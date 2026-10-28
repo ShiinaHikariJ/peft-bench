@@ -2,6 +2,8 @@
 
 在同一基座、同一数据、同一训练预算下，对比 16 种微调方法 + 不微调基线，共 **34 组实验（17 × 2 任务），已全部完成**。
 
+第二轮在全部 checkpoint 上加测了 MMLU（灾难性遗忘）和 MATH-500（难题泛化），并补跑了 PiSSA（lr=2e-4），见[第二轮](#第二轮灾难性遗忘mmlu与难题泛化math-500)。
+
 ## 实验设置
 
 | 项目 | 设置 |
@@ -54,7 +56,48 @@
 3. Full FT 比 LoRA 低 1–2 分（2 万条、1 epoch 的小数据设置下）。
 4. VeRA 只训 0.045% 参数，GSM8K 最高（71.04），但常识推理掉约 9 分。
 5. Prefix-Tuning 在常识推理上失败：用 generate bs=1 / bs=32 / 无缓存逐步解码三种方式核对结果一致（见 `code/diag_prefix.py`），模型几乎总选第一个选项，属方法本身在该设置下未学会，不是评测 bug。
-6. PiSSA 使用论文推荐学习率 2e-5（LoRA 的 1/10），常识推理低约 2 分，建议用 2e-4 补跑。
+6. PiSSA 使用论文推荐学习率 2e-5（LoRA 的 1/10），常识推理低约 2 分；用 2e-4 补跑后反而更差（见第二轮）。
+
+## 第二轮：灾难性遗忘（MMLU）与难题泛化（MATH-500）
+
+不重新训练，直接评测上面 34 个 checkpoint：
+
+- **MMLU**：14,042 题，标准 5-shot 格式，取 " A"–" D" 中 logit 最大者（不依赖生成格式）。基座 61.05，与官方报告的 60.9 一致。用来衡量微调对通用知识的损伤。
+- **MATH-500**：只测数学任务的模型，Alpaca 模板 + 贪心生成（最多 1024 token），用 math-verify 判定答案等价，按难度 1–5 级分别统计。
+
+另外按 LoRA 的学习率 2e-4 补跑了 PiSSA（结果在 `results_pissa_lr2e-4/`）。
+
+| 方法 | MMLU（常识微调后） | Δ | MMLU（数学微调后） | Δ | MATH-500 | Level 5 |
+|---|---|---|---|---|---|---|
+| base | 61.05 | – | 61.05 | – | 13.8 | 5.2 |
+| Full FT | 52.57 | **−8.48** | 59.29 | −1.76 | 33.0 | 9.7 |
+| Freeze | 60.92 | −0.13 | 60.39 | −0.66 | 32.8 | 9.0 |
+| LoRA | 60.14 | −0.91 | 60.67 | −0.38 | 36.2 | 15.7 |
+| QLoRA | 58.44 | −2.61 | 57.98 | −3.07 | 32.0 | 9.7 |
+| DoRA | 60.36 | −0.69 | 60.62 | −0.43 | 37.8 | 16.4 |
+| rsLoRA | 57.19 | −3.86 | 59.81 | −1.24 | 36.2 | 11.9 |
+| PiSSA (lr 2e-5) | 60.99 | −0.06 | 60.76 | −0.29 | 37.6 | 11.2 |
+| PiSSA (lr 2e-4) | 50.99 | **−10.06** | 58.60 | −2.45 | 33.4 | 13.4 |
+| LoRA+ | 53.61 | **−7.44** | 59.23 | −1.82 | 35.4 | 14.9 |
+| AdaLoRA | 61.28 | +0.23 | 60.68 | −0.37 | **39.0** | **17.2** |
+| VeRA | 61.39 | +0.34 | 60.71 | −0.34 | 36.4 | 14.9 |
+| IA³ | 60.49 | −0.56 | 60.29 | −0.76 | 35.8 | 13.4 |
+| OFT | 59.62 | −1.43 | 60.18 | −0.87 | 34.6 | 13.4 |
+| LoKr | 61.37 | +0.32 | 60.83 | −0.22 | 37.6 | 14.2 |
+| Prefix | 24.62 | −36.43 | 31.73 | −29.32 | 9.8 | 0.7 |
+| Prefix-MLP | 26.40 | −34.65 | 52.80 | −8.25 | 34.2 | 14.9 |
+| Prompt Tuning | 59.29 | −1.76 | 61.05 | 0.00 | 29.0 | 13.4 |
+
+完整表（含 MATH-500 各难度、MMLU 四大类和 57 个学科）见 [`results/extra_results.md`](results/extra_results.md) 和各目录下的 `extra_results.json`。
+
+### 第二轮发现
+
+1. **全量微调遗忘最重**：常识微调后 MMLU 掉 8.5 分，而 LoRA 只掉 0.9，PiSSA / AdaLoRA / VeRA / LoKr 几乎不掉。
+2. **遗忘程度与更新幅度相关**：LoRA+（B 矩阵 16 倍学习率）掉 7.4，rsLoRA（缩放因子更大）掉 3.9，PiSSA 用 2e-4 掉 10.1，用 2e-5 只掉 0.1。
+3. **PiSSA 补跑否定了"学习率太低"的猜想**：2e-4 下常识推理 75.50（原 76.60）、GSM8K 69.07（原 69.75）、MATH-500 33.4（原 37.6），全面变差。论文推荐的 2e-5 是对的。
+4. **MATH-500 排名与 GSM8K 不同**：AdaLoRA 39.0 最高，DoRA 37.8、PiSSA / LoKr 37.6 次之；Full FT 33.0、QLoRA 32.0 偏低。QLoRA 与 LoRA 的差距在难题上从 0.5 分扩大到 4.2 分。
+5. **Prefix-Tuning 的失败不只是格式问题**：MMLU 用的是 logit 打分，不依赖输出格式，仍掉到接近随机（25%），说明 prefix 破坏了模型本身的知识调用。
+6. Freeze 几乎不遗忘，但任务提升也最少；Prompt Tuning 同样遗忘很小，但 MATH-500 只有 29.0。
 
 ## 局限
 
@@ -73,8 +116,14 @@ code/
   prep_data.sh/.py 下载并抽样训练/测试数据
   summarize.py     汇总所有 results.json 生成 results.md / csv / json
   diag_prefix.py   Prefix-Tuning 低分诊断
+  prep_extra.py    下载 MMLU / MATH-500
+  extra_eval.py    第二轮评测（MMLU logit 打分、MATH-500 生成 + math-verify）
+  extra_queue.sh   第二轮队列（含 PiSSA lr=2e-4 补跑）
+  summarize_extra.py  汇总第二轮结果
 results/
-  {commonsense,math}/{method}/  每组的 results.json、训练日志、预测样例
+  {commonsense,math}/{method}/  每组的 results.json、extra_results.json、训练日志、预测样例
+  extra_results.md / .csv       第二轮汇总
+results_pissa_lr2e-4/           PiSSA 用 LoRA 学习率补跑的结果
 dashboard_data/    可视化报告使用的数据与页面源码
 ```
 
@@ -92,6 +141,6 @@ python code/summarize.py outputs
 ## 下一步
 
 - 主要方法补跑 3 个种子
-- PiSSA、LoRA+ 学习率扫描
+- LoRA+、Full FT 学习率扫描（看能否在不加重遗忘的前提下保持任务分数）
 - 增加代码任务（HumanEval）
 - 48GB 显卡上用 7B 模型复测

@@ -1,0 +1,130 @@
+[2026-10-28 12:14:38] EXTRA math/base mmlu,math500
+[2026-10-28 12:23:45] OK math/base: [mmlu] math/base: 61.05 [math500] math/base: 13.8 
+[2026-10-28 12:23:45] EXTRA math/lora mmlu,math500
+[2026-10-28 12:32:58] OK math/lora: [mmlu] math/lora: 60.67 [math500] math/lora: 36.2 
+[2026-10-28 12:32:58] EXTRA commonsense/lora mmlu
+[2026-10-28 12:38:12] OK commonsense/lora: [mmlu] commonsense/lora: 60.14 
+[2026-10-28 12:38:12] EXTRA math/qlora mmlu,math500
+[2026-10-28 12:47:22] FAIL math/qlora: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 3.48 GiB. GPU 0 has a total capacity of 23.52 GiB of which 3.32 GiB is free. Including non-PyTorch memory, this process has 20.19 GiB memo
+[2026-10-28 12:47:22] EXTRA commonsense/qlora mmlu
+[2026-10-28 12:56:30] OK commonsense/qlora: [mmlu] commonsense/qlora: 58.44 
+[2026-10-28 12:56:30] EXTRA math/dora mmlu,math500
+[2026-10-28 13:05:45] OK math/dora: [mmlu] math/dora: 60.62 [math500] math/dora: 37.8 
+[2026-10-28 13:05:45] EXTRA commonsense/dora mmlu
+[2026-10-28 13:10:58] OK commonsense/dora: [mmlu] commonsense/dora: 60.36 
+[2026-10-28 13:10:58] EXTRA math/full mmlu,math500
+[2026-10-28 13:20:05] OK math/full: [mmlu] math/full: 59.29 [math500] math/full: 33.0 
+[2026-10-28 13:20:05] EXTRA commonsense/full mmlu
+[2026-10-28 13:25:12] OK commonsense/full: [mmlu] commonsense/full: 52.57 
+[2026-10-28 13:25:12] EXTRA math/pissa mmlu,math500
+[2026-10-28 13:34:28] OK math/pissa: [mmlu] math/pissa: 60.76 [math500] math/pissa: 37.6 
+[2026-10-28 13:34:29] EXTRA commonsense/pissa mmlu
+[2026-10-28 13:39:43] OK commonsense/pissa: [mmlu] commonsense/pissa: 60.99 
+[2026-10-28 13:39:43] EXTRA math/rslora mmlu,math500
+[2026-10-28 13:48:56] OK math/rslora: [mmlu] math/rslora: 59.81 [math500] math/rslora: 36.2 
+[2026-10-28 13:48:56] EXTRA commonsense/rslora mmlu
+[2026-10-28 13:54:10] OK commonsense/rslora: [mmlu] commonsense/rslora: 57.19 
+[2026-10-28 13:54:10] EXTRA math/loraplus mmlu,math500
+[2026-10-28 14:03:25] OK math/loraplus: [mmlu] math/loraplus: 59.23 [math500] math/loraplus: 35.4 
+[2026-10-28 14:03:25] EXTRA commonsense/loraplus mmlu
+[2026-10-28 14:08:38] OK commonsense/loraplus: [mmlu] commonsense/loraplus: 53.61 
+[2026-10-28 14:08:38] EXTRA math/adalora mmlu,math500
+[2026-10-28 14:18:03] OK math/adalora: [mmlu] math/adalora: 60.68 [math500] math/adalora: 39.0 
+[2026-10-28 14:18:03] EXTRA commonsense/adalora mmlu
+[2026-10-28 14:23:25] OK commonsense/adalora: [mmlu] commonsense/adalora: 61.28 
+[2026-10-28 14:23:25] EXTRA math/vera mmlu,math500
+[2026-10-28 14:32:35] OK math/vera: [mmlu] math/vera: 60.71 [math500] math/vera: 36.4 
+[2026-10-28 14:32:35] EXTRA commonsense/vera mmlu
+[2026-10-28 14:37:46] OK commonsense/vera: [mmlu] commonsense/vera: 61.39 
+[2026-10-28 14:37:46] EXTRA math/ia3 mmlu,math500
+[2026-10-28 14:46:57] OK math/ia3: [mmlu] math/ia3: 60.29 [math500] math/ia3: 35.8 
+[2026-10-28 14:46:57] EXTRA commonsense/ia3 mmlu
+=== RESTART after container reboot 2026-10-28 14:53:45 ===
+[2026-10-28 14:53:45] EXTRA math/base mmlu,math500
+[2026-10-28 14:53:52] OK math/base: [mmlu] math/base: 61.05 [math500] math/base: 13.8 
+[2026-10-28 14:53:52] EXTRA math/lora mmlu,math500
+[2026-10-28 14:53:58] OK math/lora: [mmlu] math/lora: 60.67 [math500] math/lora: 36.2 
+[2026-10-28 14:53:58] EXTRA commonsense/lora mmlu
+[2026-10-28 14:54:04] OK commonsense/lora: [mmlu] commonsense/lora: 60.14 
+[2026-10-28 14:54:04] EXTRA math/qlora mmlu,math500
+[2026-10-28 15:13:27] OK math/qlora: [mmlu] math/qlora: 57.98 [math500] math/qlora: 32.0 
+[2026-10-28 15:13:27] EXTRA commonsense/qlora mmlu
+[2026-10-28 15:13:33] OK commonsense/qlora: [mmlu] commonsense/qlora: 58.44 
+[2026-10-28 15:13:33] EXTRA math/dora mmlu,math500
+[2026-10-28 15:13:40] OK math/dora: [mmlu] math/dora: 60.62 [math500] math/dora: 37.8 
+[2026-10-28 15:13:40] EXTRA commonsense/dora mmlu
+[2026-10-28 15:13:47] OK commonsense/dora: [mmlu] commonsense/dora: 60.36 
+[2026-10-28 15:13:47] EXTRA math/full mmlu,math500
+[2026-10-28 15:13:53] OK math/full: [mmlu] math/full: 59.29 [math500] math/full: 33.0 
+[2026-10-28 15:13:53] EXTRA commonsense/full mmlu
+[2026-10-28 15:14:00] OK commonsense/full: [mmlu] commonsense/full: 52.57 
+[2026-10-28 15:14:00] EXTRA math/pissa mmlu,math500
+[2026-10-28 15:14:06] OK math/pissa: [mmlu] math/pissa: 60.76 [math500] math/pissa: 37.6 
+[2026-10-28 15:14:06] EXTRA commonsense/pissa mmlu
+[2026-10-28 15:14:13] OK commonsense/pissa: [mmlu] commonsense/pissa: 60.99 
+[2026-10-28 15:14:13] EXTRA math/rslora mmlu,math500
+[2026-10-28 15:14:19] OK math/rslora: [mmlu] math/rslora: 59.81 [math500] math/rslora: 36.2 
+[2026-10-28 15:14:19] EXTRA commonsense/rslora mmlu
+[2026-10-28 15:14:25] OK commonsense/rslora: [mmlu] commonsense/rslora: 57.19 
+[2026-10-28 15:14:25] EXTRA math/loraplus mmlu,math500
+[2026-10-28 15:14:32] OK math/loraplus: [mmlu] math/loraplus: 59.23 [math500] math/loraplus: 35.4 
+[2026-10-28 15:14:32] EXTRA commonsense/loraplus mmlu
+[2026-10-28 15:14:38] OK commonsense/loraplus: [mmlu] commonsense/loraplus: 53.61 
+[2026-10-28 15:14:38] EXTRA math/adalora mmlu,math500
+[2026-10-28 15:14:45] OK math/adalora: [mmlu] math/adalora: 60.68 [math500] math/adalora: 39.0 
+[2026-10-28 15:14:45] EXTRA commonsense/adalora mmlu
+[2026-10-28 15:14:51] OK commonsense/adalora: [mmlu] commonsense/adalora: 61.28 
+[2026-10-28 15:14:51] EXTRA math/vera mmlu,math500
+[2026-10-28 15:14:58] OK math/vera: [mmlu] math/vera: 60.71 [math500] math/vera: 36.4 
+[2026-10-28 15:14:58] EXTRA commonsense/vera mmlu
+[2026-10-28 15:15:04] OK commonsense/vera: [mmlu] commonsense/vera: 61.39 
+[2026-10-28 15:15:04] EXTRA math/ia3 mmlu,math500
+[2026-10-28 15:15:10] OK math/ia3: [mmlu] math/ia3: 60.29 [math500] math/ia3: 35.8 
+[2026-10-28 15:15:10] EXTRA commonsense/ia3 mmlu
+[2026-10-28 15:20:19] OK commonsense/ia3: [mmlu] commonsense/ia3: 60.49 
+[2026-10-28 15:20:19] EXTRA math/prefix_mlp mmlu,math500
+[2026-10-28 15:31:41] OK math/prefix_mlp: [mmlu] math/prefix_mlp: 52.8 [math500] math/prefix_mlp: 34.2 
+[2026-10-28 15:31:41] EXTRA commonsense/prefix_mlp mmlu
+[2026-10-28 15:36:53] OK commonsense/prefix_mlp: [mmlu] commonsense/prefix_mlp: 26.4 
+[2026-10-28 15:36:53] EXTRA math/prefix mmlu,math500
+[2026-10-28 15:48:51] OK math/prefix: [mmlu] math/prefix: 31.73 [math500] math/prefix: 9.8 
+[2026-10-28 15:48:51] EXTRA commonsense/prefix mmlu
+[2026-10-28 15:54:03] OK commonsense/prefix: [mmlu] commonsense/prefix: 24.62 
+[2026-10-28 15:54:03] EXTRA math/prompt mmlu,math500
+[2026-10-28 16:05:46] OK math/prompt: [mmlu] math/prompt: 61.05 [math500] math/prompt: 29.0 
+[2026-10-28 16:05:46] EXTRA commonsense/prompt mmlu
+[2026-10-28 16:11:07] OK commonsense/prompt: [mmlu] commonsense/prompt: 59.29 
+[2026-10-28 16:11:07] EXTRA math/oft mmlu,math500
+[2026-10-28 16:20:19] OK math/oft: [mmlu] math/oft: 60.18 [math500] math/oft: 34.6 
+[2026-10-28 16:20:19] EXTRA commonsense/oft mmlu
+[2026-10-28 16:25:31] OK commonsense/oft: [mmlu] commonsense/oft: 59.62 
+[2026-10-28 16:25:31] EXTRA math/lokr mmlu,math500
+[2026-10-28 16:34:39] OK math/lokr: [mmlu] math/lokr: 60.83 [math500] math/lokr: 37.6 
+[2026-10-28 16:34:39] EXTRA commonsense/lokr mmlu
+[2026-10-28 16:39:46] OK commonsense/lokr: [mmlu] commonsense/lokr: 61.37 
+[2026-10-28 16:39:46] EXTRA math/freeze mmlu,math500
+[2026-10-28 16:48:53] OK math/freeze: [mmlu] math/freeze: 60.39 [math500] math/freeze: 32.8 
+[2026-10-28 16:48:53] EXTRA commonsense/freeze mmlu
+[2026-10-28 16:54:01] OK commonsense/freeze: [mmlu] commonsense/freeze: 60.92 
+[2026-10-28 16:54:01] START commonsense/pissa
+[2026-10-28 17:13:15] OK commonsense/pissa
+[2026-10-28 17:13:15] START math/pissa
+[2026-10-28 17:38:02] OK math/pissa
+
+## commonsense
+
+| method | lr | trainable | trainable% | peak_mem_GB | train_min | train_loss | boolq | piqa | social_i_qa | hellaswag | winogrande | ARC-Easy | ARC-Challenge | openbookqa | avg |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| pissa | 0.0002 | 18.46M | 1.182 | 8.65 | 14.4 | 0.0898 | 64.25 | 78.84 | 72.72 | 84.22 | 69.14 | 85.44 | 72.18 | 77.2 | 75.5 |
+
+## math
+
+| method | lr | trainable | trainable% | peak_mem_GB | train_min | train_loss | gsm8k | avg |
+|---|---|---|---|---|---|---|---|---|
+| pissa | 0.0002 | 18.46M | 1.182 | 14.13 | 21.5 | 0.1764 | 69.07 | 69.07 |
+QUEUE_DONE
+[2026-10-28 17:38:02] EXTRA math/pissa mmlu,math500
+[2026-10-28 17:47:20] OK math/pissa: [mmlu] math/pissa: 58.6 [math500] math/pissa: 33.4 
+[2026-10-28 17:47:20] EXTRA commonsense/pissa mmlu
+[2026-10-28 17:52:37] OK commonsense/pissa: [mmlu] commonsense/pissa: 50.99 
+EXTRA_DONE
