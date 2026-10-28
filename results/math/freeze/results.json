@@ -1,0 +1,27 @@
+{
+ "method": "freeze",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 5e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "freeze_trainable_layers": 2,
+ "trainable_params": 93595648,
+ "total_params": 1543714304,
+ "trainable_pct": 6.063,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 951.9,
+ "train_loss": 0.1847,
+ "train_samples_per_s": 21.01,
+ "peak_mem_alloc_gb": 18.71,
+ "peak_mem_reserved_gb": 20.92,
+ "eval": {
+  "gsm8k": 53.3,
+  "avg": 53.3
+ },
+ "eval_runtime_s": 184.7
+}

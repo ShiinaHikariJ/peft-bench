@@ -1,0 +1,17 @@
+{
+ "method": "base",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": null,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 0,
+ "total_params": 1543714304,
+ "trainable_pct": 0.0,
+ "eval": {
+  "gsm8k": 56.48,
+  "avg": 56.48
+ },
+ "eval_runtime_s": 175.5
+}

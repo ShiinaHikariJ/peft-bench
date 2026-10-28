@@ -1,0 +1,27 @@
+{
+ "method": "lokr",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 659456,
+ "total_params": 1544373760,
+ "trainable_pct": 0.0427,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 1964.6,
+ "train_loss": 0.1615,
+ "train_samples_per_s": 10.18,
+ "peak_mem_alloc_gb": 13.87,
+ "peak_mem_reserved_gb": 20.42,
+ "merged_for_eval": true,
+ "eval": {
+  "gsm8k": 70.36,
+  "avg": 70.36
+ },
+ "eval_runtime_s": 125.1
+}

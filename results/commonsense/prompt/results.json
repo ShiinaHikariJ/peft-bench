@@ -1,0 +1,33 @@
+{
+ "method": "prompt",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.03,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 49152,
+ "total_params": 1543763456,
+ "trainable_pct": 0.0032,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 437.6,
+ "train_loss": 0.1387,
+ "train_samples_per_s": 45.7,
+ "peak_mem_alloc_gb": 15.45,
+ "peak_mem_reserved_gb": 22.92,
+ "eval": {
+  "boolq": 62.63,
+  "piqa": 76.71,
+  "social_i_qa": 68.01,
+  "hellaswag": 69.81,
+  "winogrande": 53.51,
+  "ARC-Easy": 85.73,
+  "ARC-Challenge": 69.45,
+  "openbookqa": 66.0,
+  "avg": 68.98
+ },
+ "eval_runtime_s": 166.9
+}

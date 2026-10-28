@@ -1,0 +1,978 @@
+{
+ "boolq": [
+  {
+   "prompt_tail": "completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: does ethanol take more energy make that produces?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "false",
+   "correct": false
+  },
+  {
+   "prompt_tail": "opriately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is house tax and property tax are same?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is false",
+   "answer": "true",
+   "correct": false
+  },
+  {
+   "prompt_tail": "e request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is pain experienced in a missing body part or paralyzed area?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "st.\n\n### Instruction:\nPlease answer the following question with true or false, question: is harry potter and the escape from gringotts a roller coaster ride?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "uest.\n\n### Instruction:\nPlease answer the following question with true or false, question: is there a difference between hydroxyzine hcl and hydroxyzine pam?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ppropriately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is barq's root beer a pepsi product?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "false",
+   "correct": false
+  },
+  {
+   "prompt_tail": "y completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: can an odd number be divided by an even number?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "t appropriately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is there a word with q without u?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ropriately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: can u drive in canada with us license?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "letes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is there a play off for third place in the world cup?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "iately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: can minors drink with parents in new york?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tely completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is the show bloodline based on a true story?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is false",
+   "answer": "false",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tely completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is it bad to wash your hair with shower gel?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "iately completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is the liver part of the excretory system?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is false",
+   "answer": "true",
+   "correct": false
+  },
+  {
+   "prompt_tail": "letes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is fantastic beasts and where to find them a prequel?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tely completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: will there be a season 8 of vampire diaries?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ly completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: was the movie strangers based on a true story?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "y completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is durham university part of the russell group?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": " completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: is the tv show the resident over for the season?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ly completes the request.\n\n### Instruction:\nPlease answer the following question with true or false, question: does magnesium citrate have citric acid in it?\n\nAnswer format: true/false\n\n### Response:\n",
+   "pred": "the correct answer is true",
+   "answer": "true",
+   "correct": true
+  }
+ ],
+ "piqa": [
+  {
+   "prompt_tail": " pig with a cage full of a few inches of bedding made of ripped jeans material, you will also need to supply it with a water bottle and a food dish.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "lease choose the correct solution to the question: dresser\n\nSolution1: replace drawer with bobby pin \n\nSolution2: finish, woodgrain with  bobby pin \n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "m.\n\nSolution1: Drago isn't in this game because it was released before Rocky IV.\n\nSolution2: You have to defeat Apollo Creed and Clubber Lang first.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "the question: Make outdoor pillow.\n\nSolution1: Blow into tin can and tie with rubber band.\n\nSolution2: Blow into trash bag and tie with rubber band.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "lution to the question: ice box\n\nSolution1: will turn into a cooler if you add water to it\n\nSolution2: will turn into a cooler if you add soda to it\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e question: Remove soap scum from shower door.\n\nSolution1: Rub hard with bed sheets, then rinse.\n\nSolution2: Rub hard with dryer sheets, then rinse.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "th warm water. Replace the spray nozzle and pump a few times to clear the hose. Empty spray bottle and allow to dry before using with a new cleaner.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "and then press the toilet paper onto the tape.\n\nSolution2: Spread mayonnaise all over the jar with your palms and then roll the jar in toilet paper.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ion2: Find tissue paper and fold it in half. Take scissors and tear out pieces of the paper in the middle. When you are done tape it to your window.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "estion: Neatly wrap up an extension cord.\n\nSolution1: Wrap the cord around your hand and elbow.\n\nSolution2: Wrap the cord around your hand and knee.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "lution to the question: Extend life of flowers in vase.\n\nSolution1: Add small amount of coffee in vase.\n\nSolution2: Add small amount of 7UP in vase.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ara.\n\nSolution2: put eyelash glue on the fake eyelashes and then let it get tacky. then, place it on top of your actual eyelashes and let it dry on.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "nge spices from hot to mild in the kitchen in order to find them by taste.\n\nSolution2: Arrange your spices alphabetically to make finding them easy.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "correct solution to the question: peeler\n\nSolution1: can be used as a decoration on a television \n\nSolution2: can be used as a decoration on a sock \n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ing them up\n\nSolution1: Place a cloth on each side of a pair of tongs.\n\nSolution2: Find a feather duster, and cut the feathers off every two inches.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ut of?\n\nSolution1: The frame is steel and then fabric can be added if you wish.\n\nSolution2: The frame is plastic and fabric can be added if you wish\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": " a cheap price,\n\nSolution1: look for the console on a website that sells used goods.\n\nSolution2: look up which console is the cheapest one in store.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution1",
+   "answer": "solution1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tion2: Take the steak out of cold storage and let come to room temperature, generously add salt and pepper to both sides and let sit for 10 minutes.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "n: To cream butter and sugar together, you can\n\nSolution1: Place it in a bowl and use a hand warmer\n\nSolution2: Place in a bowl and use a hand mixer\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "y push the knife through the meat to get a perfect cut.\n\nSolution2: Use a sharp knife or scissor and cut the meat properly as per the required size.\n\nAnswer format: solution1/solution2\n\n### Response:\n",
+   "pred": "the correct answer is solution2",
+   "answer": "solution2",
+   "correct": true
+  }
+ ],
+ "social_i_qa": [
+  {
+   "prompt_tail": " Riley's attacks. What does Tracy need to do before this?\n\nAnswer1: make a new plan Answer2: Go home and see Riley Answer3: Find somewhere to go\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ney felt bad afterwards. How would you describe Sydney?\n\nAnswer1: sympathetic Answer2: like a person who was unable to help Answer3: incredulous\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ws regarding cancer drug trials. What will patients want to do next?\n\nAnswer1: write new laws Answer2: get petitions signed Answer3: live longer\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "n the camping trip Answer2: happy that he doesn't need to do the cooking on the trip Answer3: very proud and accomplished about the camping trip\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ne. How would you describe Kendall?\n\nAnswer1: a very quiet person Answer2: a very passive person Answer3: a very aggressive and talkative person\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "swer and Riley was angry. How would you describe Aubrey?\n\nAnswer1: rude Answer2: smug at knowing the answer Answer3: annoyed at Riley's response\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ed it five miles. Why did Kendall do this?\n\nAnswer1: because it was unhealthy Answer2: start an exercise regimen Answer3: because it looked good\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "friends. What will Kendall want to do next?\n\nAnswer1: drive that sports car Answer2: show off his new sports car Answer3: clean and wax her legs\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "at does Riley need to do before this?\n\nAnswer1: turn on the air conditioner Answer2: open all the windows Answer3: get a blanket from the closet\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "y and they slept together many times. Why did Austin do this?\n\nAnswer1: hated Quinn Answer2: found QUinn attractive Answer3: ask Quinn on a date\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "x gently on the cheek and asked to go to dinner. What will happen to Carson?\n\nAnswer1: have a romantic meal Answer2: go on a date Answer3: loved\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "towards the execution chamber for her last meal. Why did Alex do this?\n\nAnswer1: work at the jail Answer2: So Robin can eat Answer3: release her\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ted to wake up to attend school. Why did Carson do this?\n\nAnswer1: Take the big test Answer2: Just say hello to friends Answer3: go to bed early\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "t about who was the stronger wrestler of them all. What will Taylor want to do next?\n\nAnswer1: be good at wrestling Answer2: bored Answer3: good\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "reating and the others joined him happily. What will Others want to do next?\n\nAnswer1: go home Answer2: did this to get candy Answer3: get candy\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer3",
+   "correct": false
+  },
+  {
+   "prompt_tail": "a set their trash on fire to get rid of it quickly. How would you describe Sasha?\n\nAnswer1: dirty Answer2: Very efficient Answer3: Inconsiderate\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": " it blew away. How would Robin feel afterwards?\n\nAnswer1: happy their only photo blew away Answer2: excited to see what comes next Answer3: gone\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "o before this?\n\nAnswer1: get ready to go on a solo trip Answer2: look at a map of the campground Answer3: tell her friends she wasn't interested\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "h Jan's friends to school. What will Robin want to do next?\n\nAnswer1: fix his car Answer2: avoid missing class Answer3: arrive on time to school\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer1",
+   "correct": false
+  },
+  {
+   "prompt_tail": " compliment seriously after the ballgame ended. How would you describe Cameron?\n\nAnswer1: humble and not too proud Answer2: proud Answer3: happy\n\nAnswer format: answer1/answer2/answer3\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  }
+ ],
+ "hellaswag": [
+  {
+   "prompt_tail": "p a pair of skis. Ending2: is ripping level tiles off. Ending3: is holding a rubik's cube. Ending4: starts pulling up roofing on a roof.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending4",
+   "correct": false
+  },
+  {
+   "prompt_tail": ". Ending2: pulls the barbell forward. Ending3: pulls a rope attached to the barbell. Ending4: stands and lifts the weight over her head.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending4",
+   "answer": "ending4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "anoe while the man paddles. Ending4: walking go down the rapids, while the man in his helicopter almost falls and goes out of canoehood.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending3",
+   "answer": "ending3",
+   "correct": true
+  },
+  {
+   "prompt_tail": ": runs into a car. Ending2: gets in a mat. Ending3: lifts his body above the height of a pole. Ending4: stands on his hands and springs.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending3",
+   "answer": "ending3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "dy around on the mat. Ending2: gets up from the mat. Ending3: continues to lift his body over the pole. Ending4: wiggles out of the mat.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ing spins. Ending2: celebrates by clapping and flexing both arms. Ending3: is dancing on the mat. Ending4: does jump jacks on his stick.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ing while playing the harmonica. Ending3: rocks back and forth to the music as he goes. Ending4: painted a fence in front of the camera.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending3",
+   "correct": false
+  },
+  {
+   "prompt_tail": "hown in closeups shooting a shot put. Ending3: push a child in a speedboat in the water. Ending4: look in the cameraman's eye and smile.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending1",
+   "answer": "ending1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "d smashes it on another stone. Ending3: uses the knife to shave his leg. Ending4: sand the rocks and tops them by using strong pressure.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ller ones to make a small triangular shaped piece. Ending4: starts to party with them and throw the pieces by hand while they celebrate.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "mooths the bottom of the board. Ending3: walks towards the camera. Ending4: then takes the knife and sharpens it against the wood piece.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending4",
+   "answer": "ending4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "g the instrument. Ending3: writes on the board again. Ending4: then notices a little black and green poisonous frog sitting next to him.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending1",
+   "answer": "ending4",
+   "correct": false
+  },
+  {
+   "prompt_tail": "begins walking towards the camera. Ending3: then escapes and jumps away. Ending4: is acting crazy and attacking him while he is cooking.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending3",
+   "answer": "ending3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "s how the frog secretes a poisonous fluid that can be extremely harmful. Ending4: takes the frog on his hand and tickles the back of it.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending3",
+   "answer": "ending3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "laying there. Ending3: then goes black and we see a black opening scene. Ending4: watching the boy and boy as they play a game of drums.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending1",
+   "answer": "ending1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ater and laughing to the camera. Ending4: demonstrates how to properly throw the ball with his hands while still speaking to the camera.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending4",
+   "answer": "ending4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "s up and grabs her purse, continuing to talk and laugh as she leaves. Ending4: picks up another chocolate bar and chews it as she talks.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending3",
+   "answer": "ending3",
+   "correct": true
+  },
+  {
+   "prompt_tail": " other like they are performing karate. Ending4: are then shown performing the type of cheerleading dance, using batons and pole vaults.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending1",
+   "answer": "ending1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e together with flip up their sleeves. Ending4: perform their routines as the studio rashes to a halt with cheerleaders in the audience.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ned and an instant replay is shown. Ending4: come down from their workout, they all stop to bow and applaud, then they continue dancing.\n\nAnswer format: ending1/ending2/ending3/ending4\n\n### Response:\n",
+   "pred": "the correct answer is ending2",
+   "answer": "ending2",
+   "correct": true
+  }
+ ],
+ "winogrande": [
+  {
+   "prompt_tail": " in the blank to complete the given sentence: Sarah was a much better surgeon than Maria so _ always got the easier cases.\n\nOption1: Sarah Option2: Maria Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": " in the blank to complete the given sentence: Sarah was a much better surgeon than Maria so _ always got the harder cases.\n\nOption1: Sarah Option2: Maria Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ank to complete the given sentence: They were worried the wine would ruin the bed and the blanket, but the _ was't ruined.\n\nOption1: blanket Option2: bed Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "the blank to complete the given sentence: Terry tried to bake the eggplant in the toaster oven but the _ was too big.\n\nOption1: eggplant Option2: toaster Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "o complete the given sentence: At night, Jeffrey always stays up later than Hunter to watch TV because _ wakes up late.\n\nOption1: Jeffrey Option2: Hunter Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option1",
+   "correct": false
+  },
+  {
+   "prompt_tail": " the given sentence: The cat of Sarah has some mouth problems, so she takes it to see Maria. _ is a responsible cat owner.\n\nOption1: Sarah Option2: Maria Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tence: The home that my parents had when I was in school was a lot nicer than my house now because the _ was sophisticated.\n\nOption1: home Option2: house Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "iven sentence: The home that my parents had when I was in school was a lot nicer than my house now because the _ is trashy.\n\nOption1: home Option2: house Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "plete the given sentence: Natalie has a rich husband and lots of money, Jennifer is poor _ needs to make her clothes.\n\nOption1: Natalie Option2: Jennifer Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e the given sentence: Joe immediately went to bakery before the bank because the _ had a limited supply of what he wanted.\n\nOption1: bakery Option2: bank Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e given sentence: Joe immediately went to bakery before the bank because the _ had a substantial supply of what he wanted.\n\nOption1: bakery Option2: bank Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "n the blank to complete the given sentence: I had to read an entire story for class tomorrow. Luckily, the _ was canceled.\n\nOption1: story Option2: class Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "l in the blank to complete the given sentence: I had to read an entire story for class tomorrow. Luckily, the _ was short.\n\nOption1: story Option2: class Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "nce: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper could wait.\n\nOption1: cafe Option2: library Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "e: He had enough time between classes to go to a cafe or to the library. He went to the _ because his paper was due soon.\n\nOption1: cafe Option2: library Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ad graphic novels but Natalie liked classic literature to read. _ bought the new Frank Miller comic at the book store.\n\nOption1: Lindsey Option2: Natalie Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "given sentence: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were new and perfect.\n\nOption1: Michael Option2: Leslie Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "he given sentence: Michael just bought brand new wheels for his truck unlike Leslie because _ wheels were old and used.\n\nOption1: Michael Option2: Leslie Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "mplete the given sentence: Leslie was nervous around parrots but Neil was not, since _ was bitten by a bird early in life.\n\nOption1: Leslie Option2: Neil Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option1",
+   "answer": "option1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "to fill in the blank to complete the given sentence: Christmas was a special holiday to Eric but not Adam since _ was a Jew.\n\nOption1: Eric Option2: Adam Answer format: option1/option2\n\n### Response:\n",
+   "pred": "the correct answer is option2",
+   "answer": "option2",
+   "correct": true
+  }
+ ],
+ "ARC-Easy": [
+  {
+   "prompt_tail": "nd instead of in water. Answer3: Carbon dioxide is more available than other gases. Answer4: The producers in all ecosystems are plants.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "spores from entering the respiratory system?\n\nAnswer1: safety goggles Answer2: breathing mask Answer3: rubber gloves Answer4: lead apron\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "to produce haploid cells. Where does meiosis occur?\n\nAnswer1: brain cells Answer2: bone cells Answer3: muscle cells Answer4: ovary cells\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": " to the question: Which characteristic describes the texture of a kitten's fur?\n\nAnswer1: gray Answer2: warm Answer3: long Answer4: soft\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "swer3: a network of interacting positive and negative particles Answer4: overlapping layers of neutral, positive, and negative particles\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "s, the most appropriate unit of measurement is the\n\nAnswer1: meter. Answer2: kilometer. Answer3: light-year. Answer4: astronomical unit.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": " lab area?\n\nAnswer1: wash hands Answer2: turn off all equipment Answer3: put away all glassware Answer4: wash instruments and table tops\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer1",
+   "correct": false
+  },
+  {
+   "prompt_tail": "units would be best to measure the mass of the fertilizer used?\n\nAnswer1: meters Answer2: centimeters Answer3: grams Answer4: milligrams\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "choose the correct answer to the question: Plants use sunlight to make\n\nAnswer1: soil. Answer2: minerals. Answer3: food. Answer4: water.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "to the leaves. Answer3: Xylem carries sugars from the flowers to the stems. Answer4: Phloem carries water from the flowers to the stems.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": " floor?\n\nAnswer1: Rainfall increases. Answer2: Sunlight is reduced. Answer3: Wind speed increases. Answer4: Animal migration is stopped.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "om food and transporting them to cells in the body Answer4: collecting waste products from the cells and transporting it out of the body\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "eases. What force causes the ball to slow while traveling up?\n\nAnswer1: electricity Answer2: gravity Answer3: magnetism Answer4: tension\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "n: Which of these will most likely harm a habitat?\n\nAnswer1: planting trees Answer2: water pollution Answer3: rainfall Answer4: sunlight\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ct answer to the question: All living and nonliving material is composed of\n\nAnswer1: air Answer2: elements Answer3: water Answer4: soil\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "process best explains how the Grand Canyon became so wide?\n\nAnswer1: folding Answer2: erosion Answer3: deposition Answer4: sedimentation\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "eefs in shallow waters Answer3: mammals that swim in cold, deep ocean waters Answer4: crustaceans at the bottom of deep sea ocean waters\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": " the dish. Answer2: the air condensed. Answer3: the light shining on the window sill produced more sugar. Answer4: the water evaporated.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": " a softball is an example of using which simple machine?\n\nAnswer1: pulley Answer2: lever Answer3: inclined plane Answer4: wheel and axle\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ontact with surrounding rock, the surrounding rock will\n\nAnswer1: erode. Answer2: foliate. Answer3: precipitate. Answer4: recrystallize.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  }
+ ],
+ "ARC-Challenge": [
+  {
+   "prompt_tail": "swer2: Planetary years will become longer. Answer3: Planetary days will become shorter. Answer4: Planetary gravity will become stronger.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "built faster Answer2: buildings will be made safer Answer3: building designs will look nicer Answer4: building materials will be cheaper\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "s converted to chemical energy. Answer3: Chlorophyll in the leaf captures light energy. Answer4: Sunlight is converted into chlorophyll.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e control Answer2: the hypothesis statement Answer3: the dependent (responding) variable Answer4: the independent (manipulated) variable\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "swer3: They have each lost the same amount of potential energy. Answer4: They have each gained one-half of their maximum kinetic energy.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer4",
+   "correct": false
+  },
+  {
+   "prompt_tail": "le disease Answer2: an infectious, cell-cycle disease Answer3: a non-infectious, chronic disease Answer4: an infectious, chronic disease\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "nths Answer3: to store food that will be eaten over the winter months Answer4: to protect the grasses and seeds from decay before winter\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": " Answer2: The area was once grassland. Answer3: The climate in the area was once tropical. Answer4: There are active faults in the area.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "and rats would increase. Answer3: Another bird of prey would replace the hawk. Answer4: The chickens would have a lower rate of disease.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "er that still maintains the characteristics of copper?\n\nAnswer1: the atom Answer2: the electron Answer3: the nucleus Answer4: the proton\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "otic cells from eukaryotic cells?\n\nAnswer1: life processes Answer2: size differences Answer3: plasma membranes Answer4: energy molecules\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "r2: The Sun creates water particles. Answer3: The Sun's rays cause organisms to come to the surface. Answer4: The Sun provides minerals.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "unny, mild day is forecast, which temperature is most likely for 2:00 p.m.?\n\nAnswer1: 32° F Answer2: 41° F Answer3: 78° F Answer4: 98° F\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": ". Answer2: Write a report of the results. Answer3: Make a table for recording data. Answer4: Make daily observations of the light bulbs.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer3",
+   "correct": false
+  },
+  {
+   "prompt_tail": " abundant greenhouse gas in the lower atmosphere of Earth?\n\nAnswer1: ozone Answer2: methane Answer3: water vapor Answer4: carbon dioxide\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer3",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ure does water freeze?\n\nAnswer1: 0 degrees Celsius Answer2: 32 degrees Celsius Answer3: 100 degrees Celsius Answer4: 212 degrees Celsius\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "t discovery will be Answer3: analyze new data as it becomes available Answer4: delete earlier reports that were missing the new findings\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "wer1: from the ice to the tea Answer2: from the tea to the ice Answer3: from the pitcher to the tea Answer4: from the ice to the pitcher\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "se Answer2: the price of boards will decrease Answer3: there will be more boards available Answer4: there will be more trees for logging\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "iscovery of the atom. Answer2: better surgical techniques. Answer3: continued experimentation. Answer4: the invention of the microscope.\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  }
+ ],
+ "openbookqa": [
+  {
+   "prompt_tail": "to\n\nAnswer1: make more phone calls Answer2: quit eating lunch out Answer3: buy less with monopoly money Answer4: have lunch with friends\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": " to the question: There is most likely going to be fog around:\n\nAnswer1: a marsh Answer2: a tundra Answer3: the plains Answer4: a desert\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ruction:\nPlease choose the correct answer to the question: Predators eat\n\nAnswer1: lions Answer2: humans Answer3: bunnies Answer4: grass\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "h means\n\nAnswer1: roots may be split Answer2: roots may begin to die Answer3: parts may break the concrete Answer4: roots may fall apart\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "estion: An electric car runs on electricity via\n\nAnswer1: gasoline Answer2: a power station Answer3: electrical conductors Answer4: fuel\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ion: As the rain forest is deforested the atmosphere will increase with\n\nAnswer1: oxygen Answer2: nitrogen Answer3: carbon Answer4: rain\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "t answer to the question: an electric car contains a motor that runs on\n\nAnswer1: gas Answer2: hydrogen Answer3: ions Answer4: plutonium\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "earth to be straight overhead why?\n\nAnswer1: moons gravity Answer2: human planet rotation Answer3: global warming Answer4: moon rotation\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "estion: The summer solstice in the northern hemisphere is four months before\n\nAnswer1: May Answer2: July Answer3: April Answer4: October\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "swer to the question: The main component in dirt is\n\nAnswer1: microorganisms Answer2: broken stones Answer3: pollution Answer4: bacteria\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer2",
+   "correct": false
+  },
+  {
+   "prompt_tail": "rrect answer to the question: It's easier for human's to survive in:\n\nAnswer1: a cave Answer2: the ocean. Answer3: a town Answer4: alone\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": " choose the correct answer to the question: A cactus stem is used to store\n\nAnswer1: fruit Answer2: liquid Answer3: food Answer4: spines\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer2",
+   "answer": "answer2",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tailed hawk is searching for prey. It is most likely to swoop down on\n\nAnswer1: an eagle Answer2: a cow Answer3: a gecko Answer4: a deer\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer3",
+   "correct": false
+  },
+  {
+   "prompt_tail": " of wildfires is increased by\n\nAnswer1: parched foliage Answer2: torrential rain Answer3: lush foliage Answer4: careful fire maintenance\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "Answer2: an increase in air pollution Answer3: powering the lights in a home Answer4: deforestation in the amazon to make room for crops\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "1: wind power will be expensive Answer2: gas costs will rise Answer3: oil costs will be maintained Answer4: gasoline will be needed less\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer4",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tricity, and so decide to install\n\nAnswer1: sun grafts Answer2: sunlight shields Answer3: panels collecting sunlight Answer4: solar bees\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "uestion: A Mola Mola might live where?\n\nAnswer1: Lake Michigan Answer2: The Mississippi River Answer3: Bay of Bengal Answer4: Lake Eerie\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer3",
+   "answer": "answer3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e the correct answer to the question: Which requires energy to move?\n\nAnswer1: weasel Answer2: willow Answer3: mango Answer4: poison ivy\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer1",
+   "answer": "answer1",
+   "correct": true
+  },
+  {
+   "prompt_tail": "se the correct answer to the question: An animal that only eats plants is a\n\nAnswer1: rat Answer2: moth Answer3: chimpanzee Answer4: pig\n\nAnswer format: answer1/answer2/answer3/answer4\n\n### Response:\n",
+   "pred": "the correct answer is answer4",
+   "answer": "answer2",
+   "correct": false
+  }
+ ]
+}

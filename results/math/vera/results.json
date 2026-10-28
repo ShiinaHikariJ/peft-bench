@@ -1,0 +1,27 @@
+{
+ "method": "vera",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.002,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 695296,
+ "total_params": 1544409600,
+ "trainable_pct": 0.045,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 1694.8,
+ "train_loss": 0.1636,
+ "train_samples_per_s": 11.8,
+ "peak_mem_alloc_gb": 13.89,
+ "peak_mem_reserved_gb": 20.52,
+ "merged_for_eval": true,
+ "eval": {
+  "gsm8k": 71.04,
+  "avg": 71.04
+ },
+ "eval_runtime_s": 126.8
+}

@@ -1,0 +1,42 @@
+[
+{
+"item": "基座模型",
+"value": "Qwen2.5-1.5B（基座版，1.54B 参数）"
+},
+{
+"item": "硬件",
+"value": "1 × RTX 4090 24GB（AutoDL），PyTorch 2.8 + transformers 5.8 + PEFT 0.18.1"
+},
+{
+"item": "常识推理训练集",
+"value": "Commonsense170K 随机抽 20,000 条（seed 42）"
+},
+{
+"item": "常识推理测试集",
+"value": "BoolQ / PIQA / SIQA / HellaSwag / WinoGrande / ARC-e / ARC-c / OBQA 全量，共 22,419 题；协议同 DoRA / LLM-Adapters"
+},
+{
+"item": "数学训练集",
+"value": "MetaMathQA 随机抽 20,000 条（seed 42）"
+},
+{
+"item": "数学测试集",
+"value": "GSM8K test 全量 1,319 题，贪心解码，最多 512 token"
+},
+{
+"item": "训练设置",
+"value": "1 epoch，有效 batch 32，cosine 学习率，warmup 3%，bf16，最大长度 384（常识）/ 768（数学）"
+},
+{
+"item": "LoRA 系配置",
+"value": "rank 16，alpha 32，作用于全部 7 个线性层（q/k/v/o/gate/up/down）"
+},
+{
+"item": "学习率",
+"value": "各方法论文 / PEFT 官方推荐默认值，未逐方法调参"
+},
+{
+"item": "随机种子",
+"value": "单种子（42），未做多次重复"
+}
+]

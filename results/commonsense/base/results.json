@@ -1,0 +1,24 @@
+{
+ "method": "base",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": null,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 0,
+ "total_params": 1543714304,
+ "trainable_pct": 0.0,
+ "eval": {
+  "boolq": 41.62,
+  "piqa": 57.29,
+  "social_i_qa": 42.53,
+  "hellaswag": 30.63,
+  "winogrande": 41.59,
+  "ARC-Easy": 57.62,
+  "ARC-Challenge": 45.22,
+  "openbookqa": 39.8,
+  "avg": 44.54
+ },
+ "eval_runtime_s": 243.2
+}
