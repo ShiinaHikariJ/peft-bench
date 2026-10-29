@@ -55,7 +55,8 @@
   <header class="pb-head" id="top">
     <h1 class="pb-title">PEFT 微调方法评测</h1>
     <p class="pb-lede">在 Qwen2.5-1.5B 上，参数高效微调普遍追平甚至超过全参数微调：常识推理最高 <b data-draw="num" data-source="best" data-where="task=commonsense" data-field="score" data-fmt="2">—</b>（<span data-draw="num" data-source="best" data-where="task=commonsense" data-field="method_label" data-fmt="text">—</span>），GSM8K 最高 <b data-draw="num" data-source="best" data-where="task=math" data-field="score" data-fmt="2">—</b>（<span data-draw="num" data-source="best" data-where="task=math" data-field="method_label" data-fmt="text">—</span>，只训练 <span data-draw="num" data-source="best" data-where="task=math" data-field="trainable_pct" data-fmt="3">—</span>% 的参数）；Full FT 分别为 <b data-draw="num" data-source="results" data-where="task=commonsense&amp;method=full" data-field="score" data-fmt="2">—</b> 和 <b data-draw="num" data-source="results" data-where="task=math&amp;method=full" data-field="score" data-fmt="2">—</b>。若只选一种，LoRA 在效果、速度和显存之间最均衡。</p>
-    <p class="pb-sub">17 种方法 × 2 个任务，单卡 RTX 4090，2026 年 10 月。分数为准确率（%）。</p>
+    <p class="pb-lede">第二轮加测显示，<b>全参数微调的遗忘最重</b>：常识推理微调后，MMLU 从基座的 <b data-draw="num" data-source="facts2" data-row="0" data-field="base_mmlu" data-fmt="2">—</b> 掉到 <b data-draw="num" data-source="facts2" data-row="0" data-field="full_mmlu_cs" data-fmt="2">—</b>，LoRA 只掉 <b data-draw="num" data-source="facts2" data-row="0" data-field="lora_drop_cs" data-fmt="2">—</b> 分。难题 MATH-500 上 <span data-draw="num" data-source="facts2" data-row="0" data-field="m5_best_label" data-fmt="text">—</span> 最高（<b data-draw="num" data-source="facts2" data-row="0" data-field="m5_best" data-fmt="1">—</b>）。</p>
+    <p class="pb-sub">17 种方法 × 2 个任务，单卡 RTX 4090，2026 年 10 月。第二轮在同一批模型上加测了 MMLU（通用知识遗忘）和 MATH-500（难题），并补跑了 PiSSA。分数为准确率（%）。</p>
   </header>
 
   <div class="pb-tiles">
@@ -83,6 +84,11 @@
       <span class="pb-tile-label">基座（不微调）· 常识 / GSM8K</span>
       <span class="pb-tile-value"><span data-draw="num" data-source="results" data-where="task=commonsense&amp;method=base" data-field="score" data-fmt="2">—</span> / <span data-draw="num" data-source="results" data-where="task=math&amp;method=base" data-field="score" data-fmt="2">—</span></span>
       <span class="pb-tile-note">下限对照</span>
+    </div>
+    <div class="pb-tile">
+      <span class="pb-tile-label">MMLU 变化 · Full FT / LoRA</span>
+      <span class="pb-tile-value"><span data-draw="num" data-source="forget" data-where="method=full" data-field="d_cs" data-fmt="2">—</span> / <span data-draw="num" data-source="forget" data-where="method=lora" data-field="d_cs" data-fmt="2">—</span></span>
+      <span class="pb-tile-note">常识推理微调后，相对基座（分）</span>
     </div>
   </div>
 
@@ -189,8 +195,87 @@
       <li><b>Full FT 反而低于 LoRA。</b>常识推理低 <span data-draw="num" data-source="facts" data-row="0" data-field="full_gap_cs" data-fmt="2">—</span> 分，GSM8K 低 <span data-draw="num" data-source="facts" data-row="0" data-field="full_gap_math" data-fmt="2">—</span> 分，显存峰值 <span data-draw="num" data-source="facts" data-row="0" data-field="full_mem_math" data-fmt="1">—</span> GB。在小数据、单 epoch 的设置下，全参数更新更容易冲掉原有能力；另外为了放进单卡，Full FT 使用了 8-bit AdamW。</li>
       <li><b>极少参数的方法在数学上很强，在常识推理上明显掉分。</b>VeRA 只训练 <span data-draw="num" data-source="facts" data-row="0" data-field="vera_pct" data-fmt="3">—</span>% 的参数，GSM8K 拿到 <span data-draw="num" data-source="facts" data-row="0" data-field="vera_math" data-fmt="2">—</span>，但常识推理只有 <span data-draw="num" data-source="facts" data-row="0" data-field="vera_cs" data-fmt="2">—</span>；IA³（<span data-draw="num" data-source="facts" data-row="0" data-field="ia3_math" data-fmt="2">—</span> / <span data-draw="num" data-source="facts" data-row="0" data-field="ia3_cs" data-fmt="2">—</span>）和 LoKr（<span data-draw="num" data-source="facts" data-row="0" data-field="lokr_math" data-fmt="2">—</span> / <span data-draw="num" data-source="facts" data-row="0" data-field="lokr_cs" data-fmt="2">—</span>）同样如此。基座数学已有 <span data-draw="num" data-source="facts" data-row="0" data-field="base_math" data-fmt="2">—</span> 分，微调主要在教格式和解题风格；常识选择题需要更多可调容量。</li>
       <li><b>Prefix 系列在常识推理上失败。</b>Prefix-Tuning (MLP) 只有 <span data-draw="num" data-source="facts" data-row="0" data-field="pmlp_cs" data-fmt="2">—</span>，P-Tuning v2 只有 <span data-draw="num" data-source="facts" data-row="0" data-field="prefix_cs" data-fmt="2">—</span>，低于基座。我们用三种解码方式核对过，结果一致：模型学会了答题格式，却几乎总选第一个选项，并非评测程序的问题。同一方法在 GSM8K 上仍有 <span data-draw="num" data-source="facts" data-row="0" data-field="pmlp_math" data-fmt="2">—</span>。Prompt Tuning 居中（<span data-draw="num" data-source="facts" data-row="0" data-field="prompt_cs" data-fmt="2">—</span> / <span data-draw="num" data-source="facts" data-row="0" data-field="prompt_math" data-fmt="2">—</span>）。</li>
-      <li><b>PiSSA 的差距可能来自学习率。</b>按论文用 <span data-draw="num" data-source="facts" data-row="0" data-field="pissa_lr" data-fmt="exp">—</span>，是 LoRA（<span data-draw="num" data-source="facts" data-row="0" data-field="lora_lr" data-fmt="exp">—</span>）的十分之一，常识推理低 <span data-draw="num" data-source="facts" data-row="0" data-field="pissa_gap_cs" data-fmt="2">—</span> 分；GSM8K 与 LoRA 接近。值得用相同学习率补跑一次。</li>
+      <li><b>PiSSA 的差距不来自学习率。</b>按论文用 <span data-draw="num" data-source="facts" data-row="0" data-field="pissa_lr" data-fmt="exp">—</span>，是 LoRA（<span data-draw="num" data-source="facts" data-row="0" data-field="lora_lr" data-fmt="exp">—</span>）的十分之一，常识推理低 <span data-draw="num" data-source="facts" data-row="0" data-field="pissa_gap_cs" data-fmt="2">—</span> 分；GSM8K 与 LoRA 接近。第二轮用与 LoRA 相同的学习率补跑，结果反而更差（见下文）。</li>
       <li><b>AdaLoRA 与 Freeze 不占优。</b>AdaLoRA 常识推理 <span data-draw="num" data-source="facts" data-row="0" data-field="ada_cs" data-fmt="2">—</span>，低于 LoRA；Freeze 只训练最后两层，GSM8K 只有 <span data-draw="num" data-source="facts" data-row="0" data-field="freeze_math" data-fmt="2">—</span>，低于未微调的基座。</li>
+    </ol>
+  </section>
+
+  <section class="pb-section" id="forgetting">
+    <h2 class="pb-h2">第二轮：通用知识遗忘（MMLU）</h2>
+    <p class="pb-note">不重新训练，把第一轮的模型直接拿去测 MMLU（57 个学科，5-shot）。只比较 A–D 四个选项的 logit，不依赖模型的输出格式。基座在两个任务下是同一个模型，得分 <b data-draw="num" data-source="facts2" data-row="0" data-field="base_mmlu" data-fmt="2">—</b>，与 Qwen 官方报告的水平一致。</p>
+    <div class="pb-card">
+      <h3 class="pb-card-title">微调后 MMLU 相对基座的变化</h3>
+      <p class="pb-note">越往左，遗忘越多。每个方法两根条，分别是常识推理微调后和数学微调后，按常识推理微调后的变化排序。</p>
+      <ul class="pb-legend">
+        <li data-series="0"><span class="pb-sw"></span>常识推理微调后</li>
+        <li data-series="2"><span class="pb-sw"></span>数学微调后</li>
+      </ul>
+      <div class="pb-chart dash-skeleton" data-draw="forget" data-source="forget"></div>
+    </div>
+  </section>
+
+  <section class="pb-section" id="math500">
+    <h2 class="pb-h2">第二轮：难题泛化（MATH-500）</h2>
+    <div class="pb-grid">
+      <div class="pb-card">
+        <h3 class="pb-card-title">MATH-500 准确率</h3>
+        <p class="pb-note">只测数学任务的模型。Alpaca 模板加贪心生成，最多 1024 个 token，用 math-verify 判断答案是否等价。虚线为基座：它没学过答题格式，分数只作下限参考。</p>
+        <div class="pb-chart dash-skeleton" data-draw="bars500" data-source="extra"></div>
+      </div>
+      <div class="pb-card">
+        <h3 class="pb-card-title">按难度分级</h3>
+        <p class="pb-note">MATH 官方难度 1–5 级，5 级最难。颜色越深表示该列得分越高（按列各自比较）。</p>
+        <div class="pb-tablebox">
+          <table class="pb-table" data-source="extra" data-row-key="method">
+            <thead>
+              <tr>
+                <th data-field="method_label">方法</th>
+                <th data-field="l1">1 级</th>
+                <th data-field="l2">2 级</th>
+                <th data-field="l3">3 级</th>
+                <th data-field="l4">4 级</th>
+                <th data-field="l5">5 级</th>
+                <th data-field="math500">总体</th>
+              </tr>
+            </thead>
+            <tbody data-draw="lvl-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-section" id="pissa">
+    <h2 class="pb-h2">PiSSA 学习率补跑</h2>
+    <div class="pb-card">
+      <p class="pb-note">第一轮猜测 PiSSA 落后是因为学习率太低。改用与 LoRA 相同的学习率补跑后，五项指标全部下降，这个猜测不成立。</p>
+      <div class="pb-tablebox">
+        <table class="pb-table" data-source="pissa" data-row-key="lr_label">
+          <thead>
+            <tr>
+              <th data-field="lr_label">学习率</th>
+              <th data-field="cs_score">常识推理</th>
+              <th data-field="gsm8k">GSM8K</th>
+              <th data-field="math500">MATH-500</th>
+              <th data-field="mmlu_cs">MMLU（常识微调后）</th>
+              <th data-field="mmlu_math">MMLU（数学微调后）</th>
+            </tr>
+          </thead>
+          <tbody data-draw="pissa-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-section" id="findings2">
+    <h2 class="pb-h2">第二轮发现</h2>
+    <ol class="pb-findings">
+      <li><b>全参数微调遗忘最重。</b>Full FT 在常识推理微调后，MMLU 掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="full_drop_cs" data-fmt="2">—</span> 分，数学微调后掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="full_drop_math" data-fmt="2">—</span> 分；LoRA 只掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="lora_drop_cs" data-fmt="2">—</span> / <span data-draw="num" data-source="facts2" data-row="0" data-field="lora_drop_math" data-fmt="2">—</span> 分。PiSSA、AdaLoRA、VeRA、LoKr 几乎不变，两个任务下的变化都不超过 <span data-draw="num" data-source="facts2" data-row="0" data-field="small_max" data-fmt="2">—</span> 分。</li>
+      <li><b>更新幅度越大，遗忘越多。</b>LoRA+ 给 B 矩阵设了 16 倍学习率，常识推理微调后掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="loraplus_drop_cs" data-fmt="2">—</span> 分；rsLoRA 的缩放因子更大，掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="rslora_drop_cs" data-fmt="2">—</span> 分。同样是 PiSSA，学习率 <span data-draw="num" data-source="pissa" data-row="1" data-field="lr" data-fmt="exp">—</span> 时掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa2_drop_cs" data-fmt="2">—</span> 分，<span data-draw="num" data-source="pissa" data-row="0" data-field="lr" data-fmt="exp">—</span> 时只掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa1_drop_cs" data-fmt="2">—</span> 分。</li>
+      <li><b>PiSSA 补跑否定了"学习率太低"的猜测。</b>学习率提到 <span data-draw="num" data-source="pissa" data-row="1" data-field="lr" data-fmt="exp">—</span> 后，常识推理从 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa1_cs" data-fmt="2">—</span> 降到 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa2_cs" data-fmt="2">—</span>，MATH-500 从 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa1_m5" data-fmt="1">—</span> 降到 <span data-draw="num" data-source="facts2" data-row="0" data-field="pissa2_m5" data-fmt="1">—</span>。论文推荐的 <span data-draw="num" data-source="pissa" data-row="0" data-field="lr" data-fmt="exp">—</span> 是合适的。</li>
+      <li><b>难题上排名有变化。</b>MATH-500 上 AdaLoRA 最高（<span data-draw="num" data-source="facts2" data-row="0" data-field="ada_m5" data-fmt="1">—</span>），DoRA 为 <span data-draw="num" data-source="facts2" data-row="0" data-field="dora_m5" data-fmt="1">—</span>；Full FT（<span data-draw="num" data-source="facts2" data-row="0" data-field="full_m5" data-fmt="1">—</span>）和 QLoRA（<span data-draw="num" data-source="facts2" data-row="0" data-field="qlora_m5" data-fmt="1">—</span>）偏低。QLoRA 与 LoRA 在 GSM8K 上只差 <span data-draw="num" data-source="facts2" data-row="0" data-field="qlora_gap_gsm" data-fmt="2">—</span> 分，在 MATH-500 上差到 <span data-draw="num" data-source="facts2" data-row="0" data-field="qlora_gap_m5" data-fmt="1">—</span> 分，4-bit 量化的损失在难题上才显现出来。</li>
+      <li><b>Prefix-Tuning 损害的是知识本身，不只是输出格式。</b>MMLU 只比较选项 logit，不看输出格式；常识推理微调后，Prefix-Tuning 只有 <span data-draw="num" data-source="facts2" data-row="0" data-field="prefix_mmlu_cs" data-fmt="2">—</span>，MLP 版只有 <span data-draw="num" data-source="facts2" data-row="0" data-field="pmlp_mmlu_cs" data-fmt="2">—</span>，接近四选一的随机水平。</li>
+      <li><b>Freeze 和 Prompt Tuning 遗忘小，但提升也小。</b>Freeze 常识推理微调后 MMLU 只掉 <span data-draw="num" data-source="facts2" data-row="0" data-field="freeze_drop_cs" data-fmt="2">—</span> 分，MATH-500 为 <span data-draw="num" data-source="facts2" data-row="0" data-field="freeze_m5" data-fmt="1">—</span>；Prompt Tuning 的 MATH-500 只有 <span data-draw="num" data-source="facts2" data-row="0" data-field="prompt_m5" data-fmt="1">—</span>。</li>
     </ol>
   </section>
 
@@ -210,10 +295,11 @@
     <h2 class="pb-h2">局限与下一步</h2>
     <ul class="pb-plain">
       <li>每组实验只跑了一个随机种子，相差 0.5 分以内的方法不宜区分高下。</li>
-      <li>学习率取各方法的推荐默认值，未逐一调参；PiSSA、LoRA+、Prefix 系列对学习率敏感，结论可能随调参改变。</li>
+      <li>学习率取各方法的推荐默认值，未逐一调参；LoRA+、Prefix 系列对学习率敏感，结论可能随调参改变。PiSSA 已补跑一档学习率。</li>
+      <li>MATH-500 只有 500 题，相差 2 分以内的方法不宜区分高下。</li>
       <li>只测了 1.5B 模型和两个任务。QLoRA、Full FT 的显存与效果对比在 7B 以上可能明显不同。</li>
       <li>AdaLoRA 的训练损失包含正交正则项，不能与其他方法的损失直接比较。</li>
-      <li>下一步建议：主要方法补 3 个种子；对 PiSSA、LoRA+、Prefix 做学习率扫描；增加代码任务（HumanEval / MBPP）；在 48GB 以上显卡上用 7B 模型复测核心方法。</li>
+      <li>下一步建议：主要方法补 3 个种子；对 LoRA+、Full FT 做学习率扫描，看能否在保持任务分数的同时减少遗忘；增加代码任务（HumanEval / MBPP）；在 48GB 以上显卡上用 7B 模型复测核心方法。</li>
     </ul>
   </section>
 </div>
@@ -292,6 +378,158 @@
 
   document.querySelectorAll('.pb-legend [data-family]').forEach((li) => {
     li.querySelectorAll('.pb-sw').forEach((sw) => { sw.style.background = window.pbColor(li.dataset.family); });
+  });
+  document.querySelectorAll('.pb-legend [data-series]').forEach((li) => {
+    li.querySelectorAll('.pb-sw').forEach((sw) => { sw.style.background = dash.colors[+li.dataset.series]; });
+  });
+</script>
+
+<script>
+  // round 2: MMLU forgetting, MATH-500, PiSSA re-run
+  dash.calc('forget', {
+    inputs: ['extra'],
+    title: 'MMLU 相对基座的变化',
+    description: '每个方法在常识推理、数学微调后的 MMLU 得分减去基座的 MMLU 得分。',
+    fn: (extra) => {
+      const base = extra.find((r) => r.method === 'base').mmlu_cs;
+      return extra.map((r) => ({ method: r.method, method_label: r.method_label, family: r.family,
+        mmlu_cs: r.mmlu_cs, mmlu_math: r.mmlu_math, d_cs: r.mmlu_cs - base, d_math: r.mmlu_math - base }));
+    },
+  });
+
+  dash.calc('facts2', {
+    inputs: ['extra', 'pissa', 'results'],
+    title: '第二轮正文引用的数字',
+    description: '由 MMLU / MATH-500 结果和 PiSSA 补跑结果算出的掉分、差值和最高分，供“第二轮发现”引用。',
+    fn: (extra, pissa, results) => {
+      const e = (m, k) => extra.find((r) => r.method === m)[k];
+      const gsm = (m) => results.find((r) => r.task === 'math' && r.method === m).score;
+      const base = e('base', 'mmlu_cs');
+      const tuned = extra.filter((r) => r.method !== 'base');
+      const best = Math.max(...tuned.map((r) => r.math500));
+      const [p1, p2] = [...pissa].sort((a, b) => a.lr - b.lr);
+      return [{
+        base_mmlu: base, full_mmlu_cs: e('full', 'mmlu_cs'),
+        full_drop_cs: base - e('full', 'mmlu_cs'), full_drop_math: base - e('full', 'mmlu_math'),
+        lora_drop_cs: base - e('lora', 'mmlu_cs'), lora_drop_math: base - e('lora', 'mmlu_math'),
+        small_max: Math.max(...['pissa', 'adalora', 'vera', 'lokr'].flatMap((m) => [e(m, 'mmlu_cs'), e(m, 'mmlu_math')].map((v) => Math.abs(v - base)))),
+        loraplus_drop_cs: base - e('loraplus', 'mmlu_cs'), rslora_drop_cs: base - e('rslora', 'mmlu_cs'),
+        pissa1_drop_cs: base - p1.mmlu_cs, pissa2_drop_cs: base - p2.mmlu_cs,
+        pissa1_cs: p1.cs_score, pissa2_cs: p2.cs_score, pissa1_m5: p1.math500, pissa2_m5: p2.math500,
+        m5_best: best, m5_best_label: tuned.filter((r) => r.math500 === best).map((r) => r.method_label).join(' / '),
+        ada_m5: e('adalora', 'math500'), dora_m5: e('dora', 'math500'), full_m5: e('full', 'math500'), qlora_m5: e('qlora', 'math500'),
+        qlora_gap_gsm: gsm('lora') - gsm('qlora'), qlora_gap_m5: e('lora', 'math500') - e('qlora', 'math500'),
+        prefix_mmlu_cs: e('prefix', 'mmlu_cs'), pmlp_mmlu_cs: e('prefix_mlp', 'mmlu_cs'),
+        freeze_drop_cs: base - e('freeze', 'mmlu_cs'), freeze_m5: e('freeze', 'math500'), prompt_m5: e('prompt', 'math500'),
+      }];
+    },
+  });
+
+  // diverging bars: two series per method around zero
+  dash.draw('forget', (el) => {
+    const d = dash.data('forget');
+    el.replaceChildren();
+    el.classList.toggle('dash-skeleton', d.status === 'loading');
+    if (d.status !== 'ok') { window.pbFail(el, d); return; }
+    const rows = d.data.filter((r) => r.method !== 'base').sort((a, b) => b.d_cs - a.d_cs);
+    const series = [['d_cs', 0, '常识推理微调后'], ['d_math', 2, '数学微调后']];
+    const W = Math.max(280, el.clientWidth);
+    const rowH = 34, top = 8, bottom = 26;
+    const H = top + rows.length * rowH + bottom;
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+
+    const probe = svg.append('g');
+    let maxL = 0;
+    rows.forEach((r) => { const t = probe.append('text').text(r.method_label); maxL = Math.max(maxL, t.node().getComputedTextLength()); });
+    probe.remove();
+    const left = Math.min(maxL + 10, W * 0.4), right = 52;
+    const vals = rows.flatMap((r) => [r.d_cs, r.d_math]);
+    const x = d3.scaleLinear([Math.floor(Math.min(...vals) / 5) * 5, Math.max(2, Math.ceil(Math.max(...vals)))], [left, W - right]);
+    const y = d3.scaleBand(rows.map((r) => r.method), [top, top + rows.length * rowH]).padding(0.18);
+    const bh = y.bandwidth() / 2;
+
+    const ticks = x.ticks(Math.max(3, Math.floor((W - left - right) / 70)));
+    svg.append('g').selectAll('line').data(ticks).join('line')
+      .attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', top).attr('y2', H - bottom)
+      .attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(ticks).join('text')
+      .attr('x', (v) => x(v)).attr('y', H - bottom + 16).attr('text-anchor', 'middle').text((v) => v);
+
+    const tip = window.pbTip(el);
+    const g = svg.append('g').selectAll('g').data(rows).join('g');
+    g.append('text').attr('class', 'pb-lbl').attr('x', left - 8).attr('y', (r) => y(r.method) + y.bandwidth() / 2)
+      .attr('dy', '0.32em').attr('text-anchor', 'end').text((r) => r.method_label);
+    series.forEach(([k, ci], i) => {
+      g.append('rect').attr('x', (r) => Math.min(x(0), x(r[k]))).attr('y', (r) => y(r.method) + i * bh)
+        .attr('width', (r) => Math.max(1, Math.abs(x(r[k]) - x(0)))).attr('height', bh - 1).attr('rx', 2)
+        .style('fill', dash.colors[ci]);
+      g.append('text').attr('x', (r) => Math.max(x(0), x(r[k])) + 4).attr('y', (r) => y(r.method) + i * bh + bh / 2)
+        .attr('dy', '0.32em').text((r) => window.pbFmt(r[k], 2));
+    });
+    g.append('rect').attr('x', 0).attr('y', (r) => y(r.method)).attr('width', W).attr('height', y.bandwidth())
+      .attr('fill', 'transparent')
+      .on('mousemove', (ev, r) => {
+        const [mx, my] = d3.pointer(ev, el);
+        tip.show(r.method_label, [
+          ['常识推理微调后', window.pbFmt(r.mmlu_cs, 2) + '（' + window.pbFmt(r.d_cs, 2) + '）'],
+          ['数学微调后', window.pbFmt(r.mmlu_math, 2) + '（' + window.pbFmt(r.d_math, 2) + '）'],
+        ], mx, my);
+      })
+      .on('mouseleave', () => tip.hide());
+    svg.append('line').attr('x1', x(0)).attr('x2', x(0)).attr('y1', top).attr('y2', H - bottom)
+      .attr('stroke', 'var(--cds-chart-axis)').attr('pointer-events', 'none');
+  });
+
+  dash.draw('bars500', (el) => {
+    const d = dash.data('extra');
+    el.replaceChildren();
+    el.classList.toggle('dash-skeleton', d.status === 'loading');
+    if (d.status !== 'ok') { window.pbFail(el, d); return; }
+    window.pbBars(el, d.data, 'math500', (r) => [
+      ['类别', r.family], ['MATH-500', window.pbFmt(r.math500, 1)], ['5 级（最难）', window.pbFmt(r.l5, 1)],
+    ]);
+  });
+
+  const LEVELS = ['l1', 'l2', 'l3', 'l4', 'l5', 'math500'];
+  dash.draw('lvl-body', (tb) => {
+    const d = dash.data('extra');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    const rows = [...d.data].sort((a, b) => b.math500 - a.math500);
+    const ext = Object.fromEntries(LEVELS.map((t) => [t, d3.extent(rows, (r) => r[t])]));
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.method;
+      const name = document.createElement('td');
+      name.textContent = r.method_label;
+      tr.append(name);
+      LEVELS.forEach((t) => {
+        const td = document.createElement('td');
+        td.textContent = window.pbFmt(r[t], 1);
+        const [lo, hi] = ext[t];
+        const k = hi > lo ? (r[t] - lo) / (hi - lo) : 0;
+        td.style.background = `color-mix(in srgb, ${dash.colors[0]} ${Math.round(k * 45)}%, transparent)`;
+        if (t === 'math500') td.style.fontWeight = '600';
+        tr.append(td);
+      });
+      tb.append(tr);
+    });
+  });
+
+  dash.draw('pissa-body', (tb) => {
+    const d = dash.data('pissa');
+    tb.replaceChildren();
+    if (d.status !== 'ok') return;
+    [...d.data].sort((a, b) => a.lr - b.lr).forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.lr_label;
+      [['lr_label', 'text'], ['cs_score', 2], ['gsm8k', 2], ['math500', 1], ['mmlu_cs', 2], ['mmlu_math', 2]].forEach(([k, f]) => {
+        const td = document.createElement('td');
+        td.textContent = window.pbFmt(r[k], f);
+        tr.append(td);
+      });
+      tb.append(tr);
+    });
   });
 </script>
 
@@ -379,8 +617,12 @@
     el.replaceChildren();
     el.classList.toggle('dash-skeleton', d.status === 'loading');
     if (d.status !== 'ok') { window.pbFail(el, d); return; }
-    const task = el.dataset.task;
-    const rows = d.data.filter((r) => r.task === task).sort((a, b) => b.score - a.score);
+    window.pbBars(el, d.data.filter((r) => r.task === el.dataset.task), 'score', window.pbTipLines);
+  });
+
+  // shared by the GSM8K / commonsense charts and MATH-500: rows sorted by `field`, dashed line at the base model
+  window.pbBars = (el, all, field, tipLines) => {
+    const rows = [...all].sort((a, b) => b[field] - a[field]);
     const base = rows.find((r) => r.method === 'base');
     const W = Math.max(280, el.clientWidth);
     const rowH = 22, top = 22, bottom = 26;
@@ -392,36 +634,38 @@
     rows.forEach((r) => { const t = probe.append('text').text(r.method_label); maxL = Math.max(maxL, t.node().getComputedTextLength()); });
     probe.remove();
     const left = Math.min(maxL + 10, W * 0.45), right = 40;
-    const x = d3.scaleLinear([0, 100], [left, W - right]);
+    const hi = Math.min(100, Math.ceil((Math.max(...rows.map((r) => r[field])) + 5) / 25) * 25);
+    const xt = d3.range(0, hi + 1, hi > 50 ? 25 : 10);
+    const x = d3.scaleLinear([0, hi], [left, W - right]);
     const y = d3.scaleBand(rows.map((r) => r.method), [top, top + rows.length * rowH]).padding(0.25);
 
-    svg.append('g').selectAll('line').data([0, 25, 50, 75, 100]).join('line')
+    svg.append('g').selectAll('line').data(xt).join('line')
       .attr('x1', (v) => x(v)).attr('x2', (v) => x(v)).attr('y1', top).attr('y2', H - bottom)
       .attr('stroke', 'var(--cds-chart-grid)').attr('stroke-width', 1);
-    svg.append('g').selectAll('text').data([0, 25, 50, 75, 100]).join('text')
+    svg.append('g').selectAll('text').data(xt).join('text')
       .attr('x', (v) => x(v)).attr('y', H - bottom + 16).attr('text-anchor', 'middle').text((v) => v);
 
     const tip = window.pbTip(el);
     const g = svg.append('g').selectAll('g').data(rows).join('g');
     g.append('rect').attr('x', left).attr('y', (r) => y(r.method)).attr('height', y.bandwidth())
-      .attr('width', (r) => Math.max(0, x(r.score) - left)).attr('rx', 2)
+      .attr('width', (r) => Math.max(0, x(r[field]) - left)).attr('rx', 2)
       .style('fill', (r) => window.pbColor(r.family));
     g.append('text').attr('class', 'pb-lbl').attr('x', left - 8).attr('y', (r) => y(r.method) + y.bandwidth() / 2)
       .attr('dy', '0.32em').attr('text-anchor', 'end').text((r) => r.method_label);
-    g.append('text').attr('x', (r) => x(r.score) + 5).attr('y', (r) => y(r.method) + y.bandwidth() / 2)
-      .attr('dy', '0.32em').text((r) => window.pbFmt(r.score, 2));
+    g.append('text').attr('x', (r) => x(r[field]) + 5).attr('y', (r) => y(r.method) + y.bandwidth() / 2)
+      .attr('dy', '0.32em').text((r) => window.pbFmt(r[field], 2));
     g.append('rect').attr('x', 0).attr('y', (r) => y(r.method) - 2).attr('width', W).attr('height', y.bandwidth() + 4)
       .attr('fill', 'transparent')
-      .on('mousemove', (ev, r) => { const [mx, my] = d3.pointer(ev, el); tip.show(r.method_label, window.pbTipLines(r), mx, my); })
+      .on('mousemove', (ev, r) => { const [mx, my] = d3.pointer(ev, el); tip.show(r.method_label, tipLines(r), mx, my); })
       .on('mouseleave', () => tip.hide());
 
     if (base) {
-      svg.append('line').attr('x1', x(base.score)).attr('x2', x(base.score)).attr('y1', top - 6).attr('y2', H - bottom)
+      svg.append('line').attr('x1', x(base[field])).attr('x2', x(base[field])).attr('y1', top - 6).attr('y2', H - bottom)
         .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 1).attr('stroke-dasharray', '4 3').attr('pointer-events', 'none');
-      svg.append('text').attr('x', x(base.score)).attr('y', top - 10).attr('text-anchor', 'middle')
-        .text('基座 ' + window.pbFmt(base.score, 1));
+      svg.append('text').attr('x', x(base[field])).attr('y', top - 10).attr('text-anchor', 'middle')
+        .text('基座 ' + window.pbFmt(base[field], 1));
     }
-  });
+  };
 </script>
 
 <script>
