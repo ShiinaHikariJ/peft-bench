@@ -1,0 +1,103 @@
+{
+ "method": "lora",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 44,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 8798208,
+ "total_params": 502830976,
+ "trainable_pct": 1.7497,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 693.2,
+ "train_loss": 0.1409,
+ "train_samples_per_s": 28.85,
+ "peak_mem_alloc_gb": 6.42,
+ "peak_mem_reserved_gb": 7.48,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 171.6,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 54.52,
+    "social_i_qa": 49.18,
+    "hellaswag": 34.15,
+    "winogrande": 49.57,
+    "ARC-Easy": 58.67,
+    "ARC-Challenge": 40.19,
+    "openbookqa": 49.4,
+    "avg": 49.73
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 343.9,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 66.97,
+    "social_i_qa": 57.06,
+    "hellaswag": 52.67,
+    "winogrande": 55.8,
+    "ARC-Easy": 68.64,
+    "ARC-Challenge": 50.94,
+    "openbookqa": 54.0,
+    "avg": 58.53
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 516.6,
+   "eval": {
+    "boolq": 61.53,
+    "piqa": 67.36,
+    "social_i_qa": 61.87,
+    "hellaswag": 60.39,
+    "winogrande": 56.83,
+    "ARC-Easy": 71.0,
+    "ARC-Challenge": 52.3,
+    "openbookqa": 56.8,
+    "avg": 61.01
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 693.2,
+   "eval": {
+    "boolq": 60.37,
+    "piqa": 68.01,
+    "social_i_qa": 62.95,
+    "hellaswag": 61.64,
+    "winogrande": 56.59,
+    "ARC-Easy": 71.76,
+    "ARC-Challenge": 53.33,
+    "openbookqa": 56.4,
+    "avg": 61.38
+   }
+  }
+ ],
+ "merged_for_eval": true,
+ "eval": {
+  "boolq": 60.37,
+  "piqa": 68.01,
+  "social_i_qa": 62.95,
+  "hellaswag": 61.64,
+  "winogrande": 56.59,
+  "ARC-Easy": 71.76,
+  "ARC-Challenge": 53.33,
+  "openbookqa": 56.4,
+  "avg": 61.38
+ },
+ "eval_runtime_s": 71.8,
+ "eval_decoding": "generate"
+}

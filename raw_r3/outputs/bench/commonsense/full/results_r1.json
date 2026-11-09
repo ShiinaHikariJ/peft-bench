@@ -1,0 +1,33 @@
+{
+ "method": "full",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 1543714304,
+ "total_params": 1543714304,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 1591.2,
+ "train_loss": 0.0934,
+ "train_samples_per_s": 12.57,
+ "peak_mem_alloc_gb": 16.91,
+ "peak_mem_reserved_gb": 22.8,
+ "eval": {
+  "boolq": 64.68,
+  "piqa": 79.11,
+  "social_i_qa": 72.72,
+  "hellaswag": 85.51,
+  "winogrande": 70.64,
+  "ARC-Easy": 86.2,
+  "ARC-Challenge": 72.44,
+  "openbookqa": 77.2,
+  "avg": 76.06
+ },
+ "eval_runtime_s": 137.5
+}

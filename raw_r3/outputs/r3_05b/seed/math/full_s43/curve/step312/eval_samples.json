@@ -1,0 +1,124 @@
+{
+ "gsm8k": [
+  {
+   "prompt_tail": "for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\n\n### Response:\n",
+   "pred": "Janet eats 3 eggs for breakfast every morning, so she eats 3 x 7 = 21 eggs in total for breakfast.\nShe also bakes muffins for her friends every day, so she bakes 4 muffins x 7 = 28 eggs in total for baking muffins.\nIn total, she eats 21 + 28 = 49 eggs per day.\nShe has 16 eggs per day, so she has 16 - 49 = 12 eggs remaining.\nShe sells the remaining eggs at the farmers' market, so she makes 12 x $2 = $24 every day.\n#### 24\nThe answer is: 24",
+   "answer": "18",
+   "correct": false
+  },
+  {
+   "prompt_tail": ". Write a response that appropriately completes the request.\n\n### Instruction:\nA robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?\n\n### Response:\n",
+   "pred": "A robe takes 2 bolts of blue fiber.\nHalf that much white fiber is 2/2 = 1 bolt of white fiber.\nSo, it takes a total of 2 + 1 = 3 bolts of blue and white fiber.\nTherefore, it takes 3 bolts in total.\n#### 3\nThe answer is: 3",
+   "answer": "3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "n:\nJosh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?\n\n### Response:\n",
+   "pred": "The house originally cost $80,000 and Josh puts in $50,000 in repairs, so the total cost of the house is $80,000 + $50,000 = $130,000.\nThe house increased in value by 150%, so the new value of the house is $130,000 + ($130,000 * 1.5) = $260,000.\nTo calculate the profit, we subtract the original cost of the house from the new value of the house: $260,000 - $130,000 = $130,000.\nTherefore, Josh made a profit of $130,000.\n#### 130000\nThe answer is: 130000",
+   "answer": "70000",
+   "correct": false
+  },
+  {
+   "prompt_tail": "se that appropriately completes the request.\n\n### Instruction:\nJames decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?\n\n### Response:\n",
+   "pred": "James runs 3 sprints 3 times a week, so he runs 3 x 3 = 9 sprints in total.\nHe runs 60 meters each sprint, so he runs 9 x 60 = 540 meters in total.\nTherefore, James runs a total of 540 meters a week.\n#### 540\nThe answer is: 540",
+   "answer": "540",
+   "correct": true
+  },
+  {
+   "prompt_tail": "oon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens?\n\n### Response:\n",
+   "pred": "Wendi gives her flock of chickens 15 cups of feed in the morning and 25 cups of feed in the afternoon, so she gives them a total of 15 + 25 = 40 cups of feed in the day.\nSince her flock has 20 chickens, she needs to give each chicken 40 / 20 = 2 cups of feed in the final meal of the day.\nTherefore, she needs to give her chickens 2 cups of feed in the final meal of the day.\n#### 2\nThe answer is: 2",
+   "answer": "20",
+   "correct": false
+  },
+  {
+   "prompt_tail": "tore to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glasses. How much does he need to pay for them?\n\n### Response:\n",
+   "pred": "Kylar wants to buy 16 glasses, and every second glass costs 60% of the price of the first glass.\nSo, the cost of the first glass is $5.\nThe cost of the second glass is 60% of $5, which is 0.6 * $5 = $3.\nThe cost of the third glass is 60% of $3, which is 0.6 * $3 = $1.80.\nThe cost of the fourth glass is 60% of $1.80, which is 0.6 * $1.80 = $1.08.\nThe cost of the fifth glass is 60% of $1.08, which is 0.6 * $1.08 = $0.672.\nThe cost of the sixth glass is 60% of $0.672, which is 0.6 * $0.672 = $0.375.\nThe cost of the seventh glass is 60% of $0.375, which is 0.6 * $0.375 = $0.225.\nThe cost of the eighth glass is 60% of $0.225, which is 0.6 * $0.225 = $1.35.\nThe cost of the ninth glass is 60% of $1.35, which is 0.6 * $1.35 = $0.81.\nThe cost of the tenth glass is 60% of $0.81, which is 0.6 * $0.81 = $0.492.\nThe cost of the eleventh glass is 60% of $0.492, which is 0.6 * $0.492 = $0.2952.\nThe cost of the twelfth glass is 60% of $0.2952, which is 0.6 * $0.2952 = $0.17712.\nThe cost of the thirteenth glass is 60% of $0.17712, which is 0.6 * $0.17712 = $0.106592.\nThe cost of the fourteenth glass is",
+   "answer": "64",
+   "correct": false
+  },
+  {
+   "prompt_tail": "louse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\n\n### Response:\n",
+   "pred": "If Seattle has 20 sheep, then Charleston has 4 * 20 = 80 sheep.\nAnd if Charleston has 80 sheep, then Toulouse has 2 * 80 = 160 sheep.\nTogether, Toulouse, Charleston, and Seattle have 160 + 80 + 20 = 260 sheep.\n#### 260\nThe answer is: 260",
+   "answer": "260",
+   "correct": true
+  },
+  {
+   "prompt_tail": "he download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file?\n\n### Response:\n",
+   "pred": "Carla normally can download 2 GB/minute, so in 1 minute she can download 2 GB.\nBut 40% of the way through the download, she has to restart the download, which takes 20 minutes.\nSo in total, she has to download 2 GB + 2 GB * 0.4 = 2.8 GB.\nSince there are 1000 GB in a megabyte, 2.8 GB is equal to 2.8 * 1000 = 2800 GB.\nTherefore, it takes her 2800 GB / 2 GB/minute = 1400 minutes to download the file.\n#### 1400\nThe answer is: 1400",
+   "answer": "160",
+   "correct": false
+  },
+  {
+   "prompt_tail": "ends the next half-hour driving at a speed of 30mph, before being able to drive the remaining time of the 4 hours going at 80 mph.  How far is he from home at the end of those 4 hours?\n\n### Response:\n",
+   "pred": "John drives for 3 hours at a speed of 60 mph, so he covers a distance of 3 * 60 = 180 miles.\nHe then tries to get home in 4 hours, but spends the first 2 hours in standstill traffic, so he drives for 4 - 2 = 2 hours.\nHe drives at a speed of 30 mph for the next half-hour, so he covers a distance of 30 * 0.5 = 15 miles.\nHe drives at a speed of 80 mph for the remaining 2 hours, so he covers a distance of 80 * 2 = 160 miles.\nIn total, John covers a distance of 180 + 15 + 160 = 355 miles.\nHe spends the first 2 hours in standstill traffic, so he is 2 * 60 = 120 miles away from home.\nHe drives for 4 hours going at a speed of 80 mph, so he covers a distance of 80 * 4 = 320 miles.\nIn total, John is 120 + 320 = 440 miles away from home.\nTherefore, he is 440 - 355 = 85 miles away from home at the end of those 4 hours.\n#### 85\nThe answer is: 85",
+   "answer": "45",
+   "correct": false
+  },
+  {
+   "prompt_tail": "urs she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?\n\n### Response:\n",
+   "pred": "Eliza's regular hourly rate is $10 per hour.\nShe works for 40 hours, so her regular earnings are 40 * $10 = $400.\nShe also works for 45 hours, so her overtime pay is 1.2 * $10 = $12.\nHer total earnings for the week are $400 + $12 = $412.\n#### 412\nThe answer is: 412",
+   "answer": "460",
+   "correct": false
+  },
+  {
+   "prompt_tail": "cond month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?\n\n### Response:\n",
+   "pred": "In the second month, the program had 3 * 60 = 180 downloads.\nIn the third month, the downloads decreased by 30%, so the program had 180 - (30/100 * 180) = 180 - 54 = 126 downloads.\nIn total, the program had 60 + 180 + 126 = 366 downloads over the three months.\n#### 366\nThe answer is: 366",
+   "answer": "366",
+   "correct": true
+  },
+  {
+   "prompt_tail": "stries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost?\n\n### Response:\n",
+   "pred": "Toula bought 3 dozen donuts, which cost $68 per dozen, so she spent 3 * $68 = $204 on donuts.\nShe also bought 2 dozen mini cupcakes, which cost $80 per dozen, so she spent 2 * $80 = $160 on cupcakes.\nShe bought 6 dozen mini cheesecakes, which cost $55 per dozen, so she spent 6 * $55 = $330 on cheesecakes.\nThe total cost of all the pastries is $204 + $160 + $330 = $694.\n#### 694\nThe answer is: 694",
+   "answer": "694",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ear it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\n\n### Response:\n",
+   "pred": "Carlos's lemon tree will grow 7 lemons each year, so after 1 year, he will have 7 lemons.\nAfter 2 years, he will have 7 lemons x 2 = 14 lemons.\nAfter 3 years, he will have 14 lemons x 3 = 42 lemons.\nAfter 4 years, he will have 42 lemons x 4 = 168 lemons.\nAfter 5 years, he will have 168 lemons x 5 = 840 lemons.\nAfter 6 years, he will have 840 lemons x 6 = 5040 lemons.\nAfter 7 years, he will have 5040 lemons x 7 = 35280 lemons.\nAfter 8 years, he will have 35280 lemons x 8 = 282240 lemons.\nAfter 9 years, he will have 282240 lemons x 9 = 2560160 lemons.\nAfter 10 years, he will have 2560160 lemons x 10 = 25601600 lemons.\nAfter 11 years, he will have 25601600 lemons x 11 = 277217600 lemons.\nAfter 12 years, he will have 277217600 lemons x 12 = 3265403200 lemons.\nAfter 13 years, he will have 3265403200 lemons x 13 = 4109240000 lemons.\nAfter 14 years, he will have 4109240000 lemons x 14 = 57337720000 lemons.\nAfter 15 years, he will have 57337720000 lemons x 15 = 855065400000 lemons.\nAfter 16 years, he will have 855065400000 lemons x 16 = 1364",
+   "answer": "13",
+   "correct": false
+  },
+  {
+   "prompt_tail": "d of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?\n\n### Response:\n",
+   "pred": "Melanie sold a third of her vacuum cleaners at the green house, so she sold 1/3 * 5 = 5/3 vacuum cleaners at the green house.\nShe sold 2 more vacuum cleaners to the red house, so she sold 5/3 + 2 = 11/3 vacuum cleaners at the red house.\nShe sold half of what was left at the orange house, so she sold 1/2 * (5/3 + 11/3) = 1/2 * 16/3 = 8/3 vacuum cleaners at the orange house.\nIn total, Melanie sold 5/3 + 11/3 + 8/3 = 24/3 = 8 vacuum cleaners.\nTherefore, Melanie started with 5 + 24 + 8 = 37 vacuum cleaners.\n#### 37\nThe answer is: 37",
+   "answer": "18",
+   "correct": false
+  },
+  {
+   "prompt_tail": "% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance?\n\n### Response:\n",
+   "pred": "20% of 20 students enrolled in contemporary dance, so 20/100 * 20 = 4 students enrolled in contemporary dance.\nThe remaining students are 20 - 4 = 16 students enrolled in jazz dance.\n25% of the remaining students enrolled in jazz dance, so 25/100 * 16 = 4 students enrolled in jazz dance.\nThe rest of the students enrolled in hip-hop dance, so 16 - 4 = 12 students enrolled in hip-hop dance.\nTo find the percentage of the entire students enrolled in hip-hop dance, we divide the number of students enrolled in hip-hop dance by the total number of students and multiply by 100.\nSo, the percentage of the entire students enrolled in hip-hop dance is 12/20 * 100 = 60%\n#### 60\nThe answer is: 60",
+   "answer": "60",
+   "correct": true
+  },
+  {
+   "prompt_tail": "lectronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\n\n### Response:\n",
+   "pred": "The jewelry market will go up 2.5% and the electronic gadgets market will go up 1.2%.\nThe increase in the jewelry market is 2.5% of $5,000, which is 0.025 * $5,000 = $1,250.\nThe increase in the electronic gadgets market is 1.2% of $8,000, which is 0.012 * $8,000 = $960.\nThe total increase in the total value of the purchase is $1,250 + $960 = $2,210.\nThe total value of the purchase is $5,000 + $8,000 = $13,000.\nThe profit the merchant would make is the total value of the purchase minus the total increase in value, which is $13,000 - $2,210 = $10,790.\nTherefore, the merchant would make a profit of $10,790.\n#### 10790\nThe answer is: 10790",
+   "answer": "125",
+   "correct": false
+  },
+  {
+   "prompt_tail": "e time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?\n\n### Response:\n",
+   "pred": "The first train travels for 80 miles in the first day, so it covers a distance of 80 miles.\nThe second train travels for 150 miles in the second day, so it covers a distance of 150 miles.\nThe total distance covered by both trains in the two days is 80 + 150 = 230 miles.\nSince they both travel for 80 miles in the first day, the distance covered by each train in the two days is 230 / 2 = 115 miles.\n#### 115\nThe answer is: 115",
+   "answer": "230",
+   "correct": false
+  },
+  {
+   "prompt_tail": "gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\n\n### Response:\n",
+   "pred": "Jill works 50 weeks a year, 35 hours a week as a teacher, so she earns 50 * 35 = $1750 as a teacher.\nShe also works 15 hours a week as a coach, so she earns 15 * 35 = $525 as a coach.\nIn total, Jill earns $1750 + $525 = $2275 per week.\nIf she works 50 weeks a year, her annual salary is $2275 * 50 = $11375.\n#### 11375\nThe answer is: 11375",
+   "answer": "57500",
+   "correct": false
+  },
+  {
+   "prompt_tail": " Write a response that appropriately completes the request.\n\n### Instruction:\nClaire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks?\n\n### Response:\n",
+   "pred": "There are 7 days in a week, so in 4 weeks there are 7 * 4 = 28 days.\nIf Claire makes a 3 egg omelet every morning, then in 28 days she will make 28 / 3 = 9 omelets.\nSince there are 12 eggs in a dozen, Claire will eat 9 / 12 = 0.75 dozens of eggs in 4 weeks.\nTo convert dozens to eggs, we multiply by 12, so 0.75 * 12 = 9 eggs.\nTherefore, Claire will eat 9 eggs in 4 weeks.\n#### 9\nThe answer is: 9",
+   "answer": "7",
+   "correct": false
+  },
+  {
+   "prompt_tail": "miles, then another hour to walk the next two miles. If she wants her average speed to be 4 miles per hour, what speed (in miles per hour) does she need to walk the remaining distance?\n\n### Response:\n",
+   "pred": "Marissa has already walked 4 miles and 2 miles, so she has walked a total of 4 + 2 = 6 miles.\nShe has a total of 12 miles to walk, so she has 12 - 6 = 6 miles left to walk.\nTo find her average speed, we need to divide the total distance by the total time.\nShe has already walked for 1 hour, so her average speed is 4 miles per hour.\nTo find her average speed for the remaining distance, we need to divide the remaining distance by the remaining time.\nLet's assume the remaining distance is x miles.\nSo her average speed for the remaining distance is x / (1 + 1) = x / 2 miles per hour.\nSince she has already walked 6 miles, her average speed for the remaining distance is 6 / 2 = 3 miles per hour.\nTherefore, she needs to walk the remaining distance at a speed of 3 miles per hour.\n#### 3\nThe answer is: 3",
+   "answer": "6",
+   "correct": false
+  }
+ ]
+}

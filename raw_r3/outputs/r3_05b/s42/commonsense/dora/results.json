@@ -1,0 +1,103 @@
+{
+ "method": "dora",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 9102336,
+ "total_params": 503135104,
+ "trainable_pct": 1.8091,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 1140.9,
+ "train_loss": 0.1456,
+ "train_samples_per_s": 17.53,
+ "peak_mem_alloc_gb": 6.42,
+ "peak_mem_reserved_gb": 7.58,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 285.5,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 50.49,
+    "social_i_qa": 33.47,
+    "hellaswag": 24.75,
+    "winogrande": 50.43,
+    "ARC-Easy": 24.62,
+    "ARC-Challenge": 26.54,
+    "openbookqa": 25.2,
+    "avg": 37.21
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 573.2,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 62.51,
+    "social_i_qa": 52.51,
+    "hellaswag": 42.4,
+    "winogrande": 52.01,
+    "ARC-Easy": 59.47,
+    "ARC-Challenge": 44.8,
+    "openbookqa": 41.6,
+    "avg": 52.18
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 859.4,
+   "eval": {
+    "boolq": 62.2,
+    "piqa": 66.0,
+    "social_i_qa": 59.77,
+    "hellaswag": 57.66,
+    "winogrande": 55.8,
+    "ARC-Easy": 68.69,
+    "ARC-Challenge": 51.19,
+    "openbookqa": 52.8,
+    "avg": 59.26
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 1140.9,
+   "eval": {
+    "boolq": 62.42,
+    "piqa": 66.59,
+    "social_i_qa": 60.95,
+    "hellaswag": 59.39,
+    "winogrande": 56.35,
+    "ARC-Easy": 69.65,
+    "ARC-Challenge": 52.3,
+    "openbookqa": 56.2,
+    "avg": 60.48
+   }
+  }
+ ],
+ "merged_for_eval": true,
+ "eval": {
+  "boolq": 62.42,
+  "piqa": 66.59,
+  "social_i_qa": 60.95,
+  "hellaswag": 59.39,
+  "winogrande": 56.35,
+  "ARC-Easy": 69.65,
+  "ARC-Challenge": 52.3,
+  "openbookqa": 56.2,
+  "avg": 60.48
+ },
+ "eval_runtime_s": 72.4,
+ "eval_decoding": "generate"
+}

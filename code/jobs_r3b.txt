@@ -1,0 +1,10 @@
+# ---- A2: seeds at each method's best learning rate from B (full 1e-5; LoRA math 5e-4) ----
+seed/commonsense/full_lr1e-5_s42 full commonsense --lr 1e-5 --seed 42 --eval_at 0.25,0.5,0.75
+seed/math/full_lr1e-5_s42 full math --lr 1e-5 --seed 42 --eval_at 0.25,0.5,0.75
+seed/math/lora_lr5e-4_s42 lora math --lr 5e-4 --seed 42 --eval_at 0.25,0.5,0.75
+seed/commonsense/full_lr1e-5_s43 full commonsense --lr 1e-5 --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/full_lr1e-5_s43 full math --lr 1e-5 --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/lora_lr5e-4_s43 lora math --lr 5e-4 --seed 43 --eval_at 0.25,0.5,0.75
+seed/commonsense/full_lr1e-5_s44 full commonsense --lr 1e-5 --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/full_lr1e-5_s44 full math --lr 1e-5 --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/lora_lr5e-4_s44 lora math --lr 5e-4 --seed 44 --eval_at 0.25,0.5,0.75

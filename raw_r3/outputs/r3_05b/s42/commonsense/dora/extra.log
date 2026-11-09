@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  52%|█████▏    | 150/290 [00:00<00:00, 1499.67it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1773.52it/s]
+[mmlu] commonsense/dora: 44.48 n=14042 (133.5s) {'avg': 44.48, 'STEM': 40.34, 'humanities': 39.0, 'other': 49.4, 'social_sciences': 52.13, 'pred_dist': {'A': 4969, 'B': 3426, 'C': 2240, 'D': 3407}, 'n': 14042, 'runtime_s': 133.5}

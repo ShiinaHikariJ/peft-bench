@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   9%|▊         | 29/338 [00:00<00:01, 266.34it/s]Loading weights:  22%|██▏       | 76/338 [00:00<00:00, 367.52it/s]Loading weights:  35%|███▍      | 118/338 [00:00<00:00, 390.50it/s]Loading weights:  47%|████▋     | 160/338 [00:00<00:00, 389.11it/s]Loading weights:  59%|█████▉    | 199/338 [00:00<00:00, 386.68it/s]Loading weights:  72%|███████▏  | 243/338 [00:00<00:00, 400.35it/s]Loading weights:  84%|████████▍ | 284/338 [00:00<00:00, 389.84it/s]Loading weights:  97%|█████████▋| 327/338 [00:00<00:00, 398.86it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 390.75it/s]
+[eval] boolq: 65.63 (3270 samples)
+[eval] piqa: 80.63 (1838 samples)
+[eval] social_i_qa: 72.67 (1954 samples)
+[eval] hellaswag: 85.04 (10042 samples)
+[eval] winogrande: 67.64 (1267 samples)
+[eval] ARC-Easy: 89.1 (2376 samples)
+[eval] ARC-Challenge: 76.28 (1172 samples)
+[eval] openbookqa: 77.0 (500 samples)
+[result] {"method": "pissa", "task": "commonsense", "model": "Qwen2.5-1.5B", "lr": 2e-05, "rank": 16, "seed": 42, "epochs": 1.0, "trainable_params": 18464768, "total_params": 1562179072, "trainable_pct": 1.182, "n_train": 20000, "truncated": 8, "total_steps": 625, "micro_bs": 8, "train_runtime_s": 874.2, "train_loss": 0.1081, "train_samples_per_s": 22.88, "peak_mem_alloc_gb": 8.65, "peak_mem_reserved_gb": 22.15, "eval": {"boolq": 65.63, "piqa": 80.63, "social_i_qa": 72.67, "hellaswag": 85.04, "winogrande": 67.64, "ARC-Easy": 89.1, "ARC-Challenge": 76.28, "openbookqa": 77.0, "avg": 76.75}, "eval_runtime_s": 270.2, "eval_decoding": "generate"}

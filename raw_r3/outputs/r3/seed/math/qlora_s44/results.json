@@ -1,0 +1,29 @@
+{
+ "method": "qlora",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 44,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 18464768,
+ "total_params": 1562179072,
+ "trainable_pct": 1.182,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 1941.3,
+ "train_loss": 0.1701,
+ "train_samples_per_s": 10.3,
+ "peak_mem_alloc_gb": 13.68,
+ "peak_mem_reserved_gb": 15.66,
+ "eval": {
+  "gsm8k": 69.83,
+  "avg": 69.83
+ },
+ "eval_runtime_s": 323.0,
+ "eval_decoding": "generate"
+}

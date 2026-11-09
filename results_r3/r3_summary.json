@@ -1,0 +1,2975 @@
+{
+ "table": {
+  "full": {
+   "commonsense": {
+    "score": {
+     "mean": 76.27,
+     "std": 0.18,
+     "n": 3,
+     "vals": [
+      76.06,
+      76.38,
+      76.37
+     ]
+    },
+    "mmlu": {
+     "mean": 52.05,
+     "std": 1.49,
+     "n": 3,
+     "vals": [
+      52.57,
+      53.2,
+      50.37
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 990.8,
+     "std": 11.09,
+     "n": 3,
+     "vals": [
+      995.7,
+      998.6,
+      978.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 16.88,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      16.88,
+      16.88,
+      16.88
+     ]
+    },
+    "trainable_pct": 100.0
+   },
+   "math": {
+    "score": {
+     "mean": 68.33,
+     "std": 0.58,
+     "n": 3,
+     "vals": [
+      68.84,
+      68.46,
+      67.7
+     ]
+    },
+    "mmlu": {
+     "mean": 59.87,
+     "std": 0.46,
+     "n": 3,
+     "vals": [
+      59.37,
+      60.27,
+      59.98
+     ]
+    },
+    "math500": {
+     "mean": 32.53,
+     "std": 1.3,
+     "n": 3,
+     "vals": [
+      31.2,
+      32.6,
+      33.8
+     ]
+    },
+    "time_s": {
+     "mean": 1535.2,
+     "std": 5.66,
+     "n": 3,
+     "vals": [
+      1534.9,
+      1529.7,
+      1541.0
+     ]
+    },
+    "mem_gb": {
+     "mean": 19.34,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      19.34,
+      19.34,
+      19.34
+     ]
+    },
+    "trainable_pct": 100.0
+   }
+  },
+  "full_lr1e-5": {
+   "commonsense": {
+    "score": {
+     "mean": 78.09,
+     "std": 0.3,
+     "n": 3,
+     "vals": [
+      78.38,
+      77.78,
+      78.1
+     ]
+    },
+    "mmlu": {
+     "mean": 58.19,
+     "std": 0.4,
+     "n": 3,
+     "vals": [
+      58.47,
+      58.37,
+      57.73
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1070.87,
+     "std": 2.32,
+     "n": 3,
+     "vals": [
+      1072.8,
+      1068.3,
+      1071.5
+     ]
+    },
+    "mem_gb": {
+     "mean": 16.88,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      16.88,
+      16.88,
+      16.88
+     ]
+    },
+    "trainable_pct": 100.0
+   },
+   "math": {
+    "score": {
+     "mean": 70.69,
+     "std": 0.09,
+     "n": 3,
+     "vals": [
+      70.74,
+      70.74,
+      70.58
+     ]
+    },
+    "mmlu": {
+     "mean": 60.39,
+     "std": 0.28,
+     "n": 3,
+     "vals": [
+      60.15,
+      60.7,
+      60.32
+     ]
+    },
+    "math500": {
+     "mean": 35.0,
+     "std": 1.31,
+     "n": 3,
+     "vals": [
+      36.2,
+      35.2,
+      33.6
+     ]
+    },
+    "time_s": {
+     "mean": 1607.77,
+     "std": 4.41,
+     "n": 3,
+     "vals": [
+      1606.4,
+      1604.2,
+      1612.7
+     ]
+    },
+    "mem_gb": {
+     "mean": 19.34,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      19.34,
+      19.34,
+      19.34
+     ]
+    },
+    "trainable_pct": 100.0
+   }
+  },
+  "lora": {
+   "commonsense": {
+    "score": {
+     "mean": 78.23,
+     "std": 0.22,
+     "n": 3,
+     "vals": [
+      78.4,
+      77.99,
+      78.31
+     ]
+    },
+    "mmlu": {
+     "mean": 60.46,
+     "std": 0.29,
+     "n": 3,
+     "vals": [
+      60.21,
+      60.77,
+      60.39
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 866.73,
+     "std": 10.38,
+     "n": 3,
+     "vals": [
+      871.7,
+      873.7,
+      854.8
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.65,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.65,
+      8.65,
+      8.65
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 70.25,
+     "std": 1.08,
+     "n": 3,
+     "vals": [
+      69.52,
+      69.75,
+      71.49
+     ]
+    },
+    "mmlu": {
+     "mean": 60.57,
+     "std": 0.3,
+     "n": 3,
+     "vals": [
+      60.68,
+      60.79,
+      60.23
+     ]
+    },
+    "math500": {
+     "mean": 37.0,
+     "std": 1.0,
+     "n": 3,
+     "vals": [
+      37.0,
+      36.0,
+      38.0
+     ]
+    },
+    "time_s": {
+     "mean": 1409.97,
+     "std": 47.25,
+     "n": 3,
+     "vals": [
+      1384.0,
+      1381.4,
+      1464.5
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.13,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      14.13,
+      14.13,
+      14.13
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "lora_lr5e-4": {
+   "commonsense": {
+    "score": {
+     "mean": 77.57,
+     "std": null,
+     "n": 1,
+     "vals": [
+      77.57
+     ]
+    },
+    "mmlu": {
+     "mean": 56.33,
+     "std": null,
+     "n": 1,
+     "vals": [
+      56.33
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 870.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      870.8
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.65,
+     "std": null,
+     "n": 1,
+     "vals": [
+      8.65
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 70.23,
+     "std": 0.7,
+     "n": 3,
+     "vals": [
+      70.81,
+      69.45,
+      70.43
+     ]
+    },
+    "mmlu": {
+     "mean": 59.95,
+     "std": 0.17,
+     "n": 3,
+     "vals": [
+      59.83,
+      60.14,
+      59.88
+     ]
+    },
+    "math500": {
+     "mean": 37.0,
+     "std": 1.44,
+     "n": 3,
+     "vals": [
+      37.4,
+      35.4,
+      38.2
+     ]
+    },
+    "time_s": {
+     "mean": 1461.57,
+     "std": 4.01,
+     "n": 3,
+     "vals": [
+      1461.9,
+      1457.4,
+      1465.4
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.13,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      14.13,
+      14.13,
+      14.13
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "qlora": {
+   "commonsense": {
+    "score": {
+     "mean": 77.21,
+     "std": 0.55,
+     "n": 3,
+     "vals": [
+      77.77,
+      76.68,
+      77.18
+     ]
+    },
+    "mmlu": {
+     "mean": 58.49,
+     "std": 0.19,
+     "n": 3,
+     "vals": [
+      58.44,
+      58.33,
+      58.7
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1186.5,
+     "std": 35.68,
+     "n": 3,
+     "vals": [
+      1227.2,
+      1171.7,
+      1160.6
+     ]
+    },
+    "mem_gb": {
+     "mean": 7.95,
+     "std": 0.01,
+     "n": 3,
+     "vals": [
+      7.96,
+      7.95,
+      7.95
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 69.15,
+     "std": 0.65,
+     "n": 3,
+     "vals": [
+      69.07,
+      68.54,
+      69.83
+     ]
+    },
+    "mmlu": {
+     "mean": 58.0,
+     "std": 0.09,
+     "n": 3,
+     "vals": [
+      57.98,
+      58.1,
+      57.93
+     ]
+    },
+    "math500": {
+     "mean": 31.07,
+     "std": 1.01,
+     "n": 3,
+     "vals": [
+      32.0,
+      30.0,
+      31.2
+     ]
+    },
+    "time_s": {
+     "mean": 1888.8,
+     "std": 45.79,
+     "n": 3,
+     "vals": [
+      1868.0,
+      1857.1,
+      1941.3
+     ]
+    },
+    "mem_gb": {
+     "mean": 13.69,
+     "std": 0.01,
+     "n": 3,
+     "vals": [
+      13.7,
+      13.68,
+      13.68
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "dora": {
+   "commonsense": {
+    "score": {
+     "mean": 78.25,
+     "std": 0.3,
+     "n": 3,
+     "vals": [
+      78.58,
+      78.15,
+      78.01
+     ]
+    },
+    "mmlu": {
+     "mean": 60.21,
+     "std": 0.36,
+     "n": 3,
+     "vals": [
+      60.36,
+      60.47,
+      59.8
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 2052.27,
+     "std": 12.2,
+     "n": 3,
+     "vals": [
+      2064.5,
+      2052.2,
+      2040.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.66,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.66,
+      8.66,
+      8.66
+     ]
+    },
+    "trainable_pct": 1.2228
+   },
+   "math": {
+    "score": {
+     "mean": 70.66,
+     "std": 1.39,
+     "n": 3,
+     "vals": [
+      69.07,
+      71.27,
+      71.65
+     ]
+    },
+    "mmlu": {
+     "mean": 60.54,
+     "std": 0.21,
+     "n": 3,
+     "vals": [
+      60.62,
+      60.7,
+      60.3
+     ]
+    },
+    "math500": {
+     "mean": 36.93,
+     "std": 1.33,
+     "n": 3,
+     "vals": [
+      37.8,
+      37.6,
+      35.4
+     ]
+    },
+    "time_s": {
+     "mean": 3285.67,
+     "std": 80.62,
+     "n": 3,
+     "vals": [
+      3236.3,
+      3242.0,
+      3378.7
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.14,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      14.14,
+      14.14,
+      14.14
+     ]
+    },
+    "trainable_pct": 1.2228
+   }
+  },
+  "pissa": {
+   "commonsense": {
+    "score": {
+     "mean": 76.65,
+     "std": 0.09,
+     "n": 3,
+     "vals": [
+      76.75,
+      76.58,
+      76.63
+     ]
+    },
+    "mmlu": {
+     "mean": 60.92,
+     "std": 0.22,
+     "n": 3,
+     "vals": [
+      60.99,
+      60.68,
+      61.1
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 823.67,
+     "std": 44.49,
+     "n": 3,
+     "vals": [
+      874.2,
+      806.4,
+      790.4
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.65,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.65,
+      8.65,
+      8.65
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 70.48,
+     "std": 0.98,
+     "n": 3,
+     "vals": [
+      69.67,
+      70.2,
+      71.57
+     ]
+    },
+    "mmlu": {
+     "mean": 60.59,
+     "std": 0.15,
+     "n": 3,
+     "vals": [
+      60.76,
+      60.55,
+      60.46
+     ]
+    },
+    "math500": {
+     "mean": 38.07,
+     "std": 1.17,
+     "n": 3,
+     "vals": [
+      37.6,
+      39.4,
+      37.2
+     ]
+    },
+    "time_s": {
+     "mean": 1312.17,
+     "std": 37.11,
+     "n": 3,
+     "vals": [
+      1293.6,
+      1288.0,
+      1354.9
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.13,
+     "std": 0.01,
+     "n": 3,
+     "vals": [
+      14.14,
+      14.13,
+      14.13
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "oft": {
+   "commonsense": {
+    "score": {
+     "mean": 77.92,
+     "std": 0.18,
+     "n": 3,
+     "vals": [
+      78.08,
+      77.73,
+      77.96
+     ]
+    },
+    "mmlu": {
+     "mean": 58.96,
+     "std": 0.58,
+     "n": 3,
+     "vals": [
+      59.62,
+      58.5,
+      58.77
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1296.63,
+     "std": 19.27,
+     "n": 3,
+     "vals": [
+      1279.0,
+      1293.7,
+      1317.2
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.49,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.49,
+      8.49,
+      8.49
+     ]
+    },
+    "trainable_pct": 0.5084
+   },
+   "math": {
+    "score": {
+     "mean": 71.04,
+     "std": 0.27,
+     "n": 3,
+     "vals": [
+      71.27,
+      70.74,
+      71.11
+     ]
+    },
+    "mmlu": {
+     "mean": 60.12,
+     "std": 0.06,
+     "n": 3,
+     "vals": [
+      60.18,
+      60.06,
+      60.11
+     ]
+    },
+    "math500": {
+     "mean": 35.13,
+     "std": 0.76,
+     "n": 3,
+     "vals": [
+      34.6,
+      34.8,
+      36.0
+     ]
+    },
+    "time_s": {
+     "mean": 1491.2,
+     "std": 30.08,
+     "n": 3,
+     "vals": [
+      1456.5,
+      1507.2,
+      1509.9
+     ]
+    },
+    "mem_gb": {
+     "mean": 13.98,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      13.98,
+      13.98,
+      13.98
+     ]
+    },
+    "trainable_pct": 0.5084
+   }
+  },
+  "adalora": {
+   "commonsense": {
+    "score": {
+     "mean": 73.01,
+     "std": 0.32,
+     "n": 3,
+     "vals": [
+      73.28,
+      73.08,
+      72.66
+     ]
+    },
+    "mmlu": {
+     "mean": 61.35,
+     "std": 0.07,
+     "n": 3,
+     "vals": [
+      61.28,
+      61.34,
+      61.42
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1393.47,
+     "std": 20.9,
+     "n": 3,
+     "vals": [
+      1389.4,
+      1374.9,
+      1416.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 9.2,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      9.2,
+      9.2,
+      9.2
+     ]
+    },
+    "trainable_pct": 1.7629
+   },
+   "math": {
+    "score": {
+     "mean": 70.23,
+     "std": 0.71,
+     "n": 3,
+     "vals": [
+      69.75,
+      71.04,
+      69.9
+     ]
+    },
+    "mmlu": {
+     "mean": 60.67,
+     "std": 0.1,
+     "n": 3,
+     "vals": [
+      60.68,
+      60.77,
+      60.57
+     ]
+    },
+    "math500": {
+     "mean": 39.47,
+     "std": 0.99,
+     "n": 3,
+     "vals": [
+      39.0,
+      40.6,
+      38.8
+     ]
+    },
+    "time_s": {
+     "mean": 1931.5,
+     "std": 4.81,
+     "n": 3,
+     "vals": [
+      1934.9,
+      1933.6,
+      1926.0
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.68,
+     "std": 0.01,
+     "n": 3,
+     "vals": [
+      14.69,
+      14.68,
+      14.68
+     ]
+    },
+    "trainable_pct": 1.7629
+   }
+  },
+  "lokr": {
+   "commonsense": {
+    "score": {
+     "mean": 72.99,
+     "std": 0.25,
+     "n": 3,
+     "vals": [
+      73.25,
+      72.95,
+      72.76
+     ]
+    },
+    "mmlu": {
+     "mean": 61.36,
+     "std": 0.03,
+     "n": 3,
+     "vals": [
+      61.37,
+      61.33,
+      61.39
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1330.63,
+     "std": 37.81,
+     "n": 3,
+     "vals": [
+      1288.0,
+      1343.8,
+      1360.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.38,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.38,
+      8.38,
+      8.38
+     ]
+    },
+    "trainable_pct": 0.0427
+   },
+   "math": {
+    "score": {
+     "mean": 69.8,
+     "std": 0.76,
+     "n": 3,
+     "vals": [
+      70.58,
+      69.07,
+      69.75
+     ]
+    },
+    "mmlu": {
+     "mean": 60.74,
+     "std": 0.13,
+     "n": 3,
+     "vals": [
+      60.83,
+      60.59,
+      60.81
+     ]
+    },
+    "math500": {
+     "mean": 37.67,
+     "std": 0.7,
+     "n": 3,
+     "vals": [
+      37.6,
+      37.0,
+      38.4
+     ]
+    },
+    "time_s": {
+     "mean": 2034.3,
+     "std": 60.77,
+     "n": 3,
+     "vals": [
+      1964.6,
+      2076.2,
+      2062.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 13.87,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      13.87,
+      13.87,
+      13.87
+     ]
+    },
+    "trainable_pct": 0.0427
+   }
+  },
+  "vera": {
+   "commonsense": {
+    "score": {
+     "mean": 69.21,
+     "std": 0.02,
+     "n": 3,
+     "vals": [
+      69.23,
+      69.2,
+      69.2
+     ]
+    },
+    "mmlu": {
+     "mean": 61.33,
+     "std": 0.07,
+     "n": 3,
+     "vals": [
+      61.39,
+      61.34,
+      61.26
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 1048.63,
+     "std": 32.88,
+     "n": 3,
+     "vals": [
+      1086.3,
+      1033.9,
+      1025.7
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.4,
+     "std": 0.0,
+     "n": 3,
+     "vals": [
+      8.4,
+      8.4,
+      8.4
+     ]
+    },
+    "trainable_pct": 0.045
+   },
+   "math": {
+    "score": {
+     "mean": 70.86,
+     "std": 0.52,
+     "n": 3,
+     "vals": [
+      71.27,
+      71.04,
+      70.28
+     ]
+    },
+    "mmlu": {
+     "mean": 60.79,
+     "std": 0.07,
+     "n": 3,
+     "vals": [
+      60.71,
+      60.83,
+      60.82
+     ]
+    },
+    "math500": {
+     "mean": 37.07,
+     "std": 0.61,
+     "n": 3,
+     "vals": [
+      36.4,
+      37.6,
+      37.2
+     ]
+    },
+    "time_s": {
+     "mean": 1719.4,
+     "std": 46.12,
+     "n": 3,
+     "vals": [
+      1694.8,
+      1690.8,
+      1772.6
+     ]
+    },
+    "mem_gb": {
+     "mean": 13.88,
+     "std": 0.01,
+     "n": 3,
+     "vals": [
+      13.89,
+      13.88,
+      13.88
+     ]
+    },
+    "trainable_pct": 0.045
+   }
+  },
+  "rslora": {
+   "commonsense": {
+    "score": {
+     "mean": 78.02,
+     "std": null,
+     "n": 1,
+     "vals": [
+      78.02
+     ]
+    },
+    "mmlu": {
+     "mean": 57.19,
+     "std": null,
+     "n": 1,
+     "vals": [
+      57.19
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 935.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      935.8
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.65,
+     "std": null,
+     "n": 1,
+     "vals": [
+      8.65
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 69.52,
+     "std": null,
+     "n": 1,
+     "vals": [
+      69.52
+     ]
+    },
+    "mmlu": {
+     "mean": 59.81,
+     "std": null,
+     "n": 1,
+     "vals": [
+      59.81
+     ]
+    },
+    "math500": {
+     "mean": 36.2,
+     "std": null,
+     "n": 1,
+     "vals": [
+      36.2
+     ]
+    },
+    "time_s": {
+     "mean": 1399.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      1399.8
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.14,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.14
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "loraplus": {
+   "commonsense": {
+    "score": {
+     "mean": 76.76,
+     "std": null,
+     "n": 1,
+     "vals": [
+      76.76
+     ]
+    },
+    "mmlu": {
+     "mean": 53.61,
+     "std": null,
+     "n": 1,
+     "vals": [
+      53.61
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 921.7,
+     "std": null,
+     "n": 1,
+     "vals": [
+      921.7
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.65,
+     "std": null,
+     "n": 1,
+     "vals": [
+      8.65
+     ]
+    },
+    "trainable_pct": 1.182
+   },
+   "math": {
+    "score": {
+     "mean": 69.14,
+     "std": null,
+     "n": 1,
+     "vals": [
+      69.14
+     ]
+    },
+    "mmlu": {
+     "mean": 59.23,
+     "std": null,
+     "n": 1,
+     "vals": [
+      59.23
+     ]
+    },
+    "math500": {
+     "mean": 35.4,
+     "std": null,
+     "n": 1,
+     "vals": [
+      35.4
+     ]
+    },
+    "time_s": {
+     "mean": 1394.2,
+     "std": null,
+     "n": 1,
+     "vals": [
+      1394.2
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.14,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.14
+     ]
+    },
+    "trainable_pct": 1.182
+   }
+  },
+  "ia3": {
+   "commonsense": {
+    "score": {
+     "mean": 72.97,
+     "std": null,
+     "n": 1,
+     "vals": [
+      72.97
+     ]
+    },
+    "mmlu": {
+     "mean": 60.49,
+     "std": null,
+     "n": 1,
+     "vals": [
+      60.49
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 650.1,
+     "std": null,
+     "n": 1,
+     "vals": [
+      650.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 8.38,
+     "std": null,
+     "n": 1,
+     "vals": [
+      8.38
+     ]
+    },
+    "trainable_pct": 0.0172
+   },
+   "math": {
+    "score": {
+     "mean": 69.98,
+     "std": null,
+     "n": 1,
+     "vals": [
+      69.98
+     ]
+    },
+    "mmlu": {
+     "mean": 60.29,
+     "std": null,
+     "n": 1,
+     "vals": [
+      60.29
+     ]
+    },
+    "math500": {
+     "mean": 35.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      35.8
+     ]
+    },
+    "time_s": {
+     "mean": 1036.1,
+     "std": null,
+     "n": 1,
+     "vals": [
+      1036.1
+     ]
+    },
+    "mem_gb": {
+     "mean": 13.86,
+     "std": null,
+     "n": 1,
+     "vals": [
+      13.86
+     ]
+    },
+    "trainable_pct": 0.0172
+   }
+  },
+  "freeze": {
+   "commonsense": {
+    "score": {
+     "mean": 62.7,
+     "std": null,
+     "n": 1,
+     "vals": [
+      62.7
+     ]
+    },
+    "mmlu": {
+     "mean": 60.92,
+     "std": null,
+     "n": 1,
+     "vals": [
+      60.92
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 598.0,
+     "std": null,
+     "n": 1,
+     "vals": [
+      598.0
+     ]
+    },
+    "mem_gb": {
+     "mean": 12.98,
+     "std": null,
+     "n": 1,
+     "vals": [
+      12.98
+     ]
+    },
+    "trainable_pct": 6.063
+   },
+   "math": {
+    "score": {
+     "mean": 53.3,
+     "std": null,
+     "n": 1,
+     "vals": [
+      53.3
+     ]
+    },
+    "mmlu": {
+     "mean": 60.39,
+     "std": null,
+     "n": 1,
+     "vals": [
+      60.39
+     ]
+    },
+    "math500": {
+     "mean": 32.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      32.8
+     ]
+    },
+    "time_s": {
+     "mean": 951.9,
+     "std": null,
+     "n": 1,
+     "vals": [
+      951.9
+     ]
+    },
+    "mem_gb": {
+     "mean": 18.71,
+     "std": null,
+     "n": 1,
+     "vals": [
+      18.71
+     ]
+    },
+    "trainable_pct": 6.063
+   }
+  },
+  "prompt": {
+   "commonsense": {
+    "score": {
+     "mean": 68.98,
+     "std": null,
+     "n": 1,
+     "vals": [
+      68.98
+     ]
+    },
+    "mmlu": {
+     "mean": 59.29,
+     "std": null,
+     "n": 1,
+     "vals": [
+      59.29
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 437.6,
+     "std": null,
+     "n": 1,
+     "vals": [
+      437.6
+     ]
+    },
+    "mem_gb": {
+     "mean": 15.45,
+     "std": null,
+     "n": 1,
+     "vals": [
+      15.45
+     ]
+    },
+    "trainable_pct": 0.0032
+   },
+   "math": {
+    "score": {
+     "mean": 62.93,
+     "std": null,
+     "n": 1,
+     "vals": [
+      62.93
+     ]
+    },
+    "mmlu": {
+     "mean": 61.05,
+     "std": null,
+     "n": 1,
+     "vals": [
+      61.05
+     ]
+    },
+    "math500": {
+     "mean": 29.0,
+     "std": null,
+     "n": 1,
+     "vals": [
+      29.0
+     ]
+    },
+    "time_s": {
+     "mean": 699.6,
+     "std": null,
+     "n": 1,
+     "vals": [
+      699.6
+     ]
+    },
+    "mem_gb": {
+     "mean": 15.04,
+     "std": null,
+     "n": 1,
+     "vals": [
+      15.04
+     ]
+    },
+    "trainable_pct": 0.0032
+   }
+  },
+  "prefix_mlp": {
+   "commonsense": {
+    "score": {
+     "mean": 36.86,
+     "std": null,
+     "n": 1,
+     "vals": [
+      36.86
+     ]
+    },
+    "mmlu": {
+     "mean": 26.4,
+     "std": null,
+     "n": 1,
+     "vals": [
+      26.4
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 416.7,
+     "std": null,
+     "n": 1,
+     "vals": [
+      416.7
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.63,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.63
+     ]
+    },
+    "trainable_pct": 0.4831
+   },
+   "math": {
+    "score": {
+     "mean": 68.31,
+     "std": null,
+     "n": 1,
+     "vals": [
+      68.31
+     ]
+    },
+    "mmlu": {
+     "mean": 52.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      52.8
+     ]
+    },
+    "math500": {
+     "mean": 34.2,
+     "std": null,
+     "n": 1,
+     "vals": [
+      34.2
+     ]
+    },
+    "time_s": {
+     "mean": 699.9,
+     "std": null,
+     "n": 1,
+     "vals": [
+      699.9
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.66,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.66
+     ]
+    },
+    "trainable_pct": 0.4831
+   }
+  },
+  "prefix": {
+   "commonsense": {
+    "score": {
+     "mean": 19.9,
+     "std": null,
+     "n": 1,
+     "vals": [
+      19.9
+     ]
+    },
+    "mmlu": {
+     "mean": 24.62,
+     "std": null,
+     "n": 1,
+     "vals": [
+      24.62
+     ]
+    },
+    "math500": null,
+    "time_s": {
+     "mean": 414.9,
+     "std": null,
+     "n": 1,
+     "vals": [
+      414.9
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.51,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.51
+     ]
+    },
+    "trainable_pct": 0.0297
+   },
+   "math": {
+    "score": {
+     "mean": 31.01,
+     "std": null,
+     "n": 1,
+     "vals": [
+      31.01
+     ]
+    },
+    "mmlu": {
+     "mean": 31.73,
+     "std": null,
+     "n": 1,
+     "vals": [
+      31.73
+     ]
+    },
+    "math500": {
+     "mean": 9.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      9.8
+     ]
+    },
+    "time_s": {
+     "mean": 702.3,
+     "std": null,
+     "n": 1,
+     "vals": [
+      702.3
+     ]
+    },
+    "mem_gb": {
+     "mean": 14.54,
+     "std": null,
+     "n": 1,
+     "vals": [
+      14.54
+     ]
+    },
+    "trainable_pct": 0.0297
+   }
+  },
+  "base": {
+   "commonsense": {
+    "score": {
+     "mean": 44.54,
+     "std": null,
+     "n": 1,
+     "vals": [
+      44.54
+     ]
+    },
+    "mmlu": null,
+    "math500": null,
+    "time_s": null,
+    "mem_gb": null,
+    "trainable_pct": 0.0
+   },
+   "math": {
+    "score": {
+     "mean": 56.48,
+     "std": null,
+     "n": 1,
+     "vals": [
+      56.48
+     ]
+    },
+    "mmlu": {
+     "mean": 61.05,
+     "std": null,
+     "n": 1,
+     "vals": [
+      61.05
+     ]
+    },
+    "math500": {
+     "mean": 13.8,
+     "std": null,
+     "n": 1,
+     "vals": [
+      13.8
+     ]
+    },
+    "time_s": null,
+    "mem_gb": null,
+    "trainable_pct": 0.0
+   }
+  }
+ },
+ "significance": {
+  "commonsense|lora|full": {
+   "diff": 1.96,
+   "ci": [
+    1.49,
+    2.42
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|lora|full_lr1e-5": {
+   "diff": 0.15,
+   "ci": [
+    -0.2,
+    0.49
+   ],
+   "p": 0.4036,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|lora_lr5e-4|full_lr1e-5": {
+   "diff": -0.51,
+   "ci": [
+    -1.0,
+    -0.02
+   ],
+   "p": 0.0424,
+   "seeds": [
+    1,
+    3
+   ]
+  },
+  "commonsense|full_lr1e-5|full": {
+   "diff": 1.81,
+   "ci": [
+    1.44,
+    2.19
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|qlora|lora": {
+   "diff": -1.02,
+   "ci": [
+    -1.38,
+    -0.67
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|dora|lora": {
+   "diff": 0.01,
+   "ci": [
+    -0.2,
+    0.22
+   ],
+   "p": 0.9004,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|pissa|lora": {
+   "diff": -1.58,
+   "ci": [
+    -1.95,
+    -1.21
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|oft|lora": {
+   "diff": -0.31,
+   "ci": [
+    -0.61,
+    -0.01
+   ],
+   "p": 0.0432,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|adalora|lora": {
+   "diff": -5.23,
+   "ci": [
+    -5.83,
+    -4.61
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|lokr|lora": {
+   "diff": -5.25,
+   "ci": [
+    -5.87,
+    -4.62
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "commonsense|vera|lora": {
+   "diff": -9.02,
+   "ci": [
+    -9.77,
+    -8.25
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|lora|full": {
+   "diff": 1.92,
+   "ci": [
+    0.33,
+    3.54
+   ],
+   "p": 0.014,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|lora|full_lr1e-5": {
+   "diff": -0.43,
+   "ci": [
+    -1.9,
+    1.01
+   ],
+   "p": 0.61,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|lora_lr5e-4|full_lr1e-5": {
+   "diff": -0.45,
+   "ci": [
+    -1.64,
+    0.73
+   ],
+   "p": 0.4688,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|full_lr1e-5|full": {
+   "diff": 2.35,
+   "ci": [
+    1.11,
+    3.59
+   ],
+   "p": 0.0002,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|qlora|lora": {
+   "diff": -1.11,
+   "ci": [
+    -2.78,
+    0.48
+   ],
+   "p": 0.1812,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|dora|lora": {
+   "diff": 0.4,
+   "ci": [
+    -0.33,
+    1.14
+   ],
+   "p": 0.2884,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|pissa|lora": {
+   "diff": 0.23,
+   "ci": [
+    -0.86,
+    1.26
+   ],
+   "p": 0.6564,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|oft|lora": {
+   "diff": 0.78,
+   "ci": [
+    -0.51,
+    2.05
+   ],
+   "p": 0.2604,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|adalora|lora": {
+   "diff": -0.03,
+   "ci": [
+    -1.36,
+    1.26
+   ],
+   "p": 0.9684,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|lokr|lora": {
+   "diff": -0.45,
+   "ci": [
+    -1.72,
+    0.78
+   ],
+   "p": 0.4744,
+   "seeds": [
+    3,
+    3
+   ]
+  },
+  "math|vera|lora": {
+   "diff": 0.61,
+   "ci": [
+    -0.78,
+    1.9
+   ],
+   "p": 0.3916,
+   "seeds": [
+    3,
+    3
+   ]
+  }
+ },
+ "curves": {
+  "commonsense|full": [
+   {
+    "frac": 0.2496,
+    "time_s": 249.7,
+    "acc": 69.3
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 494.9,
+    "acc": 73.56
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 741.5,
+    "acc": 75.84
+   },
+   {
+    "frac": 1.0,
+    "time_s": 990.8,
+    "acc": 76.27
+   }
+  ],
+  "commonsense|full_lr1e-5": [
+   {
+    "frac": 0.2496,
+    "time_s": 269.9,
+    "acc": 72.87
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 537.1,
+    "acc": 76.11
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 803.7,
+    "acc": 78.06
+   },
+   {
+    "frac": 1.0,
+    "time_s": 1070.9,
+    "acc": 78.09
+   }
+  ],
+  "commonsense|lora": [
+   {
+    "frac": 0.2496,
+    "time_s": 216.8,
+    "acc": 73.76
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 432.8,
+    "acc": 76.7
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 649.3,
+    "acc": 77.9
+   },
+   {
+    "frac": 1.0,
+    "time_s": 866.7,
+    "acc": 78.23
+   }
+  ],
+  "math|full": [
+   {
+    "frac": 0.2496,
+    "time_s": 382.3,
+    "acc": 59.31
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 763.0,
+    "acc": 62.75
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 1149.1,
+    "acc": 67.12
+   },
+   {
+    "frac": 1.0,
+    "time_s": 1535.2,
+    "acc": 68.33
+   }
+  ],
+  "math|full_lr1e-5": [
+   {
+    "frac": 0.2496,
+    "time_s": 401.0,
+    "acc": 66.56
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 801.7,
+    "acc": 68.01
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 1206.2,
+    "acc": 70.2
+   },
+   {
+    "frac": 1.0,
+    "time_s": 1607.8,
+    "acc": 70.69
+   }
+  ],
+  "math|lora": [
+   {
+    "frac": 0.2496,
+    "time_s": 348.5,
+    "acc": 69.77
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 701.1,
+    "acc": 70.08
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 1056.5,
+    "acc": 70.13
+   },
+   {
+    "frac": 1.0,
+    "time_s": 1410.0,
+    "acc": 70.25
+   }
+  ],
+  "math|lora_lr5e-4": [
+   {
+    "frac": 0.2496,
+    "time_s": 361.9,
+    "acc": 67.65
+   },
+   {
+    "frac": 0.4992,
+    "time_s": 727.2,
+    "acc": 69.32
+   },
+   {
+    "frac": 0.7504,
+    "time_s": 1095.9,
+    "acc": 70.06
+   },
+   {
+    "frac": 1.0,
+    "time_s": 1461.6,
+    "acc": 70.23
+   }
+  ]
+ },
+ "time_to_95": {
+  "commonsense|full": {
+   "target": 74.19,
+   "time_to_95_s": 562.6,
+   "speedup_vs_full_run": 1.9,
+   "full_run_time_s": 1070.87
+  },
+  "commonsense|full_lr1e-5": {
+   "target": 74.19,
+   "time_to_95_s": 378.4,
+   "speedup_vs_full_run": 2.83,
+   "full_run_time_s": 1070.87
+  },
+  "commonsense|lora": {
+   "target": 74.19,
+   "time_to_95_s": 248.1,
+   "speedup_vs_full_run": 4.32,
+   "full_run_time_s": 1070.87
+  },
+  "math|full": {
+   "target": 67.16,
+   "time_to_95_s": 1160.4,
+   "speedup_vs_full_run": 1.39,
+   "full_run_time_s": 1607.77
+  },
+  "math|full_lr1e-5": {
+   "target": 67.16,
+   "time_to_95_s": 565.6,
+   "speedup_vs_full_run": 2.84,
+   "full_run_time_s": 1607.77
+  },
+  "math|lora": {
+   "target": 67.16,
+   "time_to_95_s": 348.5,
+   "speedup_vs_full_run": 4.61,
+   "full_run_time_s": 1607.77
+  },
+  "math|lora_lr5e-4": {
+   "target": 67.16,
+   "time_to_95_s": 361.9,
+   "speedup_vs_full_run": 4.44,
+   "full_run_time_s": 1607.77
+  }
+ },
+ "epochs3": {
+  "commonsense|full": {
+   "per_epoch": [
+    71.08,
+    73.95,
+    74.04
+   ],
+   "mmlu": 44.21,
+   "math500": null,
+   "time_s": 3241.7
+  },
+  "commonsense|lora": {
+   "per_epoch": [
+    77.99,
+    78.6,
+    78.06
+   ],
+   "mmlu": 58.63,
+   "math500": null,
+   "time_s": 2816.2
+  },
+  "commonsense|qlora": {
+   "per_epoch": [
+    77.11,
+    77.71,
+    77.36
+   ],
+   "mmlu": 57.29,
+   "math500": null,
+   "time_s": 3758.5
+  },
+  "commonsense|pissa": {
+   "per_epoch": [
+    77.59,
+    77.98,
+    77.78
+   ],
+   "mmlu": 60.43,
+   "math500": null,
+   "time_s": 2606.7
+  },
+  "math|full": {
+   "per_epoch": [
+    63.91,
+    67.1,
+    68.08
+   ],
+   "mmlu": 59.51,
+   "math500": 32.6,
+   "time_s": 4884.4
+  },
+  "math|lora": {
+   "per_epoch": [
+    69.75,
+    69.83,
+    69.45
+   ],
+   "mmlu": 60.54,
+   "math500": 36.0,
+   "time_s": 4392.2
+  },
+  "math|qlora": {
+   "per_epoch": [
+    69.37,
+    68.16,
+    67.48
+   ],
+   "mmlu": 58.13,
+   "math500": 35.2,
+   "time_s": 5856.5
+  },
+  "math|pissa": {
+   "per_epoch": [
+    70.28,
+    68.76,
+    70.58
+   ],
+   "mmlu": 60.4,
+   "math500": 34.6,
+   "time_s": 4091.9
+  }
+ },
+ "lr": {
+  "commonsense|full_lr1e-5": {
+   "score": 78.38,
+   "mmlu": 58.47,
+   "math500": null
+  },
+  "commonsense|full_lr5e-5": {
+   "score": 67.26,
+   "mmlu": 33.7,
+   "math500": null
+  },
+  "commonsense|lora_lr1e-4": {
+   "score": 77.73,
+   "mmlu": 60.65,
+   "math500": null
+  },
+  "commonsense|lora_lr5e-4": {
+   "score": 77.57,
+   "mmlu": 56.33,
+   "math500": null
+  },
+  "commonsense|full_adamw32": {
+   "score": 76.57,
+   "mmlu": 52.74,
+   "math500": null
+  },
+  "math|full_lr1e-5": {
+   "score": 70.43,
+   "mmlu": 59.91,
+   "math500": 35.0
+  },
+  "math|full_lr5e-5": {
+   "score": 61.33,
+   "mmlu": 56.63,
+   "math500": 23.6
+  },
+  "math|lora_lr1e-4": {
+   "score": 68.69,
+   "mmlu": 60.74,
+   "math500": 38.4
+  },
+  "math|lora_lr5e-4": {
+   "score": 70.96,
+   "mmlu": 60.11,
+   "math500": 38.4
+  },
+  "math|full_adamw32": {
+   "score": 68.01,
+   "mmlu": 59.24,
+   "math500": 33.0
+  }
+ },
+ "small": {
+  "commonsense|base": {
+   "score": {
+    "mean": 30.99,
+    "std": null,
+    "n": 1,
+    "vals": [
+     30.99
+    ]
+   },
+   "mmlu": {
+    "mean": 47.66,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.66
+    ]
+   },
+   "math500": null,
+   "time_s": null,
+   "mem_gb": null
+  },
+  "commonsense|full": {
+   "score": {
+    "mean": 52.06,
+    "std": 2.51,
+    "n": 3,
+    "vals": [
+     51.57,
+     54.78,
+     49.84
+    ]
+   },
+   "mmlu": {
+    "mean": 38.48,
+    "std": 5.86,
+    "n": 3,
+    "vals": [
+     34.8,
+     35.4,
+     45.24
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 817.5,
+    "std": 17.16,
+    "n": 3,
+    "vals": [
+     830.7,
+     823.7,
+     798.1
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.94,
+    "std": 0.0,
+    "n": 3,
+    "vals": [
+     6.94,
+     6.94,
+     6.94
+    ]
+   }
+  },
+  "commonsense|lora": {
+   "score": {
+    "mean": 60.86,
+    "std": 0.98,
+    "n": 3,
+    "vals": [
+     59.73,
+     61.47,
+     61.38
+    ]
+   },
+   "mmlu": {
+    "mean": 44.95,
+    "std": 0.71,
+    "n": 3,
+    "vals": [
+     45.76,
+     44.59,
+     44.49
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 691.13,
+    "std": 1.79,
+    "n": 3,
+    "vals": [
+     690.0,
+     690.2,
+     693.2
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.42,
+    "std": 0.0,
+    "n": 3,
+    "vals": [
+     6.42,
+     6.42,
+     6.42
+    ]
+   }
+  },
+  "commonsense|qlora": {
+   "score": {
+    "mean": 59.65,
+    "std": null,
+    "n": 1,
+    "vals": [
+     59.65
+    ]
+   },
+   "mmlu": {
+    "mean": 43.09,
+    "std": null,
+    "n": 1,
+    "vals": [
+     43.09
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 932.2,
+    "std": null,
+    "n": 1,
+    "vals": [
+     932.2
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.55,
+    "std": null,
+    "n": 1,
+    "vals": [
+     6.55
+    ]
+   }
+  },
+  "commonsense|dora": {
+   "score": {
+    "mean": 60.48,
+    "std": null,
+    "n": 1,
+    "vals": [
+     60.48
+    ]
+   },
+   "mmlu": {
+    "mean": 44.48,
+    "std": null,
+    "n": 1,
+    "vals": [
+     44.48
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 1140.9,
+    "std": null,
+    "n": 1,
+    "vals": [
+     1140.9
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.42,
+    "std": null,
+    "n": 1,
+    "vals": [
+     6.42
+    ]
+   }
+  },
+  "commonsense|pissa": {
+   "score": {
+    "mean": 59.77,
+    "std": null,
+    "n": 1,
+    "vals": [
+     59.77
+    ]
+   },
+   "mmlu": {
+    "mean": 47.13,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.13
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 650.0,
+    "std": null,
+    "n": 1,
+    "vals": [
+     650.0
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.42,
+    "std": null,
+    "n": 1,
+    "vals": [
+     6.42
+    ]
+   }
+  },
+  "commonsense|vera": {
+   "score": {
+    "mean": 51.72,
+    "std": null,
+    "n": 1,
+    "vals": [
+     51.72
+    ]
+   },
+   "mmlu": {
+    "mean": 47.43,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.43
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 699.9,
+    "std": null,
+    "n": 1,
+    "vals": [
+     699.9
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.3,
+    "std": null,
+    "n": 1,
+    "vals": [
+     6.3
+    ]
+   }
+  },
+  "commonsense|ia3": {
+   "score": {
+    "mean": 54.6,
+    "std": null,
+    "n": 1,
+    "vals": [
+     54.6
+    ]
+   },
+   "mmlu": {
+    "mean": 47.54,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.54
+    ]
+   },
+   "math500": null,
+   "time_s": {
+    "mean": 384.8,
+    "std": null,
+    "n": 1,
+    "vals": [
+     384.8
+    ]
+   },
+   "mem_gb": {
+    "mean": 6.29,
+    "std": null,
+    "n": 1,
+    "vals": [
+     6.29
+    ]
+   }
+  },
+  "math|base": {
+   "score": {
+    "mean": 26.31,
+    "std": null,
+    "n": 1,
+    "vals": [
+     26.31
+    ]
+   },
+   "mmlu": {
+    "mean": 47.66,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.66
+    ]
+   },
+   "math500": {
+    "mean": 9.2,
+    "std": null,
+    "n": 1,
+    "vals": [
+     9.2
+    ]
+   },
+   "time_s": null,
+   "mem_gb": null
+  },
+  "math|full": {
+   "score": {
+    "mean": 45.51,
+    "std": 1.23,
+    "n": 3,
+    "vals": [
+     46.93,
+     44.73,
+     44.88
+    ]
+   },
+   "mmlu": {
+    "mean": 46.94,
+    "std": 0.39,
+    "n": 3,
+    "vals": [
+     46.94,
+     46.55,
+     47.33
+    ]
+   },
+   "math500": {
+    "mean": 17.27,
+    "std": 0.23,
+    "n": 3,
+    "vals": [
+     17.4,
+     17.0,
+     17.4
+    ]
+   },
+   "time_s": {
+    "mean": 846.17,
+    "std": 7.61,
+    "n": 3,
+    "vals": [
+     851.0,
+     837.4,
+     850.1
+    ]
+   },
+   "mem_gb": {
+    "mean": 9.45,
+    "std": 0.0,
+    "n": 3,
+    "vals": [
+     9.45,
+     9.45,
+     9.45
+    ]
+   }
+  },
+  "math|lora": {
+   "score": {
+    "mean": 46.37,
+    "std": 0.29,
+    "n": 3,
+    "vals": [
+     46.17,
+     46.7,
+     46.25
+    ]
+   },
+   "mmlu": {
+    "mean": 47.24,
+    "std": 0.24,
+    "n": 3,
+    "vals": [
+     47.39,
+     47.37,
+     46.97
+    ]
+   },
+   "math500": {
+    "mean": 19.13,
+    "std": 1.4,
+    "n": 3,
+    "vals": [
+     20.6,
+     19.0,
+     17.8
+    ]
+   },
+   "time_s": {
+    "mean": 776.57,
+    "std": 13.36,
+    "n": 3,
+    "vals": [
+     780.8,
+     787.3,
+     761.6
+    ]
+   },
+   "mem_gb": {
+    "mean": 11.77,
+    "std": 0.0,
+    "n": 3,
+    "vals": [
+     11.77,
+     11.77,
+     11.77
+    ]
+   }
+  },
+  "math|qlora": {
+   "score": {
+    "mean": 43.14,
+    "std": null,
+    "n": 1,
+    "vals": [
+     43.14
+    ]
+   },
+   "mmlu": {
+    "mean": 45.52,
+    "std": null,
+    "n": 1,
+    "vals": [
+     45.52
+    ]
+   },
+   "math500": {
+    "mean": 18.0,
+    "std": null,
+    "n": 1,
+    "vals": [
+     18.0
+    ]
+   },
+   "time_s": {
+    "mean": 959.4,
+    "std": null,
+    "n": 1,
+    "vals": [
+     959.4
+    ]
+   },
+   "mem_gb": {
+    "mean": 12.03,
+    "std": null,
+    "n": 1,
+    "vals": [
+     12.03
+    ]
+   }
+  },
+  "math|dora": {
+   "score": {
+    "mean": 46.02,
+    "std": null,
+    "n": 1,
+    "vals": [
+     46.02
+    ]
+   },
+   "mmlu": {
+    "mean": 47.19,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.19
+    ]
+   },
+   "math500": {
+    "mean": 21.2,
+    "std": null,
+    "n": 1,
+    "vals": [
+     21.2
+    ]
+   },
+   "time_s": {
+    "mean": 1447.7,
+    "std": null,
+    "n": 1,
+    "vals": [
+     1447.7
+    ]
+   },
+   "mem_gb": {
+    "mean": 11.78,
+    "std": null,
+    "n": 1,
+    "vals": [
+     11.78
+    ]
+   }
+  },
+  "math|pissa": {
+   "score": {
+    "mean": 46.47,
+    "std": null,
+    "n": 1,
+    "vals": [
+     46.47
+    ]
+   },
+   "mmlu": {
+    "mean": 47.25,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.25
+    ]
+   },
+   "math500": {
+    "mean": 18.6,
+    "std": null,
+    "n": 1,
+    "vals": [
+     18.6
+    ]
+   },
+   "time_s": {
+    "mean": 741.9,
+    "std": null,
+    "n": 1,
+    "vals": [
+     741.9
+    ]
+   },
+   "mem_gb": {
+    "mean": 11.77,
+    "std": null,
+    "n": 1,
+    "vals": [
+     11.77
+    ]
+   }
+  },
+  "math|vera": {
+   "score": {
+    "mean": 45.56,
+    "std": null,
+    "n": 1,
+    "vals": [
+     45.56
+    ]
+   },
+   "mmlu": {
+    "mean": 47.55,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.55
+    ]
+   },
+   "math500": {
+    "mean": 21.0,
+    "std": null,
+    "n": 1,
+    "vals": [
+     21.0
+    ]
+   },
+   "time_s": {
+    "mean": 871.8,
+    "std": null,
+    "n": 1,
+    "vals": [
+     871.8
+    ]
+   },
+   "mem_gb": {
+    "mean": 11.65,
+    "std": null,
+    "n": 1,
+    "vals": [
+     11.65
+    ]
+   }
+  },
+  "math|ia3": {
+   "score": {
+    "mean": 45.41,
+    "std": null,
+    "n": 1,
+    "vals": [
+     45.41
+    ]
+   },
+   "mmlu": {
+    "mean": 47.22,
+    "std": null,
+    "n": 1,
+    "vals": [
+     47.22
+    ]
+   },
+   "math500": {
+    "mean": 21.0,
+    "std": null,
+    "n": 1,
+    "vals": [
+     21.0
+    ]
+   },
+   "time_s": {
+    "mean": 510.0,
+    "std": null,
+    "n": 1,
+    "vals": [
+     510.0
+    ]
+   },
+   "mem_gb": {
+    "mean": 11.64,
+    "std": null,
+    "n": 1,
+    "vals": [
+     11.64
+    ]
+   }
+  }
+ },
+ "parity": {
+  "1.5B|commonsense": {
+   "lora_mem": 5.91,
+   "full_mem": 16.88,
+   "mem_saving_pct": 65.0,
+   "lora_time_s": 1648.6,
+   "full_time_s": 1070.9
+  },
+  "1.5B|math": {
+   "lora_mem": 8.65,
+   "full_mem": 19.34,
+   "mem_saving_pct": 55.3,
+   "lora_time_s": 1721.6,
+   "full_time_s": 1607.8
+  },
+  "0.5B|commonsense": {
+   "lora_mem": 3.74,
+   "full_mem": 6.94,
+   "mem_saving_pct": 46.1,
+   "lora_time_s": 1425.5,
+   "full_time_s": 830.7
+  },
+  "0.5B|math": {
+   "lora_mem": 6.42,
+   "full_mem": 9.45,
+   "mem_saving_pct": 32.1,
+   "lora_time_s": 1417.8,
+   "full_time_s": 851.0
+  }
+ },
+ "labels": {
+  "full": "Full FT (lr 2e-5)",
+  "full_lr1e-5": "Full FT (lr 1e-5, tuned)",
+  "lora": "LoRA (lr 2e-4)",
+  "lora_lr5e-4": "LoRA (lr 5e-4)",
+  "qlora": "QLoRA",
+  "dora": "DoRA",
+  "pissa": "PiSSA",
+  "oft": "OFT",
+  "adalora": "AdaLoRA",
+  "lokr": "LoKr",
+  "vera": "VeRA",
+  "rslora": "rsLoRA",
+  "loraplus": "LoRA+",
+  "ia3": "IA³",
+  "freeze": "Freeze",
+  "prompt": "Prompt",
+  "prefix_mlp": "Prefix-MLP",
+  "prefix": "Prefix",
+  "base": "base"
+ }
+}

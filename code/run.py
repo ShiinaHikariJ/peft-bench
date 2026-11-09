@@ -19,7 +19,7 @@ from peft import (AdaLoraConfig, IA3Config, LoKrConfig, LoraConfig, OFTConfig, P
 from peft.optimizers import create_loraplus_optimizer
 
 DATA = "/root/autodl-tmp/data"
-MODEL = "/root/autodl-tmp/models/Qwen2.5-1.5B"
+MODEL = os.environ.get("BENCH_MODEL", "/root/autodl-tmp/models/Qwen2.5-1.5B")
 EFFECTIVE_BS = 32
 
 TEMPLATE = ("Below is an instruction that describes a task. Write a response that appropriately completes the request."
@@ -246,8 +246,8 @@ def evaluate(model, tok, task, cfg, max_eval, out_dir, no_cache=False):
     model.eval()
     if hasattr(model, "config"):
         model.config.use_cache = True
-    metrics, samples = {}, {}
-    bs = cfg["eval_bs"] // (4 if no_cache else 1)
+    metrics, samples, per_item = {}, {}, {}
+    bs = int(os.environ.get("EVAL_BS", 0)) or cfg["eval_bs"] // (4 if no_cache else 1)
     for t in cfg["tests"]:
         rows = read_jsonl(os.path.join(DATA, f"test_{t}.jsonl"), max_eval)
         preds = generate_all(model, tok, [build_prompt(r) for r in rows], bs, cfg["max_new_tokens"], no_cache)
@@ -259,12 +259,51 @@ def evaluate(model, tok, task, cfg, max_eval, out_dir, no_cache=False):
         else:
             correct = [extract_cs(t, p) == r["answer"] for r, p in zip(rows, preds)]
         metrics[t] = round(100 * sum(correct) / len(rows), 2)
+        if not max_eval:
+            per_item[t] = "".join("1" if c else "0" for c in correct)
         samples[t] = [{"prompt_tail": build_prompt(r)[-200:], "pred": p, "answer": r["answer"], "correct": c}
                       for r, p, c in list(zip(rows, preds, correct))[:20]]
         print(f"[eval] {t}: {metrics[t]} ({len(rows)} samples)", flush=True)
     metrics["avg"] = round(sum(metrics[t] for t in cfg["tests"]) / len(cfg["tests"]), 2)
     json.dump(samples, open(os.path.join(out_dir, "eval_samples.json"), "w"), ensure_ascii=False, indent=1)
+    if per_item:  # per-question correctness ("0101..."), for paired significance tests across methods
+        json.dump(per_item, open(os.path.join(out_dir, "correct.json"), "w"))
     return metrics
+
+
+class CurveCallback(TrainerCallback):
+    """Evaluate at given fractions of training (learning curve / time-to-target).
+
+    Eval time is excluded from the reported training time, and the peak-memory counter is reset after each eval so
+    the reported peak stays a training-only number.
+    """
+
+    def __init__(self, steps, tok, task, cfg, out_dir, use_gc, t_start):
+        self.steps, self.tok, self.task, self.cfg, self.out_dir = steps, tok, task, cfg, out_dir
+        self.use_gc, self.t_start = use_gc, t_start
+        self.eval_s, self.train_peak, self.points = 0.0, 0, []
+
+    def on_step_end(self, args, state, control, model=None, **kwargs):
+        if state.global_step not in self.steps:
+            return
+        torch.cuda.synchronize()
+        self.train_peak = max(self.train_peak, torch.cuda.max_memory_allocated())
+        t0 = time.time()
+        train_s = t0 - self.t_start[0] - self.eval_s
+        d = os.path.join(self.out_dir, "curve", f"step{state.global_step}")
+        os.makedirs(d, exist_ok=True)
+        with torch.autocast("cuda", dtype=torch.bfloat16):
+            m = evaluate(model, self.tok, self.task, self.cfg, None, d)
+        model.train()
+        if self.use_gc and hasattr(model, "config"):
+            model.config.use_cache = False
+        gc.collect()
+        torch.cuda.empty_cache()
+        torch.cuda.reset_peak_memory_stats()
+        self.eval_s += time.time() - t0
+        self.points.append(dict(step=state.global_step, frac=round(state.global_step / state.max_steps, 4),
+                                train_time_s=round(train_s, 1), eval=m))
+        print(f"[curve] step {state.global_step}/{state.max_steps} train_s={train_s:.0f} avg={m['avg']}", flush=True)
 
 
 # ---------------------------------------------------------------- main
@@ -279,6 +318,9 @@ def main():
     ap.add_argument("--max_train", type=int, default=None)
     ap.add_argument("--max_eval", type=int, default=None)
     ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--optim", default=None, help="override the method's optimizer, e.g. paged_adamw_32bit")
+    ap.add_argument("--micro_bs", type=int, default=None)
+    ap.add_argument("--eval_at", default="", help="comma-separated fractions of training to evaluate at, e.g. 0.25,0.5")
     ap.add_argument("--eval_only", action="store_true", help="re-evaluate the saved adapter/model in out_dir")
     args = ap.parse_args()
     if args.eval_only:
@@ -303,6 +345,9 @@ def main():
         micro_bs = mcfg.get("micro_bs", 8)
         if not use_gc and args.task == "math":
             micro_bs = 4  # no gradient checkpointing + 768-token sequences does not fit 24GB at micro_bs=8
+        micro_bs = args.micro_bs or micro_bs
+        optim = args.optim or mcfg.get("optim", "adamw_torch")
+        result.update(optim=optim, model_path=MODEL)
         accum = EFFECTIVE_BS // micro_bs
         total_steps = max(1, int(len(train) * args.epochs) // EFFECTIVE_BS)
 
@@ -337,7 +382,7 @@ def main():
             output_dir=args.out_dir, per_device_train_batch_size=micro_bs, gradient_accumulation_steps=accum,
             learning_rate=lr, num_train_epochs=args.epochs, lr_scheduler_type="cosine",
             warmup_steps=max(1, int(0.03 * total_steps)), weight_decay=0.0, max_grad_norm=1.0, bf16=True,
-            optim=mcfg.get("optim", "adamw_torch"), gradient_checkpointing=use_gc and args.method != "qlora",
+            optim=optim, gradient_checkpointing=use_gc and args.method != "qlora",
             gradient_checkpointing_kwargs={"use_reentrant": False}, logging_steps=10, save_strategy="no",
             report_to="none", remove_unused_columns=False, dataloader_num_workers=2, seed=args.seed,
             disable_tqdm=True)
@@ -346,16 +391,28 @@ def main():
             optimizers = (create_loraplus_optimizer(model, optimizer_cls=torch.optim.AdamW, lr=lr,
                                                     loraplus_lr_ratio=16.0), None)
         callbacks = [AdaLoraCallback(model)] if args.method == "adalora" else []
+        t_start = [0.0]
+        curve = None
+        if args.eval_at:
+            steps = {max(1, round(float(f) * total_steps)) for f in args.eval_at.split(",")} - {total_steps}
+            curve = CurveCallback(steps, tok, args.task, cfg, args.out_dir, use_gc, t_start)
+            callbacks.append(curve)
         trainer = Trainer(model=model, args=targs, train_dataset=train, data_collator=make_collate(tok.pad_token_id),
                           optimizers=optimizers, callbacks=callbacks)
 
         torch.cuda.reset_peak_memory_stats()
-        t0 = time.time()
+        t0 = t_start[0] = time.time()
         out = trainer.train()
-        result.update(train_runtime_s=round(time.time() - t0, 1), train_loss=round(out.training_loss, 4),
-                      train_samples_per_s=round(len(train) * args.epochs / (time.time() - t0), 2),
-                      peak_mem_alloc_gb=round(torch.cuda.max_memory_allocated() / 2**30, 2),
+        eval_s = curve.eval_s if curve else 0.0
+        train_s = time.time() - t0 - eval_s
+        peak = max(curve.train_peak if curve else 0, torch.cuda.max_memory_allocated())
+        result.update(train_runtime_s=round(train_s, 1), train_loss=round(out.training_loss, 4),
+                      train_samples_per_s=round(len(train) * args.epochs / train_s, 2),
+                      peak_mem_alloc_gb=round(peak / 2**30, 2),
                       peak_mem_reserved_gb=round(torch.cuda.max_memory_reserved() / 2**30, 2))
+        if curve:
+            result["curve"] = curve.points + [dict(step=trainer.state.global_step, frac=1.0,
+                                                   train_time_s=round(train_s, 1), eval=None)]
         json.dump(trainer.state.log_history, open(os.path.join(args.out_dir, "log_history.json"), "w"), indent=1)
         print(f"[train] done {result['train_runtime_s']}s loss={result['train_loss']} "
               f"peak={result['peak_mem_alloc_gb']}GB", flush=True)
@@ -386,6 +443,8 @@ def main():
     result["eval"] = evaluate(model, tok, args.task, cfg, args.max_eval, args.out_dir, no_cache)
     result["eval_runtime_s"] = round(time.time() - t0, 1)
     result["eval_decoding"] = "greedy_no_cache" if no_cache else "generate"
+    if result.get("curve"):
+        result["curve"][-1]["eval"] = result["eval"]
 
     if args.method == "pissa":
         model.save_pretrained(os.path.join(args.out_dir, "adapter"),

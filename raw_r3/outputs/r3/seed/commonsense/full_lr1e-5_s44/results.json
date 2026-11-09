@@ -1,0 +1,102 @@
+{
+ "method": "full",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 1e-05,
+ "rank": 16,
+ "seed": 44,
+ "epochs": 1.0,
+ "optim": "paged_adamw_8bit",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 1543714304,
+ "total_params": 1543714304,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 1071.5,
+ "train_loss": 0.093,
+ "train_samples_per_s": 18.67,
+ "peak_mem_alloc_gb": 16.88,
+ "peak_mem_reserved_gb": 18.08,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 269.5,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 71.6,
+    "social_i_qa": 69.55,
+    "hellaswag": 78.6,
+    "winogrande": 63.93,
+    "ARC-Easy": 87.21,
+    "ARC-Challenge": 72.87,
+    "openbookqa": 72.8,
+    "avg": 72.34
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 534.1,
+   "eval": {
+    "boolq": 64.89,
+    "piqa": 81.01,
+    "social_i_qa": 73.03,
+    "hellaswag": 84.79,
+    "winogrande": 70.24,
+    "ARC-Easy": 88.05,
+    "ARC-Challenge": 75.09,
+    "openbookqa": 78.8,
+    "avg": 76.99
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 803.3,
+   "eval": {
+    "boolq": 65.11,
+    "piqa": 80.96,
+    "social_i_qa": 73.59,
+    "hellaswag": 87.11,
+    "winogrande": 72.45,
+    "ARC-Easy": 89.69,
+    "ARC-Challenge": 76.88,
+    "openbookqa": 81.0,
+    "avg": 78.35
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 1071.5,
+   "eval": {
+    "boolq": 63.0,
+    "piqa": 80.74,
+    "social_i_qa": 73.59,
+    "hellaswag": 87.36,
+    "winogrande": 72.3,
+    "ARC-Easy": 89.48,
+    "ARC-Challenge": 76.71,
+    "openbookqa": 81.6,
+    "avg": 78.1
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 63.0,
+  "piqa": 80.74,
+  "social_i_qa": 73.59,
+  "hellaswag": 87.36,
+  "winogrande": 72.3,
+  "ARC-Easy": 89.48,
+  "ARC-Challenge": 76.71,
+  "openbookqa": 81.6,
+  "avg": 78.1
+ },
+ "eval_runtime_s": 140.8,
+ "eval_decoding": "generate"
+}

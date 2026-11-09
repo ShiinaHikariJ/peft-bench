@@ -1,0 +1,124 @@
+{
+ "gsm8k": [
+  {
+   "prompt_tail": "for her friends every day with four. She sells the remainder at the farmers' market daily for $2 per fresh duck egg. How much in dollars does she make every day at the farmers' market?\n\n### Response:\n",
+   "pred": "To determine how much Janet makes every day at the farmers' market, we need to follow these steps:\n\n1. Calculate the total number of eggs laid by Janet's ducks per day.\n2. Subtract the number of eggs Janet eats for breakfast and the number of eggs she uses for baking muffins.\n3. Multiply the remaining number of eggs by the price per egg ($2) to find out how much she makes at the farmers' market.\n\nLet's go through each step:\n\n1. Total number of eggs laid per day = 16\n2. Eggs eaten for breakfast = 3\n3. Eggs used for baking muffins = 4\n4. Remaining eggs = Total eggs - Eggs eaten - Eggs used = 16 - 3 - 4 = 9\n5. Price per egg = $2\n6. Amount made at the farmers' market = Remaining eggs * Price per egg = 9 * $2 = $18\n\nSo, Janet makes $18 every day at the farmers' market.",
+   "answer": "18",
+   "correct": true
+  },
+  {
+   "prompt_tail": ". Write a response that appropriately completes the request.\n\n### Instruction:\nA robe takes 2 bolts of blue fiber and half that much white fiber.  How many bolts in total does it take?\n\n### Response:\n",
+   "pred": "To determine the total number of bolts required for a robe, we need to consider both the blue and white fibers needed. According to the given information, a robe requires 2 bolts of blue fiber and half that amount of white fiber.\n\nFirst, let's calculate the amount of white fiber required:\nWhite fiber = 2 bolts (blue fiber) / 2 = 1 bolt\n\nNow, we can add the amounts of blue and white fiber together to find the total number of bolts needed:\nTotal bolts = Blue fiber + White fiber\nTotal bolts = 2 bolts (blue) + 1 bolt (white)\nTotal bolts = 3 bolts\n\nTherefore, it takes a total of 3 bolts to make a robe.",
+   "answer": "3",
+   "correct": true
+  },
+  {
+   "prompt_tail": "n:\nJosh decides to try flipping a house.  He buys a house for $80,000 and then puts in $50,000 in repairs.  This increased the value of the house by 150%.  How much profit did he make?\n\n### Response:\n",
+   "pred": "To calculate the profit, we need to first determine the new value of the house after the repairs. \n\nThe original value of the house was $80,000. The repairs increased the value by 150%, which means the value increased by 1.5 times the original value. \n\nSo, the increase in value due to repairs is 1.5 * $80,000 = $120,000. \n\nAdding this to the original value, the new value of the house is $80,000 + $120,000 = $200,000. \n\nNow, we can calculate the profit by subtracting the total cost of the house and repairs from the new value of the house. \n\nTotal cost = $80,000 (original value) + $50,000 (repairs) = $130,000. \n\nProfit = $200,000 (new value) - $130,000 (total cost) = $70,000. \n\nTherefore, Josh made a profit of $70,000.",
+   "answer": "70000",
+   "correct": true
+  },
+  {
+   "prompt_tail": "se that appropriately completes the request.\n\n### Instruction:\nJames decides to run 3 sprints 3 times a week.  He runs 60 meters each sprint.  How many total meters does he run a week?\n\n### Response:\n",
+   "pred": "To calculate the total meters James runs in a week, we need to multiply the number of sprints he does per week by the distance he runs in each sprint. \n\nJames runs 3 sprints 3 times a week, so he runs a total of 3 x 3 = 9 sprints in a week. \n\nEach sprint is 60 meters, so the total distance he runs in a week is 9 x 60 = 540 meters. \n\nTherefore, James runs a total of 540 meters in a week.",
+   "answer": "540",
+   "correct": true
+  },
+  {
+   "prompt_tail": "oon, she gives her chickens another 25 cups of feed.  How many cups of feed does she need to give her chickens in the final meal of the day if the size of Wendi's flock is 20 chickens?\n\n### Response:\n",
+   "pred": "To determine the number of cups of feed Wendi needs to give her chickens in the final meal of the day, we can follow these steps:\n\n1. Calculate the total amount of feed given to the chickens in the morning and afternoon.\n2. Determine the total amount of feed required for all the chickens in a day.\n3. Subtract the total amount of feed given in the morning and afternoon from the total daily requirement to find out how much more feed is needed for the final meal.\n\nStep 1: Calculate the total amount of feed given to the chickens in the morning and afternoon.\n- Morning feed: 15 cups\n- Afternoon feed: 25 cups\n- Total feed given in the morning and afternoon: 15 + 25 = 40 cups\n\nStep 2: Determine the total amount of feed required for all the chickens in a day.\n- Each chicken requires 3 cups of feed per day.\n- Total number of chickens: 20\n- Total daily feed requirement: 3 cups/chicken * 20 chickens = 60 cups\n\nStep 3: Subtract the total amount of feed given in the morning and afternoon from the total daily requirement to find out how much more feed is needed for the final meal.\n- Total daily feed requirement: 60 cups\n- Total feed given in the morning and afternoon: 40 cups\n- Feed needed for the final meal: 60 - 40 = 20 cups\n\nTherefore, Wendi needs to give her chickens 20 cups of feed in the final meal of the day.",
+   "answer": "20",
+   "correct": true
+  },
+  {
+   "prompt_tail": "tore to buy glasses for his new apartment. One glass costs $5, but every second glass costs only 60% of the price. Kylar wants to buy 16 glasses. How much does he need to pay for them?\n\n### Response:\n",
+   "pred": "To calculate the total cost of 16 glasses, we need to consider the discounted price for every second glass. \n\nFirst, let's calculate the cost of the first 16 glasses without any discount:\n\n16 glasses * $5/glass = $80\n\nNow, let's calculate the cost of the discounted glasses. Since every second glass is 60% of the original price, we can calculate the discounted price as follows:\n\n$5/glass * 60% = $3/glass\n\nSince Kylar wants to buy 16 glasses, there will be 8 discounted glasses (every second glass). So, the total cost for the discounted glasses is:\n\n8 glasses * $3/glass = $24\n\nFinally, we can calculate the total cost by adding the cost of the first 16 glasses and the discounted glasses:\n\n$80 + $24 = $104\n\nTherefore, Kylar needs to pay $104 for 16 glasses.",
+   "answer": "64",
+   "correct": false
+  },
+  {
+   "prompt_tail": "louse has twice as many sheep as Charleston. Charleston has 4 times as many sheep as Seattle. How many sheep do Toulouse, Charleston, and Seattle have together if Seattle has 20 sheep?\n\n### Response:\n",
+   "pred": "To find the total number of sheep that Toulouse, Charleston, and Seattle have together, we need to follow these steps:\n\n1. Determine the number of sheep in Charleston based on the information given about Seattle.\n2. Calculate the number of sheep in Toulouse based on the information given about Charleston.\n3. Sum up the number of sheep in all three cities.\n\nLet's start with step 1:\n\n1. **Determine the number of sheep in Charleston:**\n   - We know that Charleston has 4 times as many sheep as Seattle.\n   - Since Seattle has 20 sheep, we can calculate the number of sheep in Charleston as follows:\n     \\[\n     \\text{Number of sheep in Charleston} = 4 \\times \\text{Number of sheep in Seattle} = 4 \\times 20 = 80\n     \\]\n\n2. **Calculate the number of sheep in Toulouse:**\n   - We know that Toulouse has twice as many sheep as Charleston.\n   - Since Charleston has 80 sheep, we can calculate the number of sheep in Toulouse as follows:\n     \\[\n     \\text{Number of sheep in Toulouse} = 2 \\times \\text{Number of sheep in Charleston} = 2 \\times 80 = 160\n     \\]\n\n3. **Sum up the number of sheep in all three cities:**\n   - Now that we have the number of sheep in each city, we can add them together to get the total:\n     \\[\n     \\text{Total number of sheep} = \\text{Number of sheep in Seattle} + \\text{Number of sheep in Charleston} + \\text{Number of sheep in Toulouse}\n     \\]\n     \\[\n     \\text{Total number of sheep} = 20 + 80 + 160 = 260\n     \\]\n\nTherefore, Toulouse, Charleston, and Seattle have a total of 260 sheep together.",
+   "answer": "260",
+   "correct": true
+  },
+  {
+   "prompt_tail": "he download, Windows forces a restart to install updates, which takes 20 minutes. Then Carla has to restart the download from the beginning. How load does it take to download the file?\n\n### Response:\n",
+   "pred": "To calculate the total time it takes for Carla to download the file, we need to consider the following steps:\n\n1. Calculate the time it takes to download 40% of the file at a rate of 2 GB/minute.\n2. Add the time it takes for Windows to install updates (20 minutes).\n3. Calculate the time it takes to download the remaining 60% of the file at a rate of 2 GB/minute.\n4. Add the time it takes to restart the download from the beginning.\n\nLet's break down each step:\n\n1. Time to download 40% of the file:\n   - 40% of 200 GB = 80 GB\n   - Time = 80 GB / 2 GB/minute = 40 minutes\n\n2. Time for Windows to install updates:\n   - 20 minutes\n\n3. Time to download the remaining 60% of the file:\n   - 60% of 200 GB = 120 GB\n   - Time = 120 GB / 2 GB/minute = 60 minutes\n\n4. Time to restart the download from the beginning:\n   - 40 minutes (same as step 1)\n\nNow, let's add up all the times:\n- Step 1: 40 minutes\n- Step 2: 20 minutes\n- Step 3: 60 minutes\n- Step 4: 40 minutes\n\nTotal time = 40 + 20 + 60 + 40 = 160 minutes\n\nTherefore, it takes Carla 160 minutes to download the file.",
+   "answer": "160",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ends the next half-hour driving at a speed of 30mph, before being able to drive the remaining time of the 4 hours going at 80 mph.  How far is he from home at the end of those 4 hours?\n\n### Response:\n",
+   "pred": "To determine how far John is from home after 4 hours, we need to calculate the distance he traveled during each segment of his journey and then sum these distances.\n\n1. **First Segment:**\n   - Time: 3 hours\n   - Speed: 60 mph\n   - Distance = Speed × Time = 60 mph × 3 hours = 180 miles\n\n2. **Second Segment (Turnaround):**\n   - Time: 0 hours (since he turns around immediately)\n   - Distance: 0 miles\n\n3. **Third Segment (Standstill Traffic):**\n   - Time: 2 hours\n   - Speed: 0 mph (since he is not moving)\n   - Distance = Speed × Time = 0 mph × 2 hours = 0 miles\n\n4. **Fourth Segment (Driving at 30 mph):**\n   - Time: 0.5 hours\n   - Speed: 30 mph\n   - Distance = Speed × Time = 30 mph × 0.5 hours = 15 miles\n\n5. **Fifth Segment (Driving at 80 mph):**\n   - Total time available: 4 hours\n   - Time already spent: 3 hours (first segment) + 0 hours (turnaround) + 2 hours (standstill) + 0.5 hours (driving at 30 mph) = 5.5 hours\n   - Remaining time: 4 hours - 5.5 hours = -1.5 hours (This indicates an error in the problem setup as the total time spent exceeds the available time. However, let's assume the problem meant to say he drives for the remaining time after the first 3 hours, which would be 1 hour.)\n\n   - Time: 1 hour\n   - Speed: 80 mph\n   - Distance = Speed × Time = 80 mph × 1 hour = 80 miles\n\nNow, let's sum up all the distances:\n- First segment: 180 miles\n- Second segment: 0 miles\n- Third segment: 0 miles\n- Fourth segment: 15 miles\n- Fifth segment: 80 miles\n\nTotal distance traveled = 180 miles + 0 miles + 0 miles + 15 miles + 80 miles = 275 miles\n\nSince John started from home and drove 275 miles away, he is 2",
+   "answer": "45",
+   "correct": false
+  },
+  {
+   "prompt_tail": "urs she works each week is $10. She also receives an overtime pay of 1.2 times her regular hourly rate. If Eliza worked for 45 hours this week, how much are her earnings for this week?\n\n### Response:\n",
+   "pred": "To calculate Eliza's earnings for this week, we need to consider her regular pay for the first 40 hours and her overtime pay for the additional 5 hours.\n\nRegular pay for the first 40 hours:\n40 hours * $10/hour = $400\n\nOvertime pay for the additional 5 hours:\n5 hours * ($10/hour * 1.2) = 5 hours * $12/hour = $60\n\nTotal earnings for the week:\n$400 (regular pay) + $60 (overtime pay) = $460\n\nEliza's earnings for this week are $460.",
+   "answer": "460",
+   "correct": true
+  },
+  {
+   "prompt_tail": "cond month was three times as many as the downloads in the first month, but then reduced by 30% in the third month. How many downloads did the program have total over the three months?\n\n### Response:\n",
+   "pred": "To find the total number of downloads over the three months, we need to calculate the number of downloads for each month and then add them together.\n\nFirst, let's calculate the number of downloads in the second month. We know that the number of downloads in the second month was three times as many as the downloads in the first month. So, we can multiply the number of downloads in the first month (60) by 3:\n\n60 * 3 = 180\n\nSo, the program had 180 downloads in the second month.\n\nNext, let's calculate the number of downloads in the third month. We know that the number of downloads in the third month was reduced by 30% from the second month. To find the number of downloads in the third month, we need to subtract 30% of the downloads in the second month from the total downloads in the second month:\n\n180 - (180 * 0.30) = 180 - 54 = 126\n\nSo, the program had 126 downloads in the third month.\n\nFinally, let's add up the number of downloads for each month to find the total number of downloads over the three months:\n\n60 (first month) + 180 (second month) + 126 (third month) = 366\n\nTherefore, the program had a total of 366 downloads over the three months.",
+   "answer": "366",
+   "correct": true
+  },
+  {
+   "prompt_tail": "stries. She bought 3 dozen donuts which cost $68 per dozen, 2 dozen mini cupcakes which cost $80 per dozen, and 6 dozen mini cheesecakes for $55 per dozen. How much was the total cost?\n\n### Response:\n",
+   "pred": "To calculate the total cost, we need to multiply the number of dozens by the cost per dozen for each type of pastry and then add them together.\n\nFor the donuts:\n3 dozens * $68 per dozen = $204\n\nFor the mini cupcakes:\n2 dozens * $80 per dozen = $160\n\nFor the mini cheesecakes:\n6 dozens * $55 per dozen = $330\n\nNow, let's add up the costs:\n$204 (donuts) + $160 (mini cupcakes) + $330 (mini cheesecakes) = $694\n\nSo, the total cost of all the pastries Toula bought is $694.",
+   "answer": "694",
+   "correct": true
+  },
+  {
+   "prompt_tail": "ear it will grow 7 lemons, which he can sell for $1.5 each. It costs $3 a year to water and feed the tree. How many years will it take before he starts earning money on the lemon tree?\n\n### Response:\n",
+   "pred": "To determine how many years it will take before Carlos starts earning money on the lemon tree, we need to calculate the total cost of planting and maintaining the tree, and then compare it to the revenue generated by selling the lemons.\n\nFirst, let's calculate the total cost of planting and maintaining the tree:\n\n- Cost of planting the tree: $90\n- Cost of watering and feeding the tree per year: $3\n- Number of years it takes to start earning money: x\n\nNext, let's calculate the revenue generated by selling the lemons:\n\n- Number of lemons produced per year: 7\n- Price per lemon: $1.5\n- Revenue per year: 7 * $1.5 = $10.5\n\nNow, we can set up an equation to determine the number of years it will take before Carlos starts earning money:\n\nTotal cost = Cost of planting + (Cost of watering and feeding * Number of years)\nRevenue = Revenue per year * Number of years\n\nWe want to find the number of years (x) when the revenue is greater than or equal to the total cost:\n\n$90 + ($3 * x) <= $10.5 * x\n\nSimplifying the equation:\n\n$90 + $3x <= $10.5x\n\nSubtracting $3x from both sides:\n\n$90 <= $7.5x\n\nDividing both sides by $7.5:\n\n12 <= x\n\nTherefore, it will take at least 12 years before Carlos starts earning money on the lemon tree.",
+   "answer": "13",
+   "correct": false
+  },
+  {
+   "prompt_tail": "d of her vacuum cleaners at the green house, 2 more to the red house, and half of what was left at the orange house. If Melanie has 5 vacuum cleaners left, how many did she start with?\n\n### Response:\n",
+   "pred": "To determine how many vacuum cleaners Melanie started with, we can work backwards from the information given.\n\n1. Melanie has 5 vacuum cleaners left after selling at the orange house.\n2. Before selling at the orange house, she had twice as many vacuum cleaners as she has now (since she sold half of what was left at the orange house). So, she had 5 * 2 = 10 vacuum cleaners before selling at the orange house.\n3. Before selling at the red house, she had 2 more vacuum cleaners than she had before selling at the orange house (since she sold 2 more to the red house). So, she had 10 + 2 = 12 vacuum cleaners before selling at the red house.\n4. Before selling at the green house, she had a third of the number of vacuum cleaners she had before selling at the red house (since she sold a third of her vacuum cleaners at the green house). So, she had 12 * 3 = 36 vacuum cleaners before selling at the green house.\n\nTherefore, Melanie started with 36 vacuum cleaners.",
+   "answer": "18",
+   "correct": false
+  },
+  {
+   "prompt_tail": "% enrolled in contemporary dance, 25% of the remaining enrolled in jazz dance, and the rest enrolled in hip-hop dance. What percentage of the entire students enrolled in hip-hop dance?\n\n### Response:\n",
+   "pred": "To find the percentage of students enrolled in hip-hop dance, we need to follow these steps:\n\n1. Calculate the number of students enrolled in contemporary dance: 20% of 20 students = 0.20 * 20 = 4 students.\n2. Subtract the number of students enrolled in contemporary dance from the total number of students: 20 - 4 = 16 students.\n3. Calculate the number of students enrolled in jazz dance: 25% of 16 students = 0.25 * 16 = 4 students.\n4. Subtract the number of students enrolled in jazz dance from the remaining students: 16 - 4 = 12 students.\n5. The remaining students are enrolled in hip-hop dance, so the percentage of students enrolled in hip-hop dance is 12/20 * 100% = 60%.\n\nTherefore, 60% of the entire students enrolled in hip-hop dance.",
+   "answer": "60",
+   "correct": true
+  },
+  {
+   "prompt_tail": "lectronic gadgets market will rise 1.2% within the same month. If the merchant is looking to maximize profit at the end of this month by making a choice, how much profit would this be?\n\n### Response:\n",
+   "pred": "To determine which purchase plan will yield the highest profit, we need to calculate the potential increase in value for each option based on the given percentage increases.\n\nFor the jewelry worth $5,000:\n- The increase in value is 2.5% of $5,000.\n- Calculation: 0.025 * $5,000 = $125\n\nFor the electronic gadgets worth $8,000:\n- The increase in value is 1.2% of $8,000.\n- Calculation: 0.012 * $8,000 = $96\n\nComparing the two increases:\n- Jewelry increase: $125\n- Electronic gadgets increase: $96\n\nThe jewelry purchase plan yields a higher increase in value ($125) compared to the electronic gadgets purchase plan ($96). Therefore, if the merchant aims to maximize profit at the end of the month, they should choose the jewelry worth $5,000.\n\nThe profit from choosing the jewelry would be $125.",
+   "answer": "125",
+   "correct": true
+  },
+  {
+   "prompt_tail": "e time. They begin traveling westward, both traveling for 80 miles. The next day, they travel northwards, covering 150 miles. What's the distance covered by each train in the two days?\n\n### Response:\n",
+   "pred": "To find the distance covered by each train in the two days, we need to add up the distances they traveled in each direction.\n\nFirst, let's calculate the distance traveled westward:\n- Both trains traveled 80 miles westward.\n\nNext, let's calculate the distance traveled northward:\n- Both trains traveled 150 miles northward.\n\nNow, we can add these distances together to find the total distance covered by each train in the two days:\n- Total distance = Distance westward + Distance northward\n- Total distance = 80 miles + 150 miles\n- Total distance = 230 miles\n\nSo, each train covered a total distance of 230 miles in the two days.",
+   "answer": "230",
+   "correct": true
+  },
+  {
+   "prompt_tail": "gets paid $20 per hour to teach and $30 to be a cheerleading coach. If she works 50 weeks a year, 35 hours a week as a teacher and 15 hours a week as a coach, what's her annual salary?\n\n### Response:\n",
+   "pred": "To calculate Jill's annual salary, we need to multiply her hourly rates by the number of hours she works per week and then multiply that by the number of weeks she works in a year.\n\nFirst, let's calculate her weekly earnings as a teacher:\n$20/hour * 35 hours/week = $700/week\n\nNext, let's calculate her weekly earnings as a cheerleading coach:\n$30/hour * 15 hours/week = $450/week\n\nNow, let's add these two amounts together to get her total weekly earnings:\n$700/week (teacher) + $450/week (coach) = $1150/week\n\nFinally, let's multiply her total weekly earnings by the number of weeks she works in a year:\n$1150/week * 50 weeks/year = $57,500/year\n\nTherefore, Jill's annual salary is $57,500.",
+   "answer": "57500",
+   "correct": true
+  },
+  {
+   "prompt_tail": " Write a response that appropriately completes the request.\n\n### Instruction:\nClaire makes a 3 egg omelet every morning for breakfast.  How many dozens of eggs will she eat in 4 weeks?\n\n### Response:\n",
+   "pred": "To determine how many dozens of eggs Claire will eat in 4 weeks, we need to follow these steps:\n\n1. Calculate the number of eggs Claire eats in one day.\n2. Determine the number of days in 4 weeks.\n3. Multiply the number of eggs per day by the number of days in 4 weeks.\n4. Convert the total number of eggs into dozens.\n\nLet's go through each step:\n\n1. **Number of eggs per day**: Claire makes a 3 egg omelet every morning.\n2. **Number of days in 4 weeks**: There are 7 days in a week, so in 4 weeks, there are \\( 4 \\times 7 = 28 \\) days.\n3. **Total number of eggs in 4 weeks**: If Claire eats 3 eggs each day, then in 28 days, she will eat \\( 3 \\times 28 = 84 \\) eggs.\n4. **Convert eggs to dozens**: Since there are 12 eggs in a dozen, we divide the total number of eggs by 12 to find out how many dozens that is. So, \\( 84 \\div 12 = 7 \\) dozens.\n\nTherefore, Claire will eat 7 dozens of eggs in 4 weeks.",
+   "answer": "7",
+   "correct": false
+  },
+  {
+   "prompt_tail": "miles, then another hour to walk the next two miles. If she wants her average speed to be 4 miles per hour, what speed (in miles per hour) does she need to walk the remaining distance?\n\n### Response:\n",
+   "pred": "To determine the speed Marissa needs to walk the remaining distance, we can use the formula for average speed:\n\nAverage speed = Total distance / Total time\n\nWe know that Marissa wants her average speed to be 4 miles per hour, and the total distance of the trail is 12 miles. We also know that she has already walked 6 miles (4 miles + 2 miles) in 2 hours. Therefore, the remaining distance is 12 miles - 6 miles = 6 miles.\n\nLet's denote the speed Marissa needs to walk the remaining distance as \"x\" miles per hour. We can set up the equation:\n\n4 miles per hour = (12 miles) / (2 hours + (6 miles / x miles per hour))\n\nSimplifying the equation, we get:\n\n4 = 12 / (2 + 6/x)\n\nMultiplying both sides by (2 + 6/x), we get:\n\n4(2 + 6/x) = 12\n\nExpanding the equation, we get:\n\n8 + 24/x = 12\n\nSubtracting 8 from both sides, we get:\n\n24/x = 4\n\nDividing both sides by 4, we get:\n\n6/x = 1\n\nMultiplying both sides by x, we get:\n\n6 = x\n\nTherefore, Marissa needs to walk the remaining distance at a speed of 6 miles per hour to achieve an average speed of 4 miles per hour for the entire trail.",
+   "answer": "6",
+   "correct": false
+  }
+ ]
+}

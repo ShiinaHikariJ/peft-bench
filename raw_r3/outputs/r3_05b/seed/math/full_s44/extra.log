@@ -1,0 +1,3 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  57%|█████▋    | 165/290 [00:00<00:00, 1649.03it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1801.72it/s]
+[mmlu] math/full: 47.33 n=14042 (133.3s) {'avg': 47.33, 'STEM': 42.66, 'humanities': 42.02, 'other': 52.2, 'social_sciences': 55.31, 'pred_dist': {'A': 3462, 'B': 3736, 'C': 3238, 'D': 3606}, 'n': 14042, 'runtime_s': 133.3}
+[math500] math/full: 17.4 n=500 (127.9s) {'avg': 17.4, 'level1': 46.51, 'level2': 32.22, 'level3': 17.14, 'level4': 10.94, 'level5': 4.48, 'n': 500, 'runtime_s': 127.9}

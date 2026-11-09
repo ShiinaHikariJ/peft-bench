@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   4%|▍         | 15/338 [00:00<00:02, 148.47it/s]Loading weights:  26%|██▌       | 87/338 [00:00<00:00, 464.59it/s]Loading weights:  43%|████▎     | 147/338 [00:00<00:00, 520.77it/s]Loading weights:  62%|██████▏   | 208/338 [00:00<00:00, 554.57it/s]Loading weights:  80%|███████▉  | 269/338 [00:00<00:00, 563.96it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 553.18it/s]
+[eval] boolq: 65.54 (3270 samples)
+[eval] piqa: 80.96 (1838 samples)
+[eval] social_i_qa: 74.46 (1954 samples)
+[eval] hellaswag: 87.55 (10042 samples)
+[eval] winogrande: 69.93 (1267 samples)
+[eval] ARC-Easy: 89.9 (2376 samples)
+[eval] ARC-Challenge: 76.88 (1172 samples)
+[eval] openbookqa: 79.4 (500 samples)
+[result] {"method": "oft", "task": "commonsense", "model": "Qwen2.5-1.5B", "lr": 0.0002, "rank": 16, "seed": 42, "epochs": 1.0, "trainable_params": 7888384, "total_params": 1551602688, "trainable_pct": 0.5084, "n_train": 20000, "truncated": 8, "total_steps": 625, "micro_bs": 8, "train_runtime_s": 1279.0, "train_loss": 0.0846, "train_samples_per_s": 15.64, "peak_mem_alloc_gb": 8.49, "peak_mem_reserved_gb": 22.02, "merged_for_eval": true, "eval": {"boolq": 65.54, "piqa": 80.96, "social_i_qa": 74.46, "hellaswag": 87.55, "winogrande": 69.93, "ARC-Easy": 89.9, "ARC-Challenge": 76.88, "openbookqa": 79.4, "avg": 78.08}, "eval_runtime_s": 270.9, "eval_decoding": "generate"}

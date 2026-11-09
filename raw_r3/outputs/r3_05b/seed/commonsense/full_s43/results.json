@@ -1,0 +1,102 @@
+{
+ "method": "full",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 43,
+ "epochs": 1.0,
+ "optim": "paged_adamw_8bit",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 494032768,
+ "total_params": 494032768,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 823.7,
+ "train_loss": 0.1512,
+ "train_samples_per_s": 24.28,
+ "peak_mem_alloc_gb": 6.94,
+ "peak_mem_reserved_gb": 7.88,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 207.2,
+   "eval": {
+    "boolq": 37.83,
+    "piqa": 61.81,
+    "social_i_qa": 40.23,
+    "hellaswag": 28.9,
+    "winogrande": 50.99,
+    "ARC-Easy": 37.04,
+    "ARC-Challenge": 30.03,
+    "openbookqa": 33.2,
+    "avg": 40.0
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 410.2,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 60.72,
+    "social_i_qa": 45.91,
+    "hellaswag": 33.72,
+    "winogrande": 52.09,
+    "ARC-Easy": 46.97,
+    "ARC-Challenge": 34.3,
+    "openbookqa": 39.4,
+    "avg": 46.91
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 620.9,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 61.7,
+    "social_i_qa": 53.94,
+    "hellaswag": 47.52,
+    "winogrande": 52.96,
+    "ARC-Easy": 58.59,
+    "ARC-Challenge": 38.74,
+    "openbookqa": 50.0,
+    "avg": 53.2
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 823.7,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 59.52,
+    "social_i_qa": 55.73,
+    "hellaswag": 51.51,
+    "winogrande": 53.99,
+    "ARC-Easy": 61.49,
+    "ARC-Challenge": 41.81,
+    "openbookqa": 52.0,
+    "avg": 54.78
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 62.17,
+  "piqa": 59.52,
+  "social_i_qa": 55.73,
+  "hellaswag": 51.51,
+  "winogrande": 53.99,
+  "ARC-Easy": 61.49,
+  "ARC-Challenge": 41.81,
+  "openbookqa": 52.0,
+  "avg": 54.78
+ },
+ "eval_runtime_s": 65.9,
+ "eval_decoding": "generate"
+}

@@ -1,0 +1,77 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   4%|▍         | 15/338 [00:00<00:02, 149.47it/s]Loading weights:  15%|█▌        | 52/338 [00:00<00:01, 260.56it/s]Loading weights:  28%|██▊       | 93/338 [00:00<00:00, 324.70it/s]Loading weights:  40%|███▉      | 135/338 [00:00<00:00, 353.26it/s]Loading weights:  51%|█████     | 171/338 [00:00<00:00, 348.63it/s]Loading weights:  62%|██████▏   | 209/338 [00:00<00:00, 352.92it/s]Loading weights:  74%|███████▍  | 250/338 [00:00<00:00, 369.07it/s]Loading weights:  86%|████████▌ | 291/338 [00:00<00:00, 374.87it/s]Loading weights:  97%|█████████▋| 329/338 [00:00<00:00, 359.55it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 352.59it/s]
+[train] prompt/commonsense trainable 49,152 / 1,543,763,456 (0.0032%) steps=625 lr=0.03
+{'loss': '1.8', 'grad_norm': '6.663', 'learning_rate': '0.015', 'epoch': '0.016'}
+{'loss': '0.7031', 'grad_norm': '1.705', 'learning_rate': '0.03', 'epoch': '0.032'}
+{'loss': '0.15', 'grad_norm': '0.1', 'learning_rate': '0.02998', 'epoch': '0.048'}
+{'loss': '0.1334', 'grad_norm': '0.06113', 'learning_rate': '0.02991', 'epoch': '0.064'}
+{'loss': '0.1238', 'grad_norm': '0.07311', 'learning_rate': '0.02981', 'epoch': '0.08'}
+{'loss': '0.1157', 'grad_norm': '0.0999', 'learning_rate': '0.02966', 'epoch': '0.096'}
+{'loss': '0.1093', 'grad_norm': '0.09383', 'learning_rate': '0.02948', 'epoch': '0.112'}
+{'loss': '0.121', 'grad_norm': '0.05121', 'learning_rate': '0.02926', 'epoch': '0.128'}
+{'loss': '0.1152', 'grad_norm': '0.07415', 'learning_rate': '0.029', 'epoch': '0.144'}
+{'loss': '0.1178', 'grad_norm': '0.08565', 'learning_rate': '0.0287', 'epoch': '0.16'}
+{'loss': '0.1211', 'grad_norm': '0.04101', 'learning_rate': '0.02837', 'epoch': '0.176'}
+{'loss': '0.09726', 'grad_norm': '0.05733', 'learning_rate': '0.028', 'epoch': '0.192'}
+{'loss': '0.1112', 'grad_norm': '0.05278', 'learning_rate': '0.02759', 'epoch': '0.208'}
+{'loss': '0.1099', 'grad_norm': '0.04816', 'learning_rate': '0.02715', 'epoch': '0.224'}
+{'loss': '0.1097', 'grad_norm': '0.04821', 'learning_rate': '0.02668', 'epoch': '0.24'}
+{'loss': '0.108', 'grad_norm': '0.04842', 'learning_rate': '0.02618', 'epoch': '0.256'}
+{'loss': '0.1119', 'grad_norm': '0.0695', 'learning_rate': '0.02565', 'epoch': '0.272'}
+{'loss': '0.108', 'grad_norm': '0.07529', 'learning_rate': '0.02509', 'epoch': '0.288'}
+{'loss': '0.1062', 'grad_norm': '0.05143', 'learning_rate': '0.0245', 'epoch': '0.304'}
+{'loss': '0.1101', 'grad_norm': '0.05765', 'learning_rate': '0.02389', 'epoch': '0.32'}
+{'loss': '0.1128', 'grad_norm': '0.04386', 'learning_rate': '0.02325', 'epoch': '0.336'}
+{'loss': '0.1035', 'grad_norm': '0.07956', 'learning_rate': '0.02259', 'epoch': '0.352'}
+{'loss': '0.1055', 'grad_norm': '0.07421', 'learning_rate': '0.02191', 'epoch': '0.368'}
+{'loss': '0.1091', 'grad_norm': '0.07272', 'learning_rate': '0.02121', 'epoch': '0.384'}
+{'loss': '0.1068', 'grad_norm': '0.03736', 'learning_rate': '0.0205', 'epoch': '0.4'}
+{'loss': '0.1068', 'grad_norm': '0.06967', 'learning_rate': '0.01977', 'epoch': '0.416'}
+{'loss': '0.09705', 'grad_norm': '0.05055', 'learning_rate': '0.01903', 'epoch': '0.432'}
+{'loss': '0.1013', 'grad_norm': '0.05053', 'learning_rate': '0.01827', 'epoch': '0.448'}
+{'loss': '0.09957', 'grad_norm': '0.03982', 'learning_rate': '0.01751', 'epoch': '0.464'}
+{'loss': '0.09995', 'grad_norm': '0.04836', 'learning_rate': '0.01674', 'epoch': '0.48'}
+{'loss': '0.09029', 'grad_norm': '0.03829', 'learning_rate': '0.01597', 'epoch': '0.496'}
+{'loss': '0.09624', 'grad_norm': '0.0465', 'learning_rate': '0.01519', 'epoch': '0.512'}
+{'loss': '0.0954', 'grad_norm': '0.04202', 'learning_rate': '0.01442', 'epoch': '0.528'}
+{'loss': '0.1009', 'grad_norm': '0.03526', 'learning_rate': '0.01364', 'epoch': '0.544'}
+{'loss': '0.1007', 'grad_norm': '0.03868', 'learning_rate': '0.01287', 'epoch': '0.56'}
+{'loss': '0.1037', 'grad_norm': '0.05202', 'learning_rate': '0.01211', 'epoch': '0.576'}
+{'loss': '0.09853', 'grad_norm': '0.03032', 'learning_rate': '0.01135', 'epoch': '0.592'}
+{'loss': '0.1047', 'grad_norm': '0.03608', 'learning_rate': '0.0106', 'epoch': '0.608'}
+{'loss': '0.08498', 'grad_norm': '0.03879', 'learning_rate': '0.009866', 'epoch': '0.624'}
+{'loss': '0.09146', 'grad_norm': '0.05124', 'learning_rate': '0.009143', 'epoch': '0.64'}
+{'loss': '0.1037', 'grad_norm': '0.05632', 'learning_rate': '0.008437', 'epoch': '0.656'}
+{'loss': '0.08747', 'grad_norm': '0.05063', 'learning_rate': '0.007748', 'epoch': '0.672'}
+{'loss': '0.09069', 'grad_norm': '0.04006', 'learning_rate': '0.007078', 'epoch': '0.688'}
+{'loss': '0.1017', 'grad_norm': '0.03498', 'learning_rate': '0.00643', 'epoch': '0.704'}
+{'loss': '0.09539', 'grad_norm': '0.03969', 'learning_rate': '0.005805', 'epoch': '0.72'}
+{'loss': '0.09621', 'grad_norm': '0.03823', 'learning_rate': '0.005204', 'epoch': '0.736'}
+{'loss': '0.09802', 'grad_norm': '0.03699', 'learning_rate': '0.004629', 'epoch': '0.752'}
+{'loss': '0.0906', 'grad_norm': '0.0338', 'learning_rate': '0.004082', 'epoch': '0.768'}
+{'loss': '0.09971', 'grad_norm': '0.04226', 'learning_rate': '0.003565', 'epoch': '0.784'}
+{'loss': '0.09114', 'grad_norm': '0.03727', 'learning_rate': '0.003078', 'epoch': '0.8'}
+{'loss': '0.0895', 'grad_norm': '0.04673', 'learning_rate': '0.002623', 'epoch': '0.816'}
+{'loss': '0.09288', 'grad_norm': '0.03987', 'learning_rate': '0.002201', 'epoch': '0.832'}
+{'loss': '0.09132', 'grad_norm': '0.03923', 'learning_rate': '0.001814', 'epoch': '0.848'}
+{'loss': '0.09039', 'grad_norm': '0.04718', 'learning_rate': '0.001461', 'epoch': '0.864'}
+{'loss': '0.08998', 'grad_norm': '0.03819', 'learning_rate': '0.001146', 'epoch': '0.88'}
+{'loss': '0.08041', 'grad_norm': '0.03285', 'learning_rate': '0.0008667', 'epoch': '0.896'}
+{'loss': '0.08787', 'grad_norm': '0.0394', 'learning_rate': '0.0006256', 'epoch': '0.912'}
+{'loss': '0.09096', 'grad_norm': '0.06715', 'learning_rate': '0.0004231', 'epoch': '0.928'}
+{'loss': '0.08678', 'grad_norm': '0.0431', 'learning_rate': '0.0002596', 'epoch': '0.944'}
+{'loss': '0.09374', 'grad_norm': '0.04978', 'learning_rate': '0.0001356', 'epoch': '0.96'}
+{'loss': '0.1005', 'grad_norm': '0.03257', 'learning_rate': '5.14e-05', 'epoch': '0.976'}
+{'loss': '0.08487', 'grad_norm': '0.04473', 'learning_rate': '7.232e-06', 'epoch': '0.992'}
+{'train_runtime': '437.4', 'train_samples_per_second': '45.73', 'train_steps_per_second': '1.429', 'train_loss': '0.1387', 'epoch': '1'}
+[train] done 437.6s loss=0.1387 peak=15.45GB
+/root/miniconda3/lib/python3.12/site-packages/peft/peft_model.py:2141: UserWarning: Position ids are not supported for parameter efficient tuning. Ignoring position ids.
+  warnings.warn("Position ids are not supported for parameter efficient tuning. Ignoring position ids.")
+[eval] boolq: 62.63 (3270 samples)
+[eval] piqa: 76.71 (1838 samples)
+[eval] social_i_qa: 68.01 (1954 samples)
+[eval] hellaswag: 69.81 (10042 samples)
+[eval] winogrande: 53.51 (1267 samples)
+[eval] ARC-Easy: 85.73 (2376 samples)
+[eval] ARC-Challenge: 69.45 (1172 samples)
+[eval] openbookqa: 66.0 (500 samples)
+[result] {"method": "prompt", "task": "commonsense", "model": "Qwen2.5-1.5B", "lr": 0.03, "rank": 16, "seed": 42, "epochs": 1.0, "trainable_params": 49152, "total_params": 1543763456, "trainable_pct": 0.0032, "n_train": 20000, "truncated": 8, "total_steps": 625, "micro_bs": 8, "train_runtime_s": 437.6, "train_loss": 0.1387, "train_samples_per_s": 45.7, "peak_mem_alloc_gb": 15.45, "peak_mem_reserved_gb": 22.92, "eval": {"boolq": 62.63, "piqa": 76.71, "social_i_qa": 68.01, "hellaswag": 69.81, "winogrande": 53.51, "ARC-Easy": 85.73, "ARC-Challenge": 69.45, "openbookqa": 66.0, "avg": 68.98}, "eval_runtime_s": 166.9}

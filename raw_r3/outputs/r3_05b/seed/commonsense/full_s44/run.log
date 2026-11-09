@@ -1,0 +1,103 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:   0%|          | 1/290 [00:00<01:13,  3.93it/s]Loading weights:  34%|███▍      | 99/290 [00:00<00:00, 308.50it/s]Loading weights:  51%|█████     | 147/290 [00:00<00:00, 345.65it/s]Loading weights:  66%|██████▌   | 192/290 [00:00<00:00, 374.64it/s]Loading weights:  81%|████████  | 235/290 [00:00<00:00, 362.49it/s]Loading weights:  96%|█████████▌| 279/290 [00:00<00:00, 377.38it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 339.36it/s]
+[train] full/commonsense trainable 494,032,768 / 494,032,768 (100.0%) steps=625 lr=2e-05
+{'loss': '1.395', 'grad_norm': '18.25', 'learning_rate': '1e-05', 'epoch': '0.016'}
+{'loss': '0.1571', 'grad_norm': '2.959', 'learning_rate': '2e-05', 'epoch': '0.032'}
+{'loss': '0.1496', 'grad_norm': '3.671', 'learning_rate': '1.998e-05', 'epoch': '0.048'}
+{'loss': '0.1483', 'grad_norm': '4.838', 'learning_rate': '1.994e-05', 'epoch': '0.064'}
+{'loss': '0.1432', 'grad_norm': '4.25', 'learning_rate': '1.987e-05', 'epoch': '0.08'}
+{'loss': '0.1442', 'grad_norm': '1.519', 'learning_rate': '1.978e-05', 'epoch': '0.096'}
+{'loss': '0.1445', 'grad_norm': '3.1', 'learning_rate': '1.965e-05', 'epoch': '0.112'}
+{'loss': '0.1481', 'grad_norm': '2.387', 'learning_rate': '1.951e-05', 'epoch': '0.128'}
+{'loss': '0.1475', 'grad_norm': '2.236', 'learning_rate': '1.933e-05', 'epoch': '0.144'}
+{'loss': '0.14', 'grad_norm': '1.324', 'learning_rate': '1.913e-05', 'epoch': '0.16'}
+{'loss': '0.1476', 'grad_norm': '2.855', 'learning_rate': '1.891e-05', 'epoch': '0.176'}
+{'loss': '0.1416', 'grad_norm': '1.507', 'learning_rate': '1.866e-05', 'epoch': '0.192'}
+{'loss': '0.1405', 'grad_norm': '3.112', 'learning_rate': '1.839e-05', 'epoch': '0.208'}
+{'loss': '0.1441', 'grad_norm': '3.775', 'learning_rate': '1.81e-05', 'epoch': '0.224'}
+{'loss': '0.1394', 'grad_norm': '3.177', 'learning_rate': '1.779e-05', 'epoch': '0.24'}
+[eval] boolq: 62.17 (3270 samples)
+[eval] piqa: 49.51 (1838 samples)
+[eval] social_i_qa: 32.91 (1954 samples)
+[eval] hellaswag: 25.04 (10042 samples)
+[eval] winogrande: 49.57 (1267 samples)
+[eval] ARC-Easy: 25.08 (2376 samples)
+[eval] ARC-Challenge: 22.7 (1172 samples)
+[eval] openbookqa: 27.6 (500 samples)
+[curve] step 156/625 train_s=200 avg=36.82
+{'loss': '0.1369', 'grad_norm': '2.049', 'learning_rate': '1.745e-05', 'epoch': '0.256'}
+{'loss': '0.14', 'grad_norm': '1.854', 'learning_rate': '1.71e-05', 'epoch': '0.272'}
+{'loss': '0.1436', 'grad_norm': '1.14', 'learning_rate': '1.672e-05', 'epoch': '0.288'}
+{'loss': '0.142', 'grad_norm': '1.546', 'learning_rate': '1.633e-05', 'epoch': '0.304'}
+{'loss': '0.1425', 'grad_norm': '1.737', 'learning_rate': '1.592e-05', 'epoch': '0.32'}
+{'loss': '0.1421', 'grad_norm': '1.753', 'learning_rate': '1.55e-05', 'epoch': '0.336'}
+{'loss': '0.1417', 'grad_norm': '2.682', 'learning_rate': '1.506e-05', 'epoch': '0.352'}
+{'loss': '0.1392', 'grad_norm': '2.506', 'learning_rate': '1.461e-05', 'epoch': '0.368'}
+{'loss': '0.1384', 'grad_norm': '1.869', 'learning_rate': '1.414e-05', 'epoch': '0.384'}
+{'loss': '0.1424', 'grad_norm': '2.292', 'learning_rate': '1.366e-05', 'epoch': '0.4'}
+{'loss': '0.1436', 'grad_norm': '2.604', 'learning_rate': '1.318e-05', 'epoch': '0.416'}
+{'loss': '0.1433', 'grad_norm': '1.001', 'learning_rate': '1.268e-05', 'epoch': '0.432'}
+{'loss': '0.1431', 'grad_norm': '1.249', 'learning_rate': '1.218e-05', 'epoch': '0.448'}
+{'loss': '0.1392', 'grad_norm': '1.074', 'learning_rate': '1.167e-05', 'epoch': '0.464'}
+{'loss': '0.1413', 'grad_norm': '2.396', 'learning_rate': '1.116e-05', 'epoch': '0.48'}
+{'loss': '0.1429', 'grad_norm': '2.743', 'learning_rate': '1.065e-05', 'epoch': '0.496'}
+[eval] boolq: 62.17 (3270 samples)
+[eval] piqa: 49.51 (1838 samples)
+[eval] social_i_qa: 32.91 (1954 samples)
+[eval] hellaswag: 25.11 (10042 samples)
+[eval] winogrande: 49.57 (1267 samples)
+[eval] ARC-Easy: 25.59 (2376 samples)
+[eval] ARC-Challenge: 22.95 (1172 samples)
+[eval] openbookqa: 27.4 (500 samples)
+[curve] step 312/625 train_s=399 avg=36.9
+{'loss': '0.1393', 'grad_norm': '3.265', 'learning_rate': '1.013e-05', 'epoch': '0.512'}
+{'loss': '0.1419', 'grad_norm': '2.554', 'learning_rate': '9.612e-06', 'epoch': '0.528'}
+{'loss': '0.1446', 'grad_norm': '2.477', 'learning_rate': '9.096e-06', 'epoch': '0.544'}
+{'loss': '0.1451', 'grad_norm': '1.576', 'learning_rate': '8.582e-06', 'epoch': '0.56'}
+{'loss': '0.138', 'grad_norm': '3.114', 'learning_rate': '8.071e-06', 'epoch': '0.576'}
+{'loss': '0.1397', 'grad_norm': '2.066', 'learning_rate': '7.566e-06', 'epoch': '0.592'}
+{'loss': '0.1416', 'grad_norm': '3.821', 'learning_rate': '7.068e-06', 'epoch': '0.608'}
+{'loss': '0.1373', 'grad_norm': '2.806', 'learning_rate': '6.577e-06', 'epoch': '0.624'}
+{'loss': '0.1414', 'grad_norm': '3.219', 'learning_rate': '6.096e-06', 'epoch': '0.64'}
+{'loss': '0.1364', 'grad_norm': '1.64', 'learning_rate': '5.625e-06', 'epoch': '0.656'}
+{'loss': '0.1402', 'grad_norm': '0.9344', 'learning_rate': '5.165e-06', 'epoch': '0.672'}
+{'loss': '0.1394', 'grad_norm': '1.925', 'learning_rate': '4.719e-06', 'epoch': '0.688'}
+{'loss': '0.1424', 'grad_norm': '2.46', 'learning_rate': '4.287e-06', 'epoch': '0.704'}
+{'loss': '0.1384', 'grad_norm': '2.546', 'learning_rate': '3.87e-06', 'epoch': '0.72'}
+{'loss': '0.1393', 'grad_norm': '1.412', 'learning_rate': '3.469e-06', 'epoch': '0.736'}
+[eval] boolq: 62.17 (3270 samples)
+[eval] piqa: 49.51 (1838 samples)
+[eval] social_i_qa: 36.28 (1954 samples)
+[eval] hellaswag: 26.04 (10042 samples)
+[eval] winogrande: 50.59 (1267 samples)
+[eval] ARC-Easy: 26.68 (2376 samples)
+[eval] ARC-Challenge: 25.51 (1172 samples)
+[eval] openbookqa: 24.4 (500 samples)
+[curve] step 469/625 train_s=601 avg=37.65
+{'loss': '0.1354', 'grad_norm': '0.8413', 'learning_rate': '3.086e-06', 'epoch': '0.752'}
+{'loss': '0.1436', 'grad_norm': '1.21', 'learning_rate': '2.722e-06', 'epoch': '0.768'}
+{'loss': '0.1398', 'grad_norm': '2.855', 'learning_rate': '2.377e-06', 'epoch': '0.784'}
+{'loss': '0.1361', 'grad_norm': '1.468', 'learning_rate': '2.052e-06', 'epoch': '0.8'}
+{'loss': '0.1419', 'grad_norm': '0.8633', 'learning_rate': '1.749e-06', 'epoch': '0.816'}
+{'loss': '0.1389', 'grad_norm': '1.914', 'learning_rate': '1.468e-06', 'epoch': '0.832'}
+{'loss': '0.1354', 'grad_norm': '3.101', 'learning_rate': '1.209e-06', 'epoch': '0.848'}
+{'loss': '0.138', 'grad_norm': '1.795', 'learning_rate': '9.743e-07', 'epoch': '0.864'}
+{'loss': '0.1352', 'grad_norm': '2.924', 'learning_rate': '7.637e-07', 'epoch': '0.88'}
+{'loss': '0.1332', 'grad_norm': '2.587', 'learning_rate': '5.778e-07', 'epoch': '0.896'}
+{'loss': '0.1344', 'grad_norm': '5.695', 'learning_rate': '4.171e-07', 'epoch': '0.912'}
+{'loss': '0.132', 'grad_norm': '4.479', 'learning_rate': '2.821e-07', 'epoch': '0.928'}
+{'loss': '0.1308', 'grad_norm': '2.077', 'learning_rate': '1.731e-07', 'epoch': '0.944'}
+{'loss': '0.1287', 'grad_norm': '1.636', 'learning_rate': '9.04e-08', 'epoch': '0.96'}
+{'loss': '0.1329', 'grad_norm': '2.324', 'learning_rate': '3.427e-08', 'epoch': '0.976'}
+{'loss': '0.1352', 'grad_norm': '2.246', 'learning_rate': '4.821e-09', 'epoch': '0.992'}
+{'train_runtime': '1034', 'train_samples_per_second': '19.34', 'train_steps_per_second': '0.605', 'train_loss': '0.1605', 'epoch': '1'}
+[train] done 798.1s loss=0.1605 peak=6.94GB
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]Writing model shards: 100%|██████████| 1/1 [00:01<00:00,  1.31s/it]
+[eval] boolq: 61.5 (3270 samples)
+[eval] piqa: 57.89 (1838 samples)
+[eval] social_i_qa: 53.63 (1954 samples)
+[eval] hellaswag: 29.2 (10042 samples)
+[eval] winogrande: 50.2 (1267 samples)
+[eval] ARC-Easy: 61.74 (2376 samples)
+[eval] ARC-Challenge: 41.98 (1172 samples)
+[eval] openbookqa: 42.6 (500 samples)
+[result] {"method": "full", "task": "commonsense", "model": "Qwen2.5-0.5B", "lr": 2e-05, "rank": 16, "seed": 44, "epochs": 1.0, "optim": "paged_adamw_8bit", "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B", "trainable_params": 494032768, "total_params": 494032768, "trainable_pct": 100.0, "n_train": 20000, "truncated": 8, "total_steps": 625, "micro_bs": 4, "train_runtime_s": 798.1, "train_loss": 0.1605, "train_samples_per_s": 25.06, "peak_mem_alloc_gb": 6.94, "peak_mem_reserved_gb": 7.89, "curve": [{"step": 156, "frac": 0.2496, "train_time_s": 200.3, "eval": {"boolq": 62.17, "piqa": 49.51, "social_i_qa": 32.91, "hellaswag": 25.04, "winogrande": 49.57, "ARC-Easy": 25.08, "ARC-Challenge": 22.7, "openbookqa": 27.6, "avg": 36.82}}, {"step": 312, "frac": 0.4992, "train_time_s": 399.4, "eval": {"boolq": 62.17, "piqa": 49.51, "social_i_qa": 32.91, "hellaswag": 25.11, "winogrande": 49.57, "ARC-Easy": 25.59, "ARC-Challenge": 22.95, "openbookqa": 27.4, "avg": 36.9}}, {"step": 469, "frac": 0.7504, "train_time_s": 600.9, "eval": {"boolq": 62.17, "piqa": 49.51, "social_i_qa": 36.28, "hellaswag": 26.04, "winogrande": 50.59, "ARC-Easy": 26.68, "ARC-Challenge": 25.51, "openbookqa": 24.4, "avg": 37.65}}, {"step": 625, "frac": 1.0, "train_time_s": 798.1, "eval": {"boolq": 61.5, "piqa": 57.89, "social_i_qa": 53.63, "hellaswag": 29.2, "winogrande": 50.2, "ARC-Easy": 61.74, "ARC-Challenge": 41.98, "openbookqa": 42.6, "avg": 49.84}}], "eval": {"boolq": 61.5, "piqa": 57.89, "social_i_qa": 53.63, "hellaswag": 29.2, "winogrande": 50.2, "ARC-Easy": 61.74, "ARC-Challenge": 41.98, "openbookqa": 42.6, "avg": 49.84}, "eval_runtime_s": 66.2, "eval_decoding": "generate"}

@@ -1,0 +1,3 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  54%|█████▍    | 157/290 [00:00<00:00, 1552.31it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1734.96it/s]
+[eval] gsm8k: 26.31 (1319 samples)
+[result] {"method": "base", "task": "math", "model": "Qwen2.5-0.5B", "lr": null, "rank": 16, "seed": 42, "epochs": 1.0, "trainable_params": 0, "total_params": 494032768, "trainable_pct": 0.0, "eval": {"gsm8k": 26.31, "avg": 26.31}, "eval_runtime_s": 101.3, "eval_decoding": "generate"}

@@ -1,0 +1,4 @@
+# ---- E: Qwen2.5-7B, math only; full FT does not fit 24GB. LoRA vs QLoRA at the same micro-batch (2) ----
+s42/math/base base math
+s42/math/qlora qlora math --micro_bs 2
+s42/math/lora lora math --micro_bs 2

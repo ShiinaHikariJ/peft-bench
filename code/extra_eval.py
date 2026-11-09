@@ -35,7 +35,7 @@ MMLU_CATS = {
 SUBJECT_CAT = {s: c for c, subs in MMLU_CATS.items() for s in subs.split()}
 LETTERS = "ABCD"
 MAX_PROMPT = 2048
-TOKEN_BUDGET = 12288  # tokens per forward batch (full-vocab logits are the memory hog)
+TOKEN_BUDGET = int(os.environ.get("TOKEN_BUDGET", 12288))  # tokens per forward batch (full-vocab logits are the memory hog)
 
 
 def load_model(method, out_dir):
@@ -151,7 +151,7 @@ def math_equal(pred, gold):
 
 def eval_math500(model, tok, out_dir, max_eval=None):
     rows = read_jsonl(f"{DATA}/test_math500.jsonl", max_eval)
-    bs = 32 if isinstance(model, PeftModel) else 128  # unmerged adapters (4-bit LoRA, prompt learning) need more memory
+    bs = int(os.environ.get("MATH_BS", 0)) or (32 if isinstance(model, PeftModel) else 128)  # unmerged adapters (4-bit LoRA, prompt learning) need more memory
     preds = generate_all(model, tok, [build_prompt(r) for r in rows], bs, 1024)
     ext = [extract_math(p) for p in preds]
     correct = [math_equal(e, r["answer"]) for e, r in zip(ext, rows)]

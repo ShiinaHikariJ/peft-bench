@@ -1,0 +1,102 @@
+{
+ "method": "pissa",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 8798208,
+ "total_params": 502830976,
+ "trainable_pct": 1.7497,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 650.0,
+ "train_loss": 0.1594,
+ "train_samples_per_s": 30.77,
+ "peak_mem_alloc_gb": 6.42,
+ "peak_mem_reserved_gb": 7.58,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 162.8,
+   "eval": {
+    "boolq": 62.35,
+    "piqa": 62.89,
+    "social_i_qa": 53.89,
+    "hellaswag": 36.96,
+    "winogrande": 52.72,
+    "ARC-Easy": 69.28,
+    "ARC-Challenge": 48.29,
+    "openbookqa": 49.6,
+    "avg": 54.5
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 327.2,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 66.32,
+    "social_i_qa": 57.78,
+    "hellaswag": 52.72,
+    "winogrande": 53.04,
+    "ARC-Easy": 70.58,
+    "ARC-Challenge": 50.17,
+    "openbookqa": 49.8,
+    "avg": 57.82
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 486.9,
+   "eval": {
+    "boolq": 62.57,
+    "piqa": 66.81,
+    "social_i_qa": 59.72,
+    "hellaswag": 57.4,
+    "winogrande": 55.56,
+    "ARC-Easy": 70.92,
+    "ARC-Challenge": 53.16,
+    "openbookqa": 52.8,
+    "avg": 59.87
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 650.0,
+   "eval": {
+    "boolq": 61.9,
+    "piqa": 67.46,
+    "social_i_qa": 60.03,
+    "hellaswag": 57.74,
+    "winogrande": 55.41,
+    "ARC-Easy": 70.41,
+    "ARC-Challenge": 52.99,
+    "openbookqa": 52.2,
+    "avg": 59.77
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 61.9,
+  "piqa": 67.46,
+  "social_i_qa": 60.03,
+  "hellaswag": 57.74,
+  "winogrande": 55.41,
+  "ARC-Easy": 70.41,
+  "ARC-Challenge": 52.99,
+  "openbookqa": 52.2,
+  "avg": 59.77
+ },
+ "eval_runtime_s": 136.4,
+ "eval_decoding": "generate"
+}

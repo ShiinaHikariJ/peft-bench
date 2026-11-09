@@ -1,0 +1,50 @@
+# ---- B: learning-rate fairness (seed 42) ----
+lr/commonsense/full_lr1e-5 full commonsense --lr 1e-5
+lr/commonsense/full_lr5e-5 full commonsense --lr 5e-5
+lr/commonsense/lora_lr1e-4 lora commonsense --lr 1e-4
+lr/commonsense/lora_lr5e-4 lora commonsense --lr 5e-4
+lr/math/full_lr1e-5 full math --lr 1e-5
+lr/math/full_lr5e-5 full math --lr 5e-5
+lr/math/lora_lr1e-4 lora math --lr 1e-4
+lr/math/lora_lr5e-4 lora math --lr 5e-4
+# ---- A: seeds (42 re-run with learning curve; 43, 44) ----
+seed/commonsense/full_s42 full commonsense --seed 42 --eval_at 0.25,0.5,0.75
+seed/commonsense/lora_s42 lora commonsense --seed 42 --eval_at 0.25,0.5,0.75
+seed/math/full_s42 full math --seed 42 --eval_at 0.25,0.5,0.75
+seed/math/lora_s42 lora math --seed 42 --eval_at 0.25,0.5,0.75
+seed/commonsense/full_s43 full commonsense --seed 43 --eval_at 0.25,0.5,0.75
+seed/commonsense/lora_s43 lora commonsense --seed 43 --eval_at 0.25,0.5,0.75
+seed/commonsense/qlora_s43 qlora commonsense --seed 43
+seed/commonsense/dora_s43 dora commonsense --seed 43
+seed/commonsense/pissa_s43 pissa commonsense --seed 43
+seed/commonsense/vera_s43 vera commonsense --seed 43
+seed/math/full_s43 full math --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/lora_s43 lora math --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/qlora_s43 qlora math --seed 43
+seed/math/dora_s43 dora math --seed 43
+seed/math/pissa_s43 pissa math --seed 43
+seed/math/vera_s43 vera math --seed 43
+seed/commonsense/full_s44 full commonsense --seed 44 --eval_at 0.25,0.5,0.75
+seed/commonsense/lora_s44 lora commonsense --seed 44 --eval_at 0.25,0.5,0.75
+seed/commonsense/qlora_s44 qlora commonsense --seed 44
+seed/commonsense/dora_s44 dora commonsense --seed 44
+seed/commonsense/pissa_s44 pissa commonsense --seed 44
+seed/commonsense/vera_s44 vera commonsense --seed 44
+seed/math/full_s44 full math --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/lora_s44 lora math --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/qlora_s44 qlora math --seed 44
+seed/math/dora_s44 dora math --seed 44
+seed/math/pissa_s44 pissa math --seed 44
+seed/math/vera_s44 vera math --seed 44
+# ---- C: 3 epochs with per-epoch eval (seed 42) ----
+ep3/commonsense/full full commonsense --epochs 3 --eval_at 0.3333,0.6667
+ep3/commonsense/lora lora commonsense --epochs 3 --eval_at 0.3333,0.6667
+ep3/commonsense/qlora qlora commonsense --epochs 3 --eval_at 0.3333,0.6667
+ep3/commonsense/pissa pissa commonsense --epochs 3 --eval_at 0.3333,0.6667
+ep3/math/full full math --epochs 3 --eval_at 0.3333,0.6667
+ep3/math/lora lora math --epochs 3 --eval_at 0.3333,0.6667
+ep3/math/qlora qlora math --epochs 3 --eval_at 0.3333,0.6667
+ep3/math/pissa pissa math --epochs 3 --eval_at 0.3333,0.6667
+# ---- B2: full FT with 32-bit AdamW (slow: optimizer states paged to CPU) ----
+lr/commonsense/full_adamw32 full commonsense --optim paged_adamw_32bit
+lr/math/full_adamw32 full math --optim paged_adamw_32bit

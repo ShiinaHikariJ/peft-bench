@@ -1,0 +1,102 @@
+{
+ "method": "full",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "paged_adamw_8bit",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 494032768,
+ "total_params": 494032768,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 830.7,
+ "train_loss": 0.1583,
+ "train_samples_per_s": 24.08,
+ "peak_mem_alloc_gb": 6.94,
+ "peak_mem_reserved_gb": 7.85,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 208.0,
+   "eval": {
+    "boolq": 59.27,
+    "piqa": 50.49,
+    "social_i_qa": 33.47,
+    "hellaswag": 24.75,
+    "winogrande": 50.43,
+    "ARC-Easy": 24.62,
+    "ARC-Challenge": 26.54,
+    "openbookqa": 25.2,
+    "avg": 36.85
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 412.8,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 51.63,
+    "social_i_qa": 37.51,
+    "hellaswag": 28.42,
+    "winogrande": 53.35,
+    "ARC-Easy": 33.63,
+    "ARC-Challenge": 28.75,
+    "openbookqa": 26.6,
+    "avg": 40.26
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 623.3,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 57.67,
+    "social_i_qa": 43.24,
+    "hellaswag": 40.53,
+    "winogrande": 52.57,
+    "ARC-Easy": 51.85,
+    "ARC-Challenge": 34.9,
+    "openbookqa": 36.6,
+    "avg": 47.44
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 830.7,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 61.26,
+    "social_i_qa": 49.59,
+    "hellaswag": 44.59,
+    "winogrande": 53.51,
+    "ARC-Easy": 60.31,
+    "ARC-Challenge": 39.16,
+    "openbookqa": 42.0,
+    "avg": 51.57
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 62.17,
+  "piqa": 61.26,
+  "social_i_qa": 49.59,
+  "hellaswag": 44.59,
+  "winogrande": 53.51,
+  "ARC-Easy": 60.31,
+  "ARC-Challenge": 39.16,
+  "openbookqa": 42.0,
+  "avg": 51.57
+ },
+ "eval_runtime_s": 67.2,
+ "eval_decoding": "generate"
+}

@@ -1,0 +1,86 @@
+{
+ "method": "pissa",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 3.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 18464768,
+ "total_params": 1562179072,
+ "trainable_pct": 1.182,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 1875,
+ "micro_bs": 8,
+ "train_runtime_s": 2606.7,
+ "train_loss": 0.0617,
+ "train_samples_per_s": 23.02,
+ "peak_mem_alloc_gb": 8.65,
+ "peak_mem_reserved_gb": 9.81,
+ "curve": [
+  {
+   "step": 625,
+   "frac": 0.3333,
+   "train_time_s": 869.7,
+   "eval": {
+    "boolq": 65.2,
+    "piqa": 81.23,
+    "social_i_qa": 74.56,
+    "hellaswag": 86.29,
+    "winogrande": 68.43,
+    "ARC-Easy": 89.39,
+    "ARC-Challenge": 76.79,
+    "openbookqa": 78.8,
+    "avg": 77.59
+   }
+  },
+  {
+   "step": 1250,
+   "frac": 0.6667,
+   "train_time_s": 1736.5,
+   "eval": {
+    "boolq": 66.27,
+    "piqa": 80.85,
+    "social_i_qa": 73.18,
+    "hellaswag": 86.41,
+    "winogrande": 71.19,
+    "ARC-Easy": 89.39,
+    "ARC-Challenge": 76.37,
+    "openbookqa": 80.2,
+    "avg": 77.98
+   }
+  },
+  {
+   "step": 1875,
+   "frac": 1.0,
+   "train_time_s": 2606.7,
+   "eval": {
+    "boolq": 64.68,
+    "piqa": 80.79,
+    "social_i_qa": 73.23,
+    "hellaswag": 86.18,
+    "winogrande": 71.03,
+    "ARC-Easy": 88.89,
+    "ARC-Challenge": 76.62,
+    "openbookqa": 80.8,
+    "avg": 77.78
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 64.68,
+  "piqa": 80.79,
+  "social_i_qa": 73.23,
+  "hellaswag": 86.18,
+  "winogrande": 71.03,
+  "ARC-Easy": 88.89,
+  "ARC-Challenge": 76.62,
+  "openbookqa": 80.8,
+  "avg": 77.78
+ },
+ "eval_runtime_s": 271.1,
+ "eval_decoding": "generate"
+}

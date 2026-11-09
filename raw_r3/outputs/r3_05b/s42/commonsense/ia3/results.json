@@ -1,0 +1,103 @@
+{
+ "method": "ia3",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 0.003,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 122880,
+ "total_params": 494155648,
+ "trainable_pct": 0.0249,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 384.8,
+ "train_loss": 0.1743,
+ "train_samples_per_s": 51.97,
+ "peak_mem_alloc_gb": 6.29,
+ "peak_mem_reserved_gb": 7.42,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 100.3,
+   "eval": {
+    "boolq": 62.29,
+    "piqa": 56.15,
+    "social_i_qa": 50.41,
+    "hellaswag": 26.28,
+    "winogrande": 49.25,
+    "ARC-Easy": 58.92,
+    "ARC-Challenge": 42.24,
+    "openbookqa": 38.8,
+    "avg": 48.04
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 194.9,
+   "eval": {
+    "boolq": 62.26,
+    "piqa": 64.42,
+    "social_i_qa": 53.84,
+    "hellaswag": 30.39,
+    "winogrande": 49.41,
+    "ARC-Easy": 65.03,
+    "ARC-Challenge": 44.45,
+    "openbookqa": 44.6,
+    "avg": 51.8
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 289.7,
+   "eval": {
+    "boolq": 61.44,
+    "piqa": 65.29,
+    "social_i_qa": 55.42,
+    "hellaswag": 35.62,
+    "winogrande": 51.85,
+    "ARC-Easy": 67.55,
+    "ARC-Challenge": 48.38,
+    "openbookqa": 47.0,
+    "avg": 54.07
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 384.8,
+   "eval": {
+    "boolq": 61.65,
+    "piqa": 64.85,
+    "social_i_qa": 56.5,
+    "hellaswag": 37.14,
+    "winogrande": 52.72,
+    "ARC-Easy": 68.6,
+    "ARC-Challenge": 48.72,
+    "openbookqa": 46.6,
+    "avg": 54.6
+   }
+  }
+ ],
+ "merged_for_eval": true,
+ "eval": {
+  "boolq": 61.65,
+  "piqa": 64.85,
+  "social_i_qa": 56.5,
+  "hellaswag": 37.14,
+  "winogrande": 52.72,
+  "ARC-Easy": 68.6,
+  "ARC-Challenge": 48.72,
+  "openbookqa": 46.6,
+  "avg": 54.6
+ },
+ "eval_runtime_s": 73.5,
+ "eval_decoding": "generate"
+}

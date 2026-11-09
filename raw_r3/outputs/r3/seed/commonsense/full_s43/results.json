@@ -1,0 +1,102 @@
+{
+ "method": "full",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 43,
+ "epochs": 1.0,
+ "optim": "paged_adamw_8bit",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 1543714304,
+ "total_params": 1543714304,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 998.6,
+ "train_loss": 0.0926,
+ "train_samples_per_s": 20.03,
+ "peak_mem_alloc_gb": 16.88,
+ "peak_mem_reserved_gb": 18.12,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 250.5,
+   "eval": {
+    "boolq": 37.83,
+    "piqa": 75.68,
+    "social_i_qa": 67.2,
+    "hellaswag": 77.72,
+    "winogrande": 62.83,
+    "ARC-Easy": 81.99,
+    "ARC-Challenge": 66.64,
+    "openbookqa": 69.8,
+    "avg": 67.46
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 501.6,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 76.55,
+    "social_i_qa": 67.76,
+    "hellaswag": 81.01,
+    "winogrande": 66.54,
+    "ARC-Easy": 83.75,
+    "ARC-Challenge": 68.26,
+    "openbookqa": 75.8,
+    "avg": 72.73
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 750.4,
+   "eval": {
+    "boolq": 64.86,
+    "piqa": 76.5,
+    "social_i_qa": 74.0,
+    "hellaswag": 85.23,
+    "winogrande": 70.64,
+    "ARC-Easy": 86.28,
+    "ARC-Challenge": 70.56,
+    "openbookqa": 79.8,
+    "avg": 75.98
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 998.6,
+   "eval": {
+    "boolq": 64.68,
+    "piqa": 77.04,
+    "social_i_qa": 74.62,
+    "hellaswag": 85.57,
+    "winogrande": 71.35,
+    "ARC-Easy": 86.78,
+    "ARC-Challenge": 70.82,
+    "openbookqa": 80.2,
+    "avg": 76.38
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 64.68,
+  "piqa": 77.04,
+  "social_i_qa": 74.62,
+  "hellaswag": 85.57,
+  "winogrande": 71.35,
+  "ARC-Easy": 86.78,
+  "ARC-Challenge": 70.82,
+  "openbookqa": 80.2,
+  "avg": 76.38
+ },
+ "eval_runtime_s": 135.9,
+ "eval_decoding": "generate"
+}

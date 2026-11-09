@@ -1,0 +1,13 @@
+# ---- A3: seeds 43, 44 for the close contenders OFT / AdaLoRA / LoKr ----
+seed/commonsense/oft_s43 oft commonsense --seed 43
+seed/commonsense/adalora_s43 adalora commonsense --seed 43
+seed/commonsense/lokr_s43 lokr commonsense --seed 43
+seed/math/oft_s43 oft math --seed 43
+seed/math/adalora_s43 adalora math --seed 43
+seed/math/lokr_s43 lokr math --seed 43
+seed/commonsense/oft_s44 oft commonsense --seed 44
+seed/commonsense/adalora_s44 adalora commonsense --seed 44
+seed/commonsense/lokr_s44 lokr commonsense --seed 44
+seed/math/oft_s44 oft math --seed 44
+seed/math/adalora_s44 adalora math --seed 44
+seed/math/lokr_s44 lokr math --seed 44

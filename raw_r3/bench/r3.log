@@ -1,0 +1,313 @@
+[2026-11-04 14:01:46] REEVAL commonsense/full 76.06 76.22
+[2026-11-04 14:06:27] REEVAL commonsense/lora 78.45 78.35
+[2026-11-04 14:11:39] REEVAL commonsense/qlora 77.8 77.77
+[2026-11-04 14:18:52] REEVAL commonsense/dora 78.45 78.58
+[2026-11-04 14:23:35] REEVAL commonsense/pissa 76.6 76.75
+[2026-11-04 14:28:59] REEVAL commonsense/vera 69.26 69.23
+[2026-11-04 14:31:28] REEVAL math/full 68.76 67.78
+[2026-11-04 14:34:40] REEVAL math/lora 69.9 69.37
+[2026-11-04 14:40:22] REEVAL math/qlora 69.37 69.07
+[2026-11-04 14:47:36] REEVAL math/dora 70.13 69.07
+[2026-11-04 14:50:40] REEVAL math/pissa 69.75 69.67
+[2026-11-04 14:54:22] REEVAL math/vera 71.04 71.27
+[2026-11-04 14:54:22] TRAIN lr/commonsense/full_lr1e-5
+[2026-11-04 15:13:50] OK lr/commonsense/full_lr1e-5 78.38 1010.3 16.88
+[2026-11-04 15:19:00] EXTRA OK lr/commonsense/full_lr1e-5
+[2026-11-04 15:19:00] TRAIN lr/commonsense/full_lr5e-5
+[2026-11-04 15:38:40] OK lr/commonsense/full_lr5e-5 67.26 1021.1 16.88
+[2026-11-04 15:43:48] EXTRA OK lr/commonsense/full_lr5e-5
+[2026-11-04 15:43:49] TRAIN lr/commonsense/lora_lr1e-4
+[2026-11-04 16:01:07] OK lr/commonsense/lora_lr1e-4 77.73 872.9 8.65
+[2026-11-04 16:06:21] EXTRA OK lr/commonsense/lora_lr1e-4
+[2026-11-04 16:06:21] TRAIN lr/commonsense/lora_lr5e-4
+[2026-11-04 16:23:38] OK lr/commonsense/lora_lr5e-4 77.57 870.8 8.65
+[2026-11-04 16:28:50] EXTRA OK lr/commonsense/lora_lr5e-4
+[2026-11-04 16:28:50] TRAIN lr/math/full_lr1e-5
+[2026-11-04 16:56:59] OK lr/math/full_lr1e-5 70.43 1533.6 19.34
+[2026-11-04 17:06:08] EXTRA OK lr/math/full_lr1e-5
+[2026-11-04 17:06:08] TRAIN lr/math/full_lr5e-5
+[2026-11-04 17:34:14] OK lr/math/full_lr5e-5 61.33 1525.2 19.34
+[2026-11-04 17:43:20] EXTRA OK lr/math/full_lr5e-5
+[2026-11-04 17:43:21] TRAIN lr/math/lora_lr1e-4
+[2026-11-04 18:08:34] OK lr/math/lora_lr1e-4 68.69 1378.7 14.13
+[2026-11-04 18:17:44] EXTRA OK lr/math/lora_lr1e-4
+[2026-11-04 18:17:44] TRAIN lr/math/lora_lr5e-4
+[2026-11-04 18:43:35] OK lr/math/lora_lr5e-4 70.96 1381.0 14.13
+[2026-11-04 18:52:48] EXTRA OK lr/math/lora_lr5e-4
+[2026-11-04 18:52:48] TRAIN seed/commonsense/full_s42
+[2026-11-04 19:20:18] OK seed/commonsense/full_s42 76.06 995.7 16.88
+[2026-11-04 19:25:28] EXTRA OK seed/commonsense/full_s42
+[2026-11-04 19:25:28] TRAIN seed/commonsense/lora_s42
+[2026-11-04 19:54:29] OK seed/commonsense/lora_s42 78.4 871.7 8.65
+[2026-11-04 19:59:43] EXTRA OK seed/commonsense/lora_s42
+[2026-11-04 19:59:43] TRAIN seed/math/full_s42
+[2026-11-04 20:40:18] OK seed/math/full_s42 68.84 1534.9 19.34
+[2026-11-04 20:49:26] EXTRA OK seed/math/full_s42
+[2026-11-04 20:49:27] TRAIN seed/math/lora_s42
+[2026-11-04 21:24:18] OK seed/math/lora_s42 69.52 1384.0 14.13
+[2026-11-04 21:33:30] EXTRA OK seed/math/lora_s42
+[2026-11-04 21:33:30] TRAIN seed/commonsense/full_s43
+[2026-11-04 22:00:59] OK seed/commonsense/full_s43 76.38 998.6 16.88
+[2026-11-04 22:06:08] EXTRA OK seed/commonsense/full_s43
+[2026-11-04 22:06:09] TRAIN seed/commonsense/lora_s43
+[2026-11-04 22:35:10] OK seed/commonsense/lora_s43 77.99 873.7 8.65
+[2026-11-04 22:40:23] EXTRA OK seed/commonsense/lora_s43
+[2026-11-04 22:40:23] TRAIN seed/commonsense/qlora_s43
+[2026-11-04 23:06:15] OK seed/commonsense/qlora_s43 76.68 1171.7 7.95
+[2026-11-04 23:15:21] EXTRA OK seed/commonsense/qlora_s43
+[2026-11-04 23:15:21] TRAIN seed/commonsense/dora_s43
+[2026-11-04 23:52:20] OK seed/commonsense/dora_s43 78.15 2052.2 8.66
+[2026-11-04 23:57:36] EXTRA OK seed/commonsense/dora_s43
+[2026-11-04 23:57:36] TRAIN seed/commonsense/pissa_s43
+[2026-11-05 00:15:51] OK seed/commonsense/pissa_s43 76.58 806.4 8.65
+[2026-11-05 00:21:07] EXTRA OK seed/commonsense/pissa_s43
+[2026-11-05 00:21:07] TRAIN seed/commonsense/vera_s43
+[2026-11-05 00:41:06] OK seed/commonsense/vera_s43 69.2 1033.9 8.4
+[2026-11-05 00:46:16] EXTRA OK seed/commonsense/vera_s43
+[2026-11-05 00:46:16] TRAIN seed/math/full_s43
+[2026-11-05 01:28:09] OK seed/math/full_s43 68.46 1529.7 19.34
+[2026-11-05 01:37:16] EXTRA OK seed/math/full_s43
+[2026-11-05 01:37:16] TRAIN seed/math/lora_s43
+[2026-11-05 02:11:53] OK seed/math/lora_s43 69.75 1381.4 14.13
+[2026-11-05 02:21:06] EXTRA OK seed/math/lora_s43
+[2026-11-05 02:21:06] TRAIN seed/math/qlora_s43
+[2026-11-05 02:57:51] OK seed/math/qlora_s43 68.54 1857.1 13.68
+[2026-11-05 03:26:09] EXTRA OK seed/math/qlora_s43
+[2026-11-05 03:26:09] TRAIN seed/math/dora_s43
+[2026-11-05 04:22:14] OK seed/math/dora_s43 71.27 3242.0 14.14
+[2026-11-05 04:31:28] EXTRA OK seed/math/dora_s43
+[2026-11-05 04:31:28] TRAIN seed/math/pissa_s43
+[2026-11-05 04:56:38] OK seed/math/pissa_s43 70.2 1288.0 14.13
+[2026-11-05 05:05:53] EXTRA OK seed/math/pissa_s43
+[2026-11-05 05:05:53] TRAIN seed/math/vera_s43
+[2026-11-05 05:36:33] OK seed/math/vera_s43 71.04 1690.8 13.88
+[2026-11-05 05:45:41] EXTRA OK seed/math/vera_s43
+[2026-11-05 05:45:41] TRAIN seed/commonsense/full_s44
+[2026-11-05 06:12:47] OK seed/commonsense/full_s44 76.37 978.1 16.88
+[2026-11-05 06:17:54] EXTRA OK seed/commonsense/full_s44
+[2026-11-05 06:17:54] TRAIN seed/commonsense/lora_s44
+[2026-11-05 06:46:29] OK seed/commonsense/lora_s44 78.31 854.8 8.65
+[2026-11-05 06:51:40] EXTRA OK seed/commonsense/lora_s44
+[2026-11-05 06:51:40] TRAIN seed/commonsense/qlora_s44
+[2026-11-05 07:17:21] OK seed/commonsense/qlora_s44 77.18 1160.6 7.95
+[2026-11-05 07:26:25] EXTRA OK seed/commonsense/qlora_s44
+[2026-11-05 07:26:25] TRAIN seed/commonsense/dora_s44
+[2026-11-05 08:03:10] OK seed/commonsense/dora_s44 78.01 2040.1 8.66
+[2026-11-05 08:08:21] EXTRA OK seed/commonsense/dora_s44
+[2026-11-05 08:08:21] TRAIN seed/commonsense/pissa_s44
+[2026-11-05 08:26:17] OK seed/commonsense/pissa_s44 76.63 790.4 8.65
+[2026-11-05 08:31:29] EXTRA OK seed/commonsense/pissa_s44
+[2026-11-05 08:31:29] TRAIN seed/commonsense/vera_s44
+[2026-11-05 08:51:18] OK seed/commonsense/vera_s44 69.2 1025.7 8.4
+[2026-11-05 08:56:28] EXTRA OK seed/commonsense/vera_s44
+[2026-11-05 08:56:28] TRAIN seed/math/full_s44
+[2026-11-05 09:37:42] OK seed/math/full_s44 67.7 1541.0 19.34
+[2026-11-06 01:14:16] RESUME on new server
+[2026-11-06 01:23:50] EXTRA OK seed/math/full_s44
+[2026-11-06 01:23:50] TRAIN seed/math/lora_s44
+[2026-11-06 01:58:28] OK seed/math/lora_s44 71.49 1464.5 14.13
+[2026-11-06 02:08:06] EXTRA OK seed/math/lora_s44
+[2026-11-06 02:08:06] TRAIN seed/math/qlora_s44
+[2026-11-06 02:46:19] OK seed/math/qlora_s44 69.83 1941.3 13.68
+[2026-11-06 03:11:25] EXTRA OK seed/math/qlora_s44
+[2026-11-06 03:11:25] TRAIN seed/math/dora_s44
+[2026-11-06 04:09:56] OK seed/math/dora_s44 71.65 3378.7 14.14
+[2026-11-06 04:19:33] EXTRA OK seed/math/dora_s44
+[2026-11-06 04:19:33] TRAIN seed/math/pissa_s44
+[2026-11-06 04:45:06] OK seed/math/pissa_s44 71.57 1354.9 14.13
+[2026-11-06 04:54:45] EXTRA OK seed/math/pissa_s44
+[2026-11-06 04:54:45] TRAIN seed/math/vera_s44
+[2026-11-06 05:26:49] OK seed/math/vera_s44 70.28 1772.6 13.88
+[2026-11-06 05:36:26] EXTRA OK seed/math/vera_s44
+[2026-11-06 05:36:26] TRAIN ep3/commonsense/full
+[2026-11-06 06:38:59] OK ep3/commonsense/full 74.04 3241.7 16.88
+[2026-11-06 06:44:29] EXTRA OK ep3/commonsense/full
+[2026-11-06 06:44:29] TRAIN ep3/commonsense/lora
+[2026-11-06 07:42:12] OK ep3/commonsense/lora 78.06 2816.2 8.65
+[2026-11-06 07:47:52] EXTRA OK ep3/commonsense/lora
+[2026-11-06 07:47:52] TRAIN ep3/commonsense/qlora
+[2026-11-06 09:07:42] OK ep3/commonsense/qlora 77.36 3758.5 7.95
+[2026-11-06 09:17:22] EXTRA OK ep3/commonsense/qlora
+[2026-11-06 09:17:22] TRAIN ep3/commonsense/pissa
+[2026-11-06 10:13:30] OK ep3/commonsense/pissa 77.78 2606.7 8.65
+[2026-11-06 10:19:11] EXTRA OK ep3/commonsense/pissa
+[2026-11-06 10:19:11] TRAIN ep3/math/full
+[2026-11-06 11:51:59] OK ep3/math/full 68.08 4884.4 19.34
+[2026-11-06 12:01:32] EXTRA OK ep3/math/full
+[2026-11-06 12:01:32] TRAIN ep3/math/lora
+[2026-11-06 13:22:49] OK ep3/math/lora 69.45 4392.2 14.13
+[2026-11-06 13:32:25] EXTRA OK ep3/math/lora
+[2026-11-06 13:32:25] TRAIN ep3/math/qlora
+[2026-11-06 15:26:05] OK ep3/math/qlora 67.48 5856.5 13.68
+[2026-11-06 15:50:09] EXTRA OK ep3/math/qlora
+[2026-11-06 15:50:09] TRAIN ep3/math/pissa
+[2026-11-06 17:07:06] OK ep3/math/pissa 70.58 4091.9 14.13
+[2026-11-06 17:16:39] EXTRA OK ep3/math/pissa
+[2026-11-06 17:16:39] TRAIN lr/commonsense/full_adamw32
+[2026-11-06 17:48:32] OK lr/commonsense/full_adamw32 76.57 1741.7 16.85
+[2026-11-06 17:54:05] EXTRA OK lr/commonsense/full_adamw32
+[2026-11-06 17:54:05] TRAIN lr/math/full_adamw32
+[2026-11-06 18:30:26] OK lr/math/full_adamw32 68.01 2025.1 19.3
+[2026-11-06 18:40:00] EXTRA OK lr/math/full_adamw32
+[2026-11-06 18:40:00] QUEUE_DONE jobs_r3.txt
+[2026-11-06 18:40:00] TRAIN s42/commonsense/base
+[2026-11-06 18:42:38] OK s42/commonsense/base 30.99 None None
+[2026-11-06 18:45:03] EXTRA OK s42/commonsense/base
+[2026-11-06 18:45:03] TRAIN s42/commonsense/full
+[2026-11-06 19:04:23] OK s42/commonsense/full 51.57 830.7 6.94
+[2026-11-06 19:06:47] EXTRA OK s42/commonsense/full
+[2026-11-06 19:06:48] TRAIN s42/commonsense/lora
+[2026-11-06 19:25:57] OK s42/commonsense/lora 59.73 690.0 6.42
+[2026-11-06 19:28:24] EXTRA OK s42/commonsense/lora
+[2026-11-06 19:28:24] TRAIN s42/commonsense/qlora
+[2026-11-06 19:56:02] OK s42/commonsense/qlora 59.65 932.2 6.55
+[2026-11-06 20:00:17] EXTRA OK s42/commonsense/qlora
+[2026-11-06 20:00:17] TRAIN s42/commonsense/dora
+[2026-11-06 20:31:26] OK s42/commonsense/dora 60.48 1140.9 6.42
+[2026-11-06 20:33:53] EXTRA OK s42/commonsense/dora
+[2026-11-06 20:33:53] TRAIN s42/commonsense/pissa
+[2026-11-06 20:53:20] OK s42/commonsense/pissa 59.77 650.0 6.42
+[2026-11-06 20:55:50] EXTRA OK s42/commonsense/pissa
+[2026-11-06 20:55:50] TRAIN s42/commonsense/vera
+[2026-11-06 21:16:30] OK s42/commonsense/vera 51.72 699.9 6.3
+[2026-11-06 21:18:56] EXTRA OK s42/commonsense/vera
+[2026-11-06 21:18:56] TRAIN s42/commonsense/ia3
+[2026-11-06 21:31:20] OK s42/commonsense/ia3 54.6 384.8 6.29
+[2026-11-06 21:33:47] EXTRA OK s42/commonsense/ia3
+[2026-11-06 21:33:47] TRAIN s42/math/base
+[2026-11-06 21:35:37] OK s42/math/base 26.31 None None
+[2026-11-06 21:40:09] EXTRA OK s42/math/base
+[2026-11-06 21:40:09] TRAIN s42/math/full
+[2026-11-06 22:04:14] OK s42/math/full 46.93 851.0 9.45
+[2026-11-06 22:08:44] EXTRA OK s42/math/full
+[2026-11-06 22:08:44] TRAIN s42/math/lora
+[2026-11-06 22:31:16] OK s42/math/lora 46.17 780.8 11.77
+[2026-11-06 22:35:53] EXTRA OK s42/math/lora
+[2026-11-06 22:35:53] TRAIN s42/math/qlora
+[2026-11-06 23:08:18] OK s42/math/qlora 43.14 959.4 12.03
+[2026-11-06 23:26:43] EXTRA OK s42/math/qlora
+[2026-11-06 23:26:43] TRAIN s42/math/dora
+[2026-11-07 15:05:38] RESUME2 after recharge
+[2026-11-07 15:05:38] QUEUE_DONE jobs_r3.txt
+[2026-11-07 15:05:38] TRAIN s42/math/dora
+[2026-11-07 15:46:58] OK s42/math/dora 46.02 1447.7 11.78
+[2026-11-07 15:51:34] EXTRA OK s42/math/dora
+[2026-11-07 15:51:34] TRAIN s42/math/pissa
+[2026-11-07 16:15:01] OK s42/math/pissa 46.47 741.9 11.77
+[2026-11-07 16:19:39] EXTRA OK s42/math/pissa
+[2026-11-07 16:19:39] TRAIN s42/math/vera
+[2026-11-07 16:46:07] OK s42/math/vera 45.56 871.8 11.65
+[2026-11-07 16:50:43] EXTRA OK s42/math/vera
+[2026-11-07 16:50:43] TRAIN s42/math/ia3
+[2026-11-07 17:05:36] OK s42/math/ia3 45.41 510.0 11.64
+[2026-11-07 17:10:10] EXTRA OK s42/math/ia3
+[2026-11-07 17:10:10] TRAIN seed/commonsense/full_s43
+[2026-11-07 17:29:19] OK seed/commonsense/full_s43 54.78 823.7 6.94
+[2026-11-07 17:31:43] EXTRA OK seed/commonsense/full_s43
+[2026-11-07 17:31:43] TRAIN seed/commonsense/lora_s43
+[2026-11-07 17:50:49] OK seed/commonsense/lora_s43 61.47 690.2 6.42
+[2026-11-07 17:53:16] EXTRA OK seed/commonsense/lora_s43
+[2026-11-07 17:53:16] TRAIN seed/math/full_s43
+[2026-11-07 18:17:03] OK seed/math/full_s43 44.73 837.4 9.45
+[2026-11-07 18:21:35] EXTRA OK seed/math/full_s43
+[2026-11-07 18:21:35] TRAIN seed/math/lora_s43
+[2026-11-07 18:44:54] OK seed/math/lora_s43 46.7 787.3 11.77
+[2026-11-07 18:49:28] EXTRA OK seed/math/lora_s43
+[2026-11-07 18:49:28] TRAIN seed/commonsense/full_s44
+[2026-11-07 19:08:12] OK seed/commonsense/full_s44 49.84 798.1 6.94
+[2026-11-07 19:10:37] EXTRA OK seed/commonsense/full_s44
+[2026-11-07 19:10:37] TRAIN seed/commonsense/lora_s44
+[2026-11-07 19:29:45] OK seed/commonsense/lora_s44 61.38 693.2 6.42
+[2026-11-07 19:32:11] EXTRA OK seed/commonsense/lora_s44
+[2026-11-07 19:32:11] TRAIN seed/math/full_s44
+[2026-11-07 19:56:22] OK seed/math/full_s44 44.88 850.1 9.45
+[2026-11-07 20:00:53] EXTRA OK seed/math/full_s44
+[2026-11-07 20:00:53] TRAIN seed/math/lora_s44
+[2026-11-07 20:23:01] OK seed/math/lora_s44 46.25 761.6 11.77
+[2026-11-07 20:27:35] EXTRA OK seed/math/lora_s44
+[2026-11-07 20:27:35] QUEUE_DONE jobs_05b.txt
+ALL_DONE
+[2026-11-07 20:49:39] TRAIN seed/commonsense/full_lr1e-5_s42
+[2026-11-07 21:18:54] OK seed/commonsense/full_lr1e-5_s42 78.38 1072.8 16.88
+[2026-11-07 21:24:25] EXTRA OK seed/commonsense/full_lr1e-5_s42
+[2026-11-07 21:24:25] TRAIN seed/math/full_lr1e-5_s42
+[2026-11-07 22:06:06] OK seed/math/full_lr1e-5_s42 70.74 1606.4 19.34
+[2026-11-07 22:15:37] EXTRA OK seed/math/full_lr1e-5_s42
+[2026-11-07 22:15:37] TRAIN seed/math/lora_lr5e-4_s42
+[2026-11-07 22:51:16] OK seed/math/lora_lr5e-4_s42 70.81 1461.9 14.13
+[2026-11-07 23:00:50] EXTRA OK seed/math/lora_lr5e-4_s42
+[2026-11-07 23:00:50] TRAIN seed/commonsense/full_lr1e-5_s43
+[2026-11-07 23:30:02] OK seed/commonsense/full_lr1e-5_s43 77.78 1068.3 16.88
+[2026-11-07 23:35:33] EXTRA OK seed/commonsense/full_lr1e-5_s43
+[2026-11-07 23:35:34] TRAIN seed/math/full_lr1e-5_s43
+[2026-11-08 00:16:20] OK seed/math/full_lr1e-5_s43 70.74 1604.2 19.34
+[2026-11-08 00:25:49] EXTRA OK seed/math/full_lr1e-5_s43
+[2026-11-08 00:25:49] TRAIN seed/math/lora_lr5e-4_s43
+[2026-11-08 01:01:32] OK seed/math/lora_lr5e-4_s43 69.45 1457.4 14.13
+[2026-11-08 01:11:08] EXTRA OK seed/math/lora_lr5e-4_s43
+[2026-11-08 01:11:08] TRAIN seed/commonsense/full_lr1e-5_s44
+[2026-11-08 01:40:22] OK seed/commonsense/full_lr1e-5_s44 78.1 1071.5 16.88
+[2026-11-08 01:45:51] EXTRA OK seed/commonsense/full_lr1e-5_s44
+[2026-11-08 01:45:52] TRAIN seed/math/full_lr1e-5_s44
+[2026-11-08 02:28:41] OK seed/math/full_lr1e-5_s44 70.58 1612.7 19.34
+[2026-11-08 02:38:15] EXTRA OK seed/math/full_lr1e-5_s44
+[2026-11-08 02:38:15] TRAIN seed/math/lora_lr5e-4_s44
+[2026-11-08 03:15:20] OK seed/math/lora_lr5e-4_s44 70.43 1465.4 14.13
+[2026-11-08 03:25:01] EXTRA OK seed/math/lora_lr5e-4_s44
+[2026-11-08 03:25:01] QUEUE_DONE jobs_r3b.txt
+R3B_DONE
+[2026-11-08 03:25:40] TRAIN parity/commonsense/lora_mb4
+[2026-11-08 03:56:06] OK parity/commonsense/lora_mb4 78.68 1648.6 5.91
+[2026-11-08 03:56:06] TRAIN parity/math/lora_mb4
+[2026-11-08 04:27:09] OK parity/math/lora_mb4 69.29 1721.6 8.65
+[2026-11-08 04:27:09] QUEUE_DONE jobs_parity.txt
+[2026-11-08 04:27:09] TRAIN parity/commonsense/lora_mb4
+[2026-11-08 04:52:33] OK parity/commonsense/lora_mb4 58.74 1425.5 3.74
+[2026-11-08 04:52:33] TRAIN parity/math/lora_mb4
+[2026-11-08 05:18:08] OK parity/math/lora_mb4 46.47 1417.8 6.42
+[2026-11-08 05:18:08] QUEUE_DONE jobs_parity.txt
+R3C_DONE
+[2026-11-08 05:24:20] REEVAL commonsense/oft 78.06 78.08
+[2026-11-08 05:29:19] REEVAL commonsense/adalora 73.18 73.28
+[2026-11-08 05:37:53] REEVAL commonsense/lokr 73.27 73.25
+[2026-11-08 05:43:03] REEVAL math/oft 70.2 71.27
+[2026-11-08 05:46:06] REEVAL math/adalora 70.28 69.75
+[2026-11-08 05:50:16] REEVAL math/lokr 70.36 70.58
+[2026-11-08 05:50:16] TRAIN seed/commonsense/oft_s43
+[2026-11-08 06:14:47] OK seed/commonsense/oft_s43 77.73 1293.7 8.49
+[2026-11-08 06:20:23] EXTRA OK seed/commonsense/oft_s43
+[2026-11-08 06:20:23] TRAIN seed/commonsense/adalora_s43
+[2026-11-08 06:46:14] OK seed/commonsense/adalora_s43 73.08 1374.9 9.2
+[2026-11-08 06:51:51] EXTRA OK seed/commonsense/adalora_s43
+[2026-11-08 06:51:51] TRAIN seed/commonsense/lokr_s43
+[2026-11-08 07:17:06] OK seed/commonsense/lokr_s43 72.95 1343.8 8.38
+[2026-11-08 07:22:35] EXTRA OK seed/commonsense/lokr_s43
+[2026-11-08 07:22:35] TRAIN seed/math/oft_s43
+[2026-11-08 07:50:13] OK seed/math/oft_s43 70.74 1507.2 13.98
+[2026-11-08 07:59:49] EXTRA OK seed/math/oft_s43
+[2026-11-08 07:59:49] TRAIN seed/math/adalora_s43
+[2026-11-08 08:34:20] OK seed/math/adalora_s43 71.04 1933.6 14.68
+[2026-11-08 08:44:02] EXTRA OK seed/math/adalora_s43
+[2026-11-08 08:44:02] TRAIN seed/math/lokr_s43
+[2026-11-08 09:21:01] OK seed/math/lokr_s43 69.07 2076.2 13.87
+[2026-11-08 09:30:26] EXTRA OK seed/math/lokr_s43
+[2026-11-08 09:30:26] TRAIN seed/commonsense/oft_s44
+[2026-11-08 09:55:21] OK seed/commonsense/oft_s44 77.96 1317.2 8.49
+[2026-11-08 10:00:56] EXTRA OK seed/commonsense/oft_s44
+[2026-11-08 10:00:56] TRAIN seed/commonsense/adalora_s44
+[2026-11-08 10:27:34] OK seed/commonsense/adalora_s44 72.66 1416.1 9.2
+[2026-11-08 10:33:14] EXTRA OK seed/commonsense/adalora_s44
+[2026-11-08 10:33:14] TRAIN seed/commonsense/lokr_s44
+[2026-11-08 10:58:46] OK seed/commonsense/lokr_s44 72.76 1360.1 8.38
+[2026-11-08 11:04:18] EXTRA OK seed/commonsense/lokr_s44
+[2026-11-08 11:04:18] TRAIN seed/math/oft_s44
+[2026-11-08 11:31:59] OK seed/math/oft_s44 71.11 1509.9 13.98
+[2026-11-08 11:41:33] EXTRA OK seed/math/oft_s44
+[2026-11-08 11:41:33] TRAIN seed/math/adalora_s44
+[2026-11-08 12:16:21] OK seed/math/adalora_s44 69.9 1926.0 14.68
+[2026-11-08 12:25:59] EXTRA OK seed/math/adalora_s44
+[2026-11-08 12:25:59] TRAIN seed/math/lokr_s44
+[2026-11-08 13:02:21] OK seed/math/lokr_s44 69.75 2062.1 13.87
+[2026-11-08 13:11:52] EXTRA OK seed/math/lokr_s44
+[2026-11-08 13:11:52] QUEUE_DONE jobs_r3d.txt
+R3D_DONE

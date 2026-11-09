@@ -1,0 +1,26 @@
+{
+ "method": "prefix_mlp",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.001,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 7494144,
+ "total_params": 1551208448,
+ "trainable_pct": 0.4831,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 4,
+ "train_runtime_s": 699.9,
+ "train_loss": 0.1863,
+ "train_samples_per_s": 28.58,
+ "peak_mem_alloc_gb": 14.66,
+ "peak_mem_reserved_gb": 22.13,
+ "eval": {
+  "gsm8k": 68.31,
+  "avg": 68.31
+ },
+ "eval_runtime_s": 123.3
+}

@@ -1,0 +1,25 @@
+# ---- D: Qwen2.5-0.5B (edge-size model) ----
+s42/commonsense/base base commonsense
+s42/commonsense/full full commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/lora lora commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/qlora qlora commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/dora dora commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/pissa pissa commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/vera vera commonsense --eval_at 0.25,0.5,0.75
+s42/commonsense/ia3 ia3 commonsense --eval_at 0.25,0.5,0.75
+s42/math/base base math
+s42/math/full full math --eval_at 0.25,0.5,0.75
+s42/math/lora lora math --eval_at 0.25,0.5,0.75
+s42/math/qlora qlora math --eval_at 0.25,0.5,0.75
+s42/math/dora dora math --eval_at 0.25,0.5,0.75
+s42/math/pissa pissa math --eval_at 0.25,0.5,0.75
+s42/math/vera vera math --eval_at 0.25,0.5,0.75
+s42/math/ia3 ia3 math --eval_at 0.25,0.5,0.75
+seed/commonsense/full_s43 full commonsense --seed 43 --eval_at 0.25,0.5,0.75
+seed/commonsense/lora_s43 lora commonsense --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/full_s43 full math --seed 43 --eval_at 0.25,0.5,0.75
+seed/math/lora_s43 lora math --seed 43 --eval_at 0.25,0.5,0.75
+seed/commonsense/full_s44 full commonsense --seed 44 --eval_at 0.25,0.5,0.75
+seed/commonsense/lora_s44 lora commonsense --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/full_s44 full math --seed 44 --eval_at 0.25,0.5,0.75
+seed/math/lora_s44 lora math --seed 44 --eval_at 0.25,0.5,0.75

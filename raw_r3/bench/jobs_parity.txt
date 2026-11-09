@@ -1,0 +1,3 @@
+# ---- memory/time parity: LoRA at the same micro-batch as full FT (micro_bs=4) ----
+parity/commonsense/lora_mb4 lora commonsense --micro_bs 4
+parity/math/lora_mb4 lora math --micro_bs 4

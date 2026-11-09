@@ -1,0 +1,102 @@
+{
+ "method": "qlora",
+ "task": "commonsense",
+ "model": "Qwen2.5-0.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-0.5B",
+ "trainable_params": 8798208,
+ "total_params": 502830976,
+ "trainable_pct": 1.7497,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 932.2,
+ "train_loss": 0.1383,
+ "train_samples_per_s": 21.45,
+ "peak_mem_alloc_gb": 6.55,
+ "peak_mem_reserved_gb": 7.46,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 237.6,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 56.96,
+    "social_i_qa": 51.28,
+    "hellaswag": 30.9,
+    "winogrande": 52.57,
+    "ARC-Easy": 62.42,
+    "ARC-Challenge": 40.7,
+    "openbookqa": 43.2,
+    "avg": 50.02
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 466.4,
+   "eval": {
+    "boolq": 62.17,
+    "piqa": 65.72,
+    "social_i_qa": 56.45,
+    "hellaswag": 51.52,
+    "winogrande": 51.78,
+    "ARC-Easy": 60.19,
+    "ARC-Challenge": 44.11,
+    "openbookqa": 44.6,
+    "avg": 54.57
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 701.7,
+   "eval": {
+    "boolq": 61.99,
+    "piqa": 64.31,
+    "social_i_qa": 62.13,
+    "hellaswag": 58.97,
+    "winogrande": 55.88,
+    "ARC-Easy": 68.81,
+    "ARC-Challenge": 50.94,
+    "openbookqa": 52.0,
+    "avg": 59.38
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 932.2,
+   "eval": {
+    "boolq": 61.25,
+    "piqa": 65.78,
+    "social_i_qa": 63.66,
+    "hellaswag": 59.66,
+    "winogrande": 57.3,
+    "ARC-Easy": 68.22,
+    "ARC-Challenge": 52.13,
+    "openbookqa": 49.2,
+    "avg": 59.65
+   }
+  }
+ ],
+ "eval": {
+  "boolq": 61.25,
+  "piqa": 65.78,
+  "social_i_qa": 63.66,
+  "hellaswag": 59.66,
+  "winogrande": 57.3,
+  "ARC-Easy": 68.22,
+  "ARC-Challenge": 52.13,
+  "openbookqa": 49.2,
+  "avg": 59.65
+ },
+ "eval_runtime_s": 192.5,
+ "eval_decoding": "generate"
+}

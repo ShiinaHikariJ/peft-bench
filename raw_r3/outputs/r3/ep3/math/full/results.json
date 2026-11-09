@@ -1,0 +1,58 @@
+{
+ "method": "full",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 2e-05,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 3.0,
+ "optim": "paged_adamw_8bit",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 1543714304,
+ "total_params": 1543714304,
+ "trainable_pct": 100.0,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 1875,
+ "micro_bs": 4,
+ "train_runtime_s": 4884.4,
+ "train_loss": 0.1135,
+ "train_samples_per_s": 12.28,
+ "peak_mem_alloc_gb": 19.34,
+ "peak_mem_reserved_gb": 21.25,
+ "curve": [
+  {
+   "step": 625,
+   "frac": 0.3333,
+   "train_time_s": 1670.8,
+   "eval": {
+    "gsm8k": 63.91,
+    "avg": 63.91
+   }
+  },
+  {
+   "step": 1250,
+   "frac": 0.6667,
+   "train_time_s": 3277.3,
+   "eval": {
+    "gsm8k": 67.1,
+    "avg": 67.1
+   }
+  },
+  {
+   "step": 1875,
+   "frac": 1.0,
+   "train_time_s": 4884.4,
+   "eval": {
+    "gsm8k": 68.08,
+    "avg": 68.08
+   }
+  }
+ ],
+ "eval": {
+  "gsm8k": 68.08,
+  "avg": 68.08
+ },
+ "eval_runtime_s": 107.8,
+ "eval_decoding": "generate"
+}

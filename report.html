@@ -1,0 +1,254 @@
+<title>PEFT 微调方法对比</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* 布局：单栏报告，结论在前，图表在中，明细表在后 */
+:root{
+  --bg:#f6f7f9; --panel:#ffffff; --fg:#1b2230; --muted:#5d6779; --line:#dde1e8;
+  --accent:#2952c8; --accent-soft:#dbe4fb; --ref:#c27a12; --bar:#aab3c3; --base:#d3d8e0;
+  --good:#1f8a5b; --bad:#c2412d;
+  --f-body:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --f-num:"Noto Serif SC","Songti SC",Georgia,serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12151b; --panel:#1a1f28; --fg:#e7eaf0; --muted:#9aa3b3; --line:#2c3340;
+  --accent:#7d9bff; --accent-soft:#25335a; --ref:#e9a640; --bar:#4d5668; --base:#363d4a;
+  --good:#4cc38a; --bad:#ef7a66; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12151b; --panel:#1a1f28; --fg:#e7eaf0; --muted:#9aa3b3; --line:#2c3340;
+  --accent:#7d9bff; --accent-soft:#25335a; --ref:#e9a640; --bar:#4d5668; --base:#363d4a;
+  --good:#4cc38a; --bad:#ef7a66; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.65}
+.wrap{max-width:980px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:40px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-size:12px;letter-spacing:.08em;color:var(--muted)}
+h1{font-family:var(--f-num);font-size:clamp(26px,4.4vw,36px);line-height:1.25;margin:0;text-wrap:balance}
+h2{font-size:19px;margin:0;text-wrap:balance}
+.lead{max-width:62ch;color:var(--muted);margin:0}
+.lead b{color:var(--fg)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:4px}
+.kpi .k{font-size:13px;color:var(--muted)}
+.kpi .v{font-family:var(--f-num);font-size:30px;line-height:1.2;color:var(--accent);font-variant-numeric:tabular-nums}
+.kpi .s{font-size:13px;color:var(--muted)}
+section{display:flex;flex-direction:column;gap:14px;min-width:0}
+.sub{color:var(--muted);margin:0;max-width:66ch;font-size:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;min-width:0}
+.tabs{display:flex;flex-wrap:wrap;gap:6px}
+.tabs button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--panel);color:var(--fg);
+  border-radius:999px;padding:5px 14px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:16px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.chart svg{display:block;width:100%;height:auto}
+.chart text{font-family:var(--f-body);fill:var(--fg);font-size:12.5px}
+.chart .num{font-family:var(--f-mono);font-size:12px;fill:var(--muted)}
+.chart .axis{stroke:var(--line)}
+.chart .grid{stroke:var(--line);stroke-dasharray:2 3}
+.findings{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:8px;max-width:70ch}
+.findings b{color:var(--fg)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-weight:500;color:var(--muted);font-size:12.5px;background:var(--bg)}
+th:first-child,td:first-child{text-align:left}
+tr.hl td{background:var(--accent-soft)}
+tr.ref td{color:var(--ref)}
+td .neg{color:var(--bad)} td .pos{color:var(--good)}
+.setup{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 28px;font-size:14px}
+.setup div{display:flex;gap:10px;border-bottom:1px solid var(--line);padding-block:6px}
+.setup dt{color:var(--muted);flex:0 0 5.5em}
+.setup dd{margin:0;min-width:0}
+footer{font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+footer a{color:var(--accent)}
+#tip{position:fixed;pointer-events:none;background:var(--fg);color:var(--bg);font-size:12.5px;padding:6px 9px;border-radius:6px;
+  line-height:1.45;max-width:240px;z-index:20;white-space:pre-line}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">面向边缘场景的大模型高效微调 · Qwen2.5-1.5B · 单卡 RTX 4090</div>
+  <h1>16 种微调方法同条件对比：LoRA 用一半显存超过全参微调</h1>
+  <p class="lead">同一基座、同一数据、同一训练预算下，对比 LoRA / QLoRA / DoRA / PiSSA 等 16 种方法与不微调基线，共 34 组训练和 3 组附加评测。结论：<b>LoRA 在常识推理和数学推理上都略高于全参微调，峰值显存约减半，通用知识遗忘只有全参的约 1/9。</b></p>
+</header>
+
+<div class="kpis">
+  <div class="kpi"><span class="k">常识推理（8 个测试集平均）</span><span class="v">103%</span><span class="s">LoRA 78.45 vs 全参 76.06</span></div>
+  <div class="kpi"><span class="k">数学推理 GSM8K</span><span class="v">102%</span><span class="s">LoRA 69.90 vs 全参 68.76</span></div>
+  <div class="kpi"><span class="k">训练峰值显存</span><span class="v">−49%</span><span class="s">LoRA 8.65 GB vs 全参 16.9 GB</span></div>
+  <div class="kpi"><span class="k">通用知识遗忘（MMLU 下降）</span><span class="v">1/9</span><span class="s">LoRA −0.91 分 vs 全参 −8.48 分</span></div>
+</div>
+
+<section id="scores">
+  <h2>各方法任务得分</h2>
+  <p class="sub">橙色虚线是全参微调的分数，越过虚线说明这种方法用更少的参数达到或超过了全参微调。</p>
+  <div class="card">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="tabs" role="group" aria-label="选择任务">
+        <button id="t-cs" aria-pressed="true" data-k="cs">常识推理</button>
+        <button id="t-gsm" aria-pressed="false" data-k="gsm">GSM8K 数学</button>
+        <button id="t-m5" aria-pressed="false" data-k="m5">MATH-500 难题</button>
+      </div>
+      <div class="legend"><span><i style="background:var(--accent)"></i>LoRA / DoRA</span><span><i style="background:var(--ref)"></i>全参微调</span><span><i style="background:var(--bar)"></i>其他方法</span><span><i style="background:var(--base)"></i>不微调</span></div>
+      <div class="chart" id="c-scores"></div>
+    </div>
+  </div>
+</section>
+
+<section id="efficiency">
+  <h2>显存与效果：越靠左上越好</h2>
+  <p class="sub">横轴是常识推理任务的训练峰值显存，纵轴是准确率。LoRA 家族聚在左上角；全参微调显存最高，效果反而略低。</p>
+  <div class="card"><div class="chart" id="c-mem"></div></div>
+</section>
+
+<section id="forgetting">
+  <h2>微调后通用知识掉了多少（MMLU）</h2>
+  <p class="sub">在常识推理数据上微调后，再测 MMLU（57 个学科、14,042 题）。基座 61.05 分，条形表示相对基座的变化，越短越好。</p>
+  <div class="card"><div class="chart" id="c-forget"></div></div>
+</section>
+
+<section id="findings">
+  <h2>主要结论</h2>
+  <ol class="findings">
+    <li><b>LoRA 是综合最优的选择</b>：常识推理并列第一（78.45），GSM8K 69.90，显存 8.65 GB，训练 15 分钟，遗忘小。</li>
+    <li><b>DoRA 分数与 LoRA 持平或略高</b>，MATH-500 37.8 更好，但训练时间是 LoRA 的 2.2 倍。</li>
+    <li><b>全参微调遗忘最严重</b>：MMLU 掉 8.5 分；更新幅度越大的方法遗忘越重（LoRA+ 掉 7.4，rsLoRA 掉 3.9）。</li>
+    <li><b>QLoRA 在 1.5B 模型上收益有限</b>：只省 0.7 GB 显存且慢 33%，难题（MATH-500）上比 LoRA 低 4 分；它的价值在 7B 以上模型。</li>
+    <li><b>极少参数方法各有偏科</b>：VeRA 只训 0.045% 参数，GSM8K 最高（71.04），但常识推理掉约 9 分。</li>
+    <li><b>Prefix-Tuning 在该设置下失效</b>：常识推理 19.9、MMLU 接近随机，已用三种解码方式排除评测错误。</li>
+  </ol>
+</section>
+
+<section id="table">
+  <h2>完整结果</h2>
+  <div class="tablebox"><table id="tbl">
+    <thead><tr><th>方法</th><th>常识推理</th><th>GSM8K</th><th>MATH-500</th><th>MMLU 变化</th><th>可训练参数</th><th>显存 (GB)</th><th>训练时间 (min)</th></tr></thead>
+    <tbody></tbody>
+  </table></div>
+  <p class="sub">准确率单位为 %。显存和训练时间为常识推理任务（2 万条、1 epoch）；MMLU 变化为常识微调后相对基座 61.05 的差值。</p>
+</section>
+
+<section id="setup">
+  <h2>实验设置</h2>
+  <dl class="setup">
+    <div><dt>基座模型</dt><dd>Qwen2.5-1.5B</dd></div>
+    <div><dt>硬件</dt><dd>单卡 RTX 4090 24GB，总计约 13 小时</dd></div>
+    <div><dt>常识推理</dt><dd>Commonsense170K 抽 2 万条训练；8 个测试集共 22,419 题</dd></div>
+    <div><dt>数学推理</dt><dd>MetaMathQA 抽 2 万条训练；GSM8K 1,319 题、MATH-500</dd></div>
+    <div><dt>训练</dt><dd>1 epoch，有效 batch 32，cosine，各方法推荐学习率</dd></div>
+    <div><dt>框架</dt><dd>transformers 5.8 + PEFT 0.18.1，统一脚本一条命令切换方法</dd></div>
+  </dl>
+  <p class="sub">局限：每组单个随机种子，0.5 分以内的差距不宜下结论；只测了 1.5B 一个规模。下一步计划在 7B 模型和垂直领域数据上复测。</p>
+</section>
+
+<footer>
+  <span>代码与原始结果：<a href="https://github.com/ShiinaHikariJ/peft-bench" target="_blank" rel="noopener">github.com/ShiinaHikariJ/peft-bench</a></span>
+  <span>苏州大学 · 颜晟帆 · 2026 年 11 月</span>
+</footer>
+</div>
+<div id="tip" hidden></div>
+
+<script>
+// name, 常识, GSM8K, MATH-500, MMLU变化(常识微调后), 参数%, 显存GB, 时间min, 类别
+const R=[
+ ["不微调",44.54,56.48,13.8,0,"0",null,null,"base"],
+ ["全参微调",76.06,68.76,33.0,-8.48,"100%",16.9,26.5,"ref"],
+ ["Freeze",62.70,53.30,32.8,-0.13,"6.06%",13.0,10.0,""],
+ ["LoRA",78.45,69.90,36.2,-0.91,"1.18%",8.65,15.4,"hl"],
+ ["QLoRA",77.80,69.37,32.0,-2.61,"1.18%",7.96,20.5,""],
+ ["DoRA",78.45,70.13,37.8,-0.69,"1.22%",8.66,34.4,"hl"],
+ ["rsLoRA",78.02,69.52,36.2,-3.86,"1.18%",8.65,15.6,""],
+ ["PiSSA",76.60,69.75,37.6,-0.06,"1.18%",8.65,14.6,""],
+ ["LoRA+",76.76,69.14,35.4,-7.44,"1.18%",8.65,15.4,""],
+ ["AdaLoRA",73.18,70.28,39.0,0.23,"1.76%",9.20,23.2,""],
+ ["VeRA",69.26,71.04,36.4,0.34,"0.045%",8.40,18.1,""],
+ ["IA³",72.97,69.98,35.8,-0.56,"0.017%",8.38,10.8,""],
+ ["OFT",78.06,70.20,34.6,-1.43,"0.51%",8.49,21.3,""],
+ ["LoKr",73.27,70.36,37.6,0.32,"0.043%",8.38,21.5,""],
+ ["Prefix",19.90,31.01,9.8,-36.43,"0.030%",14.5,6.9,""],
+ ["Prefix-MLP",36.86,68.31,34.2,-34.65,"0.48%",14.6,6.9,""],
+ ["Prompt",68.98,62.93,29.0,-1.76,"0.003%",15.5,7.3,""]
+].map(a=>({n:a[0],cs:a[1],gsm:a[2],m5:a[3],dm:a[4],p:a[5],mem:a[6],t:a[7],c:a[8]}));
+const FULL=R.find(r=>r.c==="ref");
+const LBL={cs:"常识推理",gsm:"GSM8K",m5:"MATH-500"};
+const col=c=>c==="hl"?"var(--accent)":c==="ref"?"var(--ref)":c==="base"?"var(--base)":"var(--bar)";
+const esc=s=>String(s).replace(/[&<>"]/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[ch]));
+const W=el=>Math.max(300,el.clientWidth||700);
+
+function hbar(el,rows,key,o){
+  const w=W(el),lw=w<480?78:96,vw=60,rh=24,top=6,h=top+rows.length*rh+22;
+  const x=v=>lw+(v-o.min)/(o.max-o.min)*(w-lw-vw);
+  let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="${esc(o.aria)}">`;
+  for(const t of o.ticks){s+=`<line class="grid" x1="${x(t)}" x2="${x(t)}" y1="${top}" y2="${h-20}"/><text class="num" x="${x(t)}" y="${h-5}" text-anchor="middle">${t}</text>`}
+  if(o.ref!=null){const rx=x(o.ref);s+=`<line x1="${rx}" x2="${rx}" y1="${top-4}" y2="${h-20}" stroke="var(--ref)" stroke-width="1.5" stroke-dasharray="5 4" opacity=".8"/>`}
+  rows.forEach((r,i)=>{
+    const y=top+i*rh,v=r[key],cl=o.clip!=null&&v<o.clip,vv=cl?o.clip:v;
+    const x0=x(Math.max(o.min,Math.min(0,vv))),x1=x(Math.max(0,vv)),bw=Math.max(1.5,x1-x0);
+    const tip=`${r.n}\n${o.tip(r)}`;
+    s+=`<g data-tip="${esc(tip)}"><rect x="${lw-8}" y="${y}" width="${w-lw+8}" height="${rh}" fill="transparent"/>`;
+    s+=`<text x="${lw-8}" y="${y+rh/2+4}" text-anchor="end" style="${r.c==="hl"||r.c==="ref"?"font-weight:700":""}">${esc(r.n)}</text>`;
+    s+=`<rect x="${x0}" y="${y+4}" width="${bw}" height="${rh-8}" rx="3" fill="${col(r.c)}"/>`;
+    if(cl){s+=`<text class="num" x="${x0+8}" y="${y+rh/2+4}" style="fill:var(--panel)">${o.fmt(v)}（超出坐标，已截断）</text></g>`;return}
+    const lx=v<0?x0-6:x1+6;
+    s+=`<text class="num" x="${lx}" y="${y+rh/2+4}" text-anchor="${v<0?"end":"start"}" style="paint-order:stroke;stroke:var(--panel);stroke-width:4px">${o.fmt(v)}</text></g>`;
+  });
+  if(o.zero){s+=`<line class="axis" x1="${x(0)}" x2="${x(0)}" y1="${top}" y2="${h-20}" stroke-width="1.5"/>`}
+  el.innerHTML=s+"</svg>";
+}
+
+let cur="cs";
+function drawScores(){
+  const rows=[...R].sort((a,b)=>b[cur]-a[cur]);
+  const max=cur==="m5"?45:cur==="gsm"?80:85;
+  const ticks=cur==="m5"?[0,10,20,30,40]:[0,20,40,60,80].filter(t=>t<=max);
+  hbar(document.getElementById("c-scores"),rows,cur,{min:0,max,ticks,ref:FULL[cur],fmt:v=>v.toFixed(cur==="m5"?1:2),
+    aria:`${LBL[cur]}准确率`,tip:r=>`${LBL[cur]}：${r[cur]}%\n全参微调：${FULL[cur]}%`});
+}
+function drawForget(){
+  const rows=[...R].filter(r=>r.c!=="base").sort((a,b)=>b.dm-a.dm);
+  hbar(document.getElementById("c-forget"),rows,"dm",{min:-12,max:2,ticks:[-12,-8,-4,0],zero:true,clip:-12,
+    fmt:v=>(v>0?"+":"")+v.toFixed(2),aria:"MMLU 相对基座变化",tip:r=>`MMLU：${(61.05+r.dm).toFixed(2)}（${r.dm>0?"+":""}${r.dm}）`});
+}
+function drawMem(){
+  const el=document.getElementById("c-mem"),w=W(el),h=w<480?300:340,m={l:44,r:16,t:14,b:40};
+  const x=v=>m.l+(v-6)/(18-6)*(w-m.l-m.r), y=v=>m.t+(1-(v-10)/(85-10))*(h-m.t-m.b);
+  let s=`<svg viewBox="0 0 ${w} ${h}" width="100%" role="img" aria-label="显存与常识推理准确率">`;
+  for(const t of [20,40,60,80]){s+=`<line class="grid" x1="${m.l}" x2="${w-m.r}" y1="${y(t)}" y2="${y(t)}"/><text class="num" x="${m.l-8}" y="${y(t)+4}" text-anchor="end">${t}</text>`}
+  for(const t of [6,9,12,15,18]){s+=`<text class="num" x="${x(t)}" y="${h-m.b+18}" text-anchor="middle">${t}</text>`}
+  s+=`<text class="num" x="${w-m.r}" y="${h-4}" text-anchor="end">训练峰值显存 (GB)</text><text class="num" x="${m.l}" y="${m.t-2}" dy="-2"> </text>`;
+  const L={"LoRA":[8,-10,"start","LoRA / DoRA"],"QLoRA":[-8,14,"end","QLoRA"],"全参微调":[-8,-10,"end","全参微调"],"Freeze":[8,4,"start","Freeze"],
+    "Prompt":[8,4,"start","Prompt"],"Prefix-MLP":[8,4,"start","Prefix-MLP"],"Prefix":[8,4,"start","Prefix"],"VeRA":[8,4,"start","VeRA"],"AdaLoRA":[8,10,"start","AdaLoRA / LoKr"]};
+  const pts=R.filter(r=>r.mem!=null).sort((a,b)=>(a.c==="hl")-(b.c==="hl"));
+  for(const r of pts){
+    const cx=x(r.mem),cy=y(r.cs);
+    s+=`<g data-tip="${esc(`${r.n}\n常识推理：${r.cs}%\n显存：${r.mem} GB\n可训练参数：${r.p}`)}"><circle cx="${cx}" cy="${cy}" r="12" fill="transparent"/><circle cx="${cx}" cy="${cy}" r="${r.c?6:4.5}" fill="${col(r.c)}" stroke="var(--panel)" stroke-width="1.5"/></g>`;
+    const l=L[r.n]; if(l) s+=`<text x="${cx+l[0]}" y="${cy+l[1]}" text-anchor="${l[2]}" style="pointer-events:none;${r.c?"font-weight:700":""}">${esc(l[3])}</text>`;
+  }
+  s+=`<text class="num" x="${m.l+4}" y="${y(10)-6}">准确率 (%)</text>`;
+  el.innerHTML=s+"</svg>";
+}
+function fillTable(){
+  const tb=document.querySelector("#tbl tbody");
+  tb.innerHTML=R.map(r=>`<tr class="${r.c==="hl"?"hl":r.c==="ref"?"ref":""}"><td>${esc(r.n)}</td><td>${r.cs.toFixed(2)}</td><td>${r.gsm.toFixed(2)}</td><td>${r.m5.toFixed(1)}</td>`+
+   `<td>${r.c==="base"?"–":`<span class="${r.dm<-1?"neg":r.dm>0?"pos":""}">${r.dm>0?"+":""}${r.dm.toFixed(2)}</span>`}</td><td>${r.p}</td><td>${r.mem??"–"}</td><td>${r.t??"–"}</td></tr>`).join("");
+}
+function all(){drawScores();drawForget();drawMem()}
+document.querySelectorAll(".tabs button").forEach(b=>b.addEventListener("click",()=>{
+  cur=b.dataset.k;document.querySelectorAll(".tabs button").forEach(x=>x.setAttribute("aria-pressed",x===b?"true":"false"));drawScores()}));
+const tip=document.getElementById("tip");
+document.addEventListener("pointermove",e=>{
+  const g=e.target.closest&&e.target.closest("[data-tip]");
+  if(!g){tip.hidden=true;return}
+  tip.textContent=g.getAttribute("data-tip");tip.hidden=false;
+  const tw=tip.offsetWidth,th=tip.offsetHeight;
+  let lx=e.clientX+14,ly=e.clientY+14;
+  if(lx+tw>innerWidth-8)lx=e.clientX-tw-14; if(ly+th>innerHeight-8)ly=e.clientY-th-14;
+  tip.style.left=Math.max(8,lx)+"px";tip.style.top=Math.max(8,ly)+"px";
+});
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(all,120)});
+fillTable();all();
+</script>

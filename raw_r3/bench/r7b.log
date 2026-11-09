@@ -1,0 +1,12 @@
+[2026-11-08 15:02:03] 7B downloaded
+[2026-11-08 15:02:03] TRAIN s42/math/base
+[2026-11-08 15:11:35] OK s42/math/base 74.3 None None
+[2026-11-08 15:43:08] EXTRA OK s42/math/base
+[2026-11-08 15:43:08] TRAIN s42/math/qlora
+[2026-11-08 17:14:56] OK s42/math/qlora 85.06 4776.5 12.04
+[2026-11-08 18:02:56] EXTRA OK s42/math/qlora
+[2026-11-08 18:02:56] TRAIN s42/math/lora
+[2026-11-08 19:08:48] OK s42/math/lora 84.23 3583.3 17.72
+[2026-11-08 19:39:36] EXTRA OK s42/math/lora
+[2026-11-08 19:39:36] QUEUE_DONE jobs_7b.txt
+R7B_DONE

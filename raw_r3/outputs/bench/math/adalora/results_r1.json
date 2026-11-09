@@ -1,0 +1,27 @@
+{
+ "method": "adalora",
+ "task": "math",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.0005,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "trainable_params": 27701856,
+ "total_params": 1571416356,
+ "trainable_pct": 1.7629,
+ "n_train": 20000,
+ "truncated": 117,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 1934.9,
+ "train_loss": 0.5803,
+ "train_samples_per_s": 10.34,
+ "peak_mem_alloc_gb": 14.69,
+ "peak_mem_reserved_gb": 21.38,
+ "merged_for_eval": true,
+ "eval": {
+  "gsm8k": 70.28,
+  "avg": 70.28
+ },
+ "eval_runtime_s": 114.9
+}

@@ -1,0 +1,103 @@
+{
+ "method": "lora",
+ "task": "commonsense",
+ "model": "Qwen2.5-1.5B",
+ "lr": 0.0002,
+ "rank": 16,
+ "seed": 42,
+ "epochs": 1.0,
+ "optim": "adamw_torch",
+ "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B",
+ "trainable_params": 18464768,
+ "total_params": 1562179072,
+ "trainable_pct": 1.182,
+ "n_train": 20000,
+ "truncated": 8,
+ "total_steps": 625,
+ "micro_bs": 8,
+ "train_runtime_s": 871.7,
+ "train_loss": 0.0913,
+ "train_samples_per_s": 22.94,
+ "peak_mem_alloc_gb": 8.65,
+ "peak_mem_reserved_gb": 9.77,
+ "curve": [
+  {
+   "step": 156,
+   "frac": 0.2496,
+   "train_time_s": 219.2,
+   "eval": {
+    "boolq": 65.47,
+    "piqa": 78.94,
+    "social_i_qa": 70.93,
+    "hellaswag": 83.26,
+    "winogrande": 67.09,
+    "ARC-Easy": 86.87,
+    "ARC-Challenge": 74.32,
+    "openbookqa": 74.0,
+    "avg": 75.11
+   }
+  },
+  {
+   "step": 312,
+   "frac": 0.4992,
+   "train_time_s": 437.9,
+   "eval": {
+    "boolq": 63.15,
+    "piqa": 80.52,
+    "social_i_qa": 72.26,
+    "hellaswag": 85.65,
+    "winogrande": 68.82,
+    "ARC-Easy": 89.65,
+    "ARC-Challenge": 76.62,
+    "openbookqa": 78.8,
+    "avg": 76.93
+   }
+  },
+  {
+   "step": 469,
+   "frac": 0.7504,
+   "train_time_s": 654.7,
+   "eval": {
+    "boolq": 64.8,
+    "piqa": 81.12,
+    "social_i_qa": 74.36,
+    "hellaswag": 87.33,
+    "winogrande": 69.61,
+    "ARC-Easy": 90.36,
+    "ARC-Challenge": 76.96,
+    "openbookqa": 79.6,
+    "avg": 78.02
+   }
+  },
+  {
+   "step": 625,
+   "frac": 1.0,
+   "train_time_s": 871.7,
+   "eval": {
+    "boolq": 65.6,
+    "piqa": 80.96,
+    "social_i_qa": 74.31,
+    "hellaswag": 87.34,
+    "winogrande": 70.96,
+    "ARC-Easy": 90.61,
+    "ARC-Challenge": 76.79,
+    "openbookqa": 80.6,
+    "avg": 78.4
+   }
+  }
+ ],
+ "merged_for_eval": true,
+ "eval": {
+  "boolq": 65.6,
+  "piqa": 80.96,
+  "social_i_qa": 74.31,
+  "hellaswag": 87.34,
+  "winogrande": 70.96,
+  "ARC-Easy": 90.61,
+  "ARC-Challenge": 76.79,
+  "openbookqa": 80.6,
+  "avg": 78.4
+ },
+ "eval_runtime_s": 147.2,
+ "eval_decoding": "generate"
+}

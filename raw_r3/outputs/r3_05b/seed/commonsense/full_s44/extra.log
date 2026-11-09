@@ -1,0 +1,2 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  42%|████▏     | 123/290 [00:00<00:00, 1192.45it/s]Loading weights:  92%|█████████▏| 268/290 [00:00<00:00, 1330.22it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1352.04it/s]
+[mmlu] commonsense/full: 45.24 n=14042 (134.4s) {'avg': 45.24, 'STEM': 39.39, 'humanities': 41.21, 'other': 49.37, 'social_sciences': 53.2, 'pred_dist': {'A': 1962, 'B': 2636, 'C': 2792, 'D': 6652}, 'n': 14042, 'runtime_s': 134.4}

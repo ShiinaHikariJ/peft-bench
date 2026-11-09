@@ -1,0 +1,68 @@
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   8%|▊         | 27/338 [00:00<00:01, 264.39it/s]Loading weights:  26%|██▌       | 87/338 [00:00<00:00, 459.51it/s]Loading weights:  42%|████▏     | 141/338 [00:00<00:00, 495.81it/s]Loading weights:  61%|██████    | 207/338 [00:00<00:00, 547.33it/s]Loading weights:  81%|████████  | 273/338 [00:00<00:00, 587.04it/s]Loading weights: 100%|██████████| 338/338 [00:00<00:00, 560.16it/s]
+[train] lora/math trainable 18,464,768 / 1,562,179,072 (1.182%) steps=625 lr=0.0002
+{'loss': '0.217', 'grad_norm': '0.1612', 'learning_rate': '0.0001', 'epoch': '0.016'}
+{'loss': '0.1683', 'grad_norm': '0.1578', 'learning_rate': '0.0002', 'epoch': '0.032'}
+{'loss': '0.1717', 'grad_norm': '0.1318', 'learning_rate': '0.0001998', 'epoch': '0.048'}
+{'loss': '0.1583', 'grad_norm': '0.1186', 'learning_rate': '0.0001994', 'epoch': '0.064'}
+{'loss': '0.1575', 'grad_norm': '0.1388', 'learning_rate': '0.0001987', 'epoch': '0.08'}
+{'loss': '0.1564', 'grad_norm': '0.122', 'learning_rate': '0.0001978', 'epoch': '0.096'}
+{'loss': '0.1547', 'grad_norm': '0.1371', 'learning_rate': '0.0001965', 'epoch': '0.112'}
+{'loss': '0.1611', 'grad_norm': '0.1451', 'learning_rate': '0.0001951', 'epoch': '0.128'}
+{'loss': '0.1641', 'grad_norm': '0.1227', 'learning_rate': '0.0001933', 'epoch': '0.144'}
+{'loss': '0.1618', 'grad_norm': '0.1321', 'learning_rate': '0.0001913', 'epoch': '0.16'}
+{'loss': '0.1621', 'grad_norm': '0.1391', 'learning_rate': '0.0001891', 'epoch': '0.176'}
+{'loss': '0.1617', 'grad_norm': '0.1415', 'learning_rate': '0.0001866', 'epoch': '0.192'}
+{'loss': '0.1607', 'grad_norm': '0.1096', 'learning_rate': '0.0001839', 'epoch': '0.208'}
+{'loss': '0.1542', 'grad_norm': '0.1203', 'learning_rate': '0.000181', 'epoch': '0.224'}
+{'loss': '0.1649', 'grad_norm': '0.1225', 'learning_rate': '0.0001779', 'epoch': '0.24'}
+{'loss': '0.156', 'grad_norm': '0.1147', 'learning_rate': '0.0001745', 'epoch': '0.256'}
+{'loss': '0.157', 'grad_norm': '0.1047', 'learning_rate': '0.000171', 'epoch': '0.272'}
+{'loss': '0.1641', 'grad_norm': '0.1411', 'learning_rate': '0.0001672', 'epoch': '0.288'}
+{'loss': '0.1558', 'grad_norm': '0.1243', 'learning_rate': '0.0001633', 'epoch': '0.304'}
+{'loss': '0.1665', 'grad_norm': '0.1145', 'learning_rate': '0.0001592', 'epoch': '0.32'}
+{'loss': '0.1676', 'grad_norm': '0.1099', 'learning_rate': '0.000155', 'epoch': '0.336'}
+{'loss': '0.1672', 'grad_norm': '0.1132', 'learning_rate': '0.0001506', 'epoch': '0.352'}
+{'loss': '0.1649', 'grad_norm': '0.1177', 'learning_rate': '0.0001461', 'epoch': '0.368'}
+{'loss': '0.1486', 'grad_norm': '0.1175', 'learning_rate': '0.0001414', 'epoch': '0.384'}
+{'loss': '0.1537', 'grad_norm': '0.1271', 'learning_rate': '0.0001366', 'epoch': '0.4'}
+{'loss': '0.1693', 'grad_norm': '0.1127', 'learning_rate': '0.0001318', 'epoch': '0.416'}
+{'loss': '0.1558', 'grad_norm': '0.132', 'learning_rate': '0.0001268', 'epoch': '0.432'}
+{'loss': '0.1485', 'grad_norm': '0.118', 'learning_rate': '0.0001218', 'epoch': '0.448'}
+{'loss': '0.1558', 'grad_norm': '0.1244', 'learning_rate': '0.0001167', 'epoch': '0.464'}
+{'loss': '0.1553', 'grad_norm': '0.1116', 'learning_rate': '0.0001116', 'epoch': '0.48'}
+{'loss': '0.1566', 'grad_norm': '0.1097', 'learning_rate': '0.0001065', 'epoch': '0.496'}
+{'loss': '0.1645', 'grad_norm': '0.1306', 'learning_rate': '0.0001013', 'epoch': '0.512'}
+{'loss': '0.1586', 'grad_norm': '0.1177', 'learning_rate': '9.612e-05', 'epoch': '0.528'}
+{'loss': '0.1617', 'grad_norm': '0.1046', 'learning_rate': '9.096e-05', 'epoch': '0.544'}
+{'loss': '0.1534', 'grad_norm': '0.1147', 'learning_rate': '8.582e-05', 'epoch': '0.56'}
+{'loss': '0.1663', 'grad_norm': '0.1197', 'learning_rate': '8.071e-05', 'epoch': '0.576'}
+{'loss': '0.1515', 'grad_norm': '0.1247', 'learning_rate': '7.566e-05', 'epoch': '0.592'}
+{'loss': '0.1541', 'grad_norm': '0.1049', 'learning_rate': '7.068e-05', 'epoch': '0.608'}
+{'loss': '0.1548', 'grad_norm': '0.1273', 'learning_rate': '6.577e-05', 'epoch': '0.624'}
+{'loss': '0.1652', 'grad_norm': '0.1562', 'learning_rate': '6.096e-05', 'epoch': '0.64'}
+{'loss': '0.1575', 'grad_norm': '0.1239', 'learning_rate': '5.625e-05', 'epoch': '0.656'}
+{'loss': '0.1685', 'grad_norm': '0.1129', 'learning_rate': '5.165e-05', 'epoch': '0.672'}
+{'loss': '0.1461', 'grad_norm': '0.1044', 'learning_rate': '4.719e-05', 'epoch': '0.688'}
+{'loss': '0.1557', 'grad_norm': '0.1192', 'learning_rate': '4.287e-05', 'epoch': '0.704'}
+{'loss': '0.1441', 'grad_norm': '0.1153', 'learning_rate': '3.87e-05', 'epoch': '0.72'}
+{'loss': '0.1587', 'grad_norm': '0.1179', 'learning_rate': '3.469e-05', 'epoch': '0.736'}
+{'loss': '0.1476', 'grad_norm': '0.1204', 'learning_rate': '3.086e-05', 'epoch': '0.752'}
+{'loss': '0.1527', 'grad_norm': '0.1201', 'learning_rate': '2.722e-05', 'epoch': '0.768'}
+{'loss': '0.152', 'grad_norm': '0.1334', 'learning_rate': '2.377e-05', 'epoch': '0.784'}
+{'loss': '0.1565', 'grad_norm': '0.1147', 'learning_rate': '2.052e-05', 'epoch': '0.8'}
+{'loss': '0.1538', 'grad_norm': '0.1204', 'learning_rate': '1.749e-05', 'epoch': '0.816'}
+{'loss': '0.1479', 'grad_norm': '0.1238', 'learning_rate': '1.468e-05', 'epoch': '0.832'}
+{'loss': '0.1553', 'grad_norm': '0.1134', 'learning_rate': '1.209e-05', 'epoch': '0.848'}
+{'loss': '0.1576', 'grad_norm': '0.109', 'learning_rate': '9.743e-06', 'epoch': '0.864'}
+{'loss': '0.1669', 'grad_norm': '0.119', 'learning_rate': '7.637e-06', 'epoch': '0.88'}
+{'loss': '0.1595', 'grad_norm': '0.1078', 'learning_rate': '5.778e-06', 'epoch': '0.896'}
+{'loss': '0.1554', 'grad_norm': '0.1175', 'learning_rate': '4.171e-06', 'epoch': '0.912'}
+{'loss': '0.153', 'grad_norm': '0.1091', 'learning_rate': '2.821e-06', 'epoch': '0.928'}
+{'loss': '0.1576', 'grad_norm': '0.1051', 'learning_rate': '1.731e-06', 'epoch': '0.944'}
+{'loss': '0.146', 'grad_norm': '0.1166', 'learning_rate': '9.04e-07', 'epoch': '0.96'}
+{'loss': '0.1549', 'grad_norm': '0.1237', 'learning_rate': '3.427e-07', 'epoch': '0.976'}
+{'loss': '0.1535', 'grad_norm': '0.1264', 'learning_rate': '4.821e-08', 'epoch': '0.992'}
+{'train_runtime': '1721', 'train_samples_per_second': '11.62', 'train_steps_per_second': '0.363', 'train_loss': '0.1588', 'epoch': '1'}
+[train] done 1721.6s loss=0.1588 peak=8.65GB
+[eval] gsm8k: 69.29 (1319 samples)
+[result] {"method": "lora", "task": "math", "model": "Qwen2.5-1.5B", "lr": 0.0002, "rank": 16, "seed": 42, "epochs": 1.0, "optim": "adamw_torch", "model_path": "/root/autodl-tmp/models/Qwen2.5-1.5B", "trainable_params": 18464768, "total_params": 1562179072, "trainable_pct": 1.182, "n_train": 20000, "truncated": 117, "total_steps": 625, "micro_bs": 4, "train_runtime_s": 1721.6, "train_loss": 0.1588, "train_samples_per_s": 11.62, "peak_mem_alloc_gb": 8.65, "peak_mem_reserved_gb": 10.0, "merged_for_eval": true, "eval": {"gsm8k": 69.29, "avg": 69.29}, "eval_runtime_s": 112.2, "eval_decoding": "generate"}

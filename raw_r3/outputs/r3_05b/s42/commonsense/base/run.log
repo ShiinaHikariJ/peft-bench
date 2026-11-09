@@ -1,0 +1,10 @@
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights:  38%|███▊      | 111/290 [00:00<00:00, 1107.19it/s]Loading weights:  93%|█████████▎| 269/290 [00:00<00:00, 1382.54it/s]Loading weights: 100%|██████████| 290/290 [00:00<00:00, 1382.28it/s]
+[eval] boolq: 59.69 (3270 samples)
+[eval] piqa: 44.56 (1838 samples)
+[eval] social_i_qa: 12.13 (1954 samples)
+[eval] hellaswag: 23.08 (10042 samples)
+[eval] winogrande: 37.96 (1267 samples)
+[eval] ARC-Easy: 23.48 (2376 samples)
+[eval] ARC-Challenge: 21.42 (1172 samples)
+[eval] openbookqa: 25.6 (500 samples)
+[result] {"method": "base", "task": "commonsense", "model": "Qwen2.5-0.5B", "lr": null, "rank": 16, "seed": 42, "epochs": 1.0, "trainable_params": 0, "total_params": 494032768, "trainable_pct": 0.0, "eval": {"boolq": 59.69, "piqa": 44.56, "social_i_qa": 12.13, "hellaswag": 23.08, "winogrande": 37.96, "ARC-Easy": 23.48, "ARC-Challenge": 21.42, "openbookqa": 25.6, "avg": 30.99}, "eval_runtime_s": 148.9, "eval_decoding": "generate"}
